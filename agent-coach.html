@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Coach &mdash; Matthieu Duval</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <div class="nav-brand-name">Matthieu Duval</div>
+            <div class="nav-brand-title">Senior Product Manager</div>
+        </a>
+        <div class="nav-links">
+            <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+            <a href="agent-coach.html" class="active">Agent Coach</a>
+            <a href="agent-veille.html">Agent veille</a>
+            <a href="UC4/index.html">Portfolio</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero" style="align-items: end;">
+    <div class="hero-left">
+        <div class="hero-eyebrow">Use case 02 &middot; AI Discipline</div>
+        <h1>Agent<br>Coach</h1>
+    </div>
+    <div class="hero-right">
+        <p class="hero-pitch">Conception d&rsquo;un agent from scratch&nbsp;: 6 modes distincts, chacun avec son workflow et ses crit&egrave;res d&rsquo;&eacute;valuation. 364 lignes de profil en RAG pour que le matching s&rsquo;appuie sur des faits, pas sur ce qu&rsquo;on imagine de soi-m&ecirc;me.</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-num">6</div>
+                <div class="hero-stat-label">Modes de coaching</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">364</div>
+                <div class="hero-stat-label">Lignes de profil RAG</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">4</div>
+                <div class="hero-stat-label">Candidatures pr&eacute;par&eacute;es<br>jan&ndash;f&eacute;v 2026</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="tabs">
+    <div class="tabs-inner">
+        <button class="tab active" data-target="case-0">Simulation fit</button>
+        <button class="tab" data-target="case-1">6 modes</button>
+        <button class="tab" data-target="case-2">Analyse d&rsquo;offre</button>
+        <button class="tab" data-target="case-3">Dashboard</button>
+    </div>
+</div>
+
+<div class="cases">
+
+    <!-- CASE 1 : Simulation fit -->
+    <div class="case active" id="case-0">
+        <div class="case-visual">
+            <div class="case-method">Adaptation &middot; RH, CPO, CEO</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">3&times;</div>
+                <div class="case-impact-label">le m&ecirc;me pitch rewrit&eacute; selon l&rsquo;interlocuteur RH, CPO, CEO</div>
+            </div>
+            <div class="case-visual-num">01</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Entretien simul&eacute; &middot; Adaptation par interlocuteur</div>
+                <h2 class="case-title">Le recruteur dans la boucle</h2>
+                <p class="case-desc">L&rsquo;agent joue un ex-Head of Product ayant recrut&eacute; 50+ PM. Il adapte son style selon l&rsquo;interlocuteur&nbsp;: chaleureux en RH, exigeant en CPO, direct en CEO. Une question &agrave; la fois, relances, questions pi&egrave;ges. Feedback structur&eacute;&nbsp;: top 3 r&eacute;ponses fortes, red flags d&eacute;tect&eacute;s, verdict de readiness.</p>
+            </div>
+            <div class="case-learning">
+                <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                <div class="case-learning-text">Simuler RH puis CPO sur la m&ecirc;me offre produit deux versions du discours. La version CPO est syst&eacute;matiquement plus courte et plus pr&eacute;cise.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CASE 2 : 6 modes -->
+    <div class="case" id="case-1">
+        <div class="case-visual">
+            <div class="case-method">Architecture &middot; 6 workflows distincts</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">6</div>
+                <div class="case-impact-label">modes distincts, chacun avec son workflow et ses crit&egrave;res d&rsquo;&eacute;valuation</div>
+            </div>
+            <div class="case-visual-num">00</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Design de l&rsquo;agent &middot; Architecture modale</div>
+                <h2 class="case-title">6 modes</h2>
+                <p class="case-desc">L&rsquo;agent n&rsquo;est pas un chatbot g&eacute;n&eacute;raliste. Il est structur&eacute; en 6 modes distincts&nbsp;: chaque mode a son workflow, ses crit&egrave;res d&rsquo;&eacute;valuation, son scoring. La conception pr&eacute;c&egrave;de l&rsquo;usage.</p>
+                <div class="modes-grid">
+                    <div class="mode-item">
+                        <div class="mode-num">01</div>
+                        <div>
+                            <div class="mode-name">Pitch</div>
+                            <div class="mode-desc">Construire et affiner son pitch selon l&rsquo;interlocuteur. It&eacute;ration jusqu&rsquo;&agrave; validation.</div>
+                        </div>
+                    </div>
+                    <div class="mode-item">
+                        <div class="mode-num">02</div>
+                        <div>
+                            <div class="mode-name">Simulation fit</div>
+                            <div class="mode-desc">L&rsquo;agent joue le recruteur. Une question &agrave; la fois, relances, curveballs. Verdict de readiness en fin de session.</div>
+                        </div>
+                    </div>
+                    <div class="mode-item">
+                        <div class="mode-num">03</div>
+                        <div>
+                            <div class="mode-name">Case study</div>
+                            <div class="mode-desc">Brief produit, questions de relance comme un jury. Scoring sur 5 crit&egrave;res&nbsp;: structure, profondeur d&rsquo;analyse, pragmatisme, m&eacute;triques, originalit&eacute;.</div>
+                        </div>
+                    </div>
+                    <div class="mode-item">
+                        <div class="mode-num">04</div>
+                        <div>
+                            <div class="mode-name">Feedback</div>
+                            <div class="mode-desc">Analyser un contenu soumis&nbsp;: r&eacute;ponse, pitch, lettre de motivation. Syst&eacute;matiquement une version avant et une version apr&egrave;s.</div>
+                        </div>
+                    </div>
+                    <div class="mode-item">
+                        <div class="mode-num">05</div>
+                        <div>
+                            <div class="mode-name">Analyse offre</div>
+                            <div class="mode-desc">9 dimensions&nbsp;: matching profil, points forts, gaps, red flags, questions probables, angles d&rsquo;attaque, questions &agrave; poser, scoring /100, strat&eacute;gie de n&eacute;gociation. Verdict GO&nbsp;/ &Agrave; creuser&nbsp;/ Pass.</div>
+                        </div>
+                    </div>
+                    <div class="mode-item">
+                        <div class="mode-num">06</div>
+                        <div>
+                            <div class="mode-name">Debrief</div>
+                            <div class="mode-desc">Analyser un entretien pass&eacute;, identifier ce qui a fonctionn&eacute;, ajuster la strat&eacute;gie pour le suivant.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="case-learning">
+                <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                <div class="case-learning-text">Un bon agent n&rsquo;est pas un chatbot qui r&eacute;pond &agrave; tout. C&rsquo;est un syst&egrave;me avec des modes distincts, des workflows d&eacute;finis et des crit&egrave;res explicites. La conception pr&eacute;c&egrave;de l&rsquo;usage.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CASE 3 : Analyse d'offre -->
+    <div class="case" id="case-2">
+        <div class="case-visual">
+            <div class="case-method">Scoring &middot; 9 dimensions avant de postuler</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">9</div>
+                <div class="case-impact-label">dimensions analys&eacute;es avant chaque candidature</div>
+            </div>
+            <div class="case-visual-num">02</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Scoring &middot; Gaps &middot; Red flags &middot; N&eacute;gociation</div>
+                <h2 class="case-title">D&eacute;cider avant de postuler</h2>
+                <p class="case-desc">L&rsquo;agent analyse chaque offre en 9 dimensions&nbsp;: matching profil, points forts, gaps &agrave; combler, red flags ESN, questions probables, angles de diff&eacute;renciation, questions &agrave; poser au recruteur, scoring /100, strat&eacute;gie de n&eacute;gociation. Le RAG garantit que le matching s&rsquo;appuie sur des faits document&eacute;s, pas sur ce qu&rsquo;on imagine de son propre profil.</p>
+            </div>
+            <div class="case-learning">
+                <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                <div class="case-learning-text">Avant, je postulais puis je pr&eacute;parais. Maintenant je score d&rsquo;abord. Deux offres similaires en intitul&eacute; peuvent scorer tr&egrave;s diff&eacute;remment sur &laquo;&nbsp;maturit&eacute; &eacute;quipe produit&nbsp;&raquo;.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CASE 4 : Dashboard -->
+    <div class="case" id="case-3">
+        <div class="case-visual">
+            <div class="case-method">Usage terrain &middot; Entre les sessions</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">4</div>
+                <div class="case-impact-label">modules&nbsp;: checklists, fiches narratives, tracker, exercices oraux</div>
+            </div>
+            <div class="case-visual-num">03</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Pr&eacute;paration active &middot; Suivi candidatures</div>
+                <h2 class="case-title">Le Dashboard</h2>
+                <p class="case-desc">L&rsquo;agent coaching fonctionne en session. Entre les sessions, un dashboard HTML centralise&nbsp;: checklists interactives pr&eacute;sentiel et visio, fiches narratives pour les sujets sensibles, tracker de candidatures avec statuts, exercices d&rsquo;expressivit&eacute; orale. Accessible partout, &agrave; tout moment, sans connexion &agrave; Claude.</p>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Un bon syst&egrave;me ne repose pas sur un seul outil. L&rsquo;agent pense, le dashboard agit. Les deux se compl&egrave;tent sans se remplacer.</div>
+                </div>
+            </div>
+            <a href="https://coach-itw-matthieu-duval.netlify.app/" target="_blank" class="case-link">Ouvrir le dashboard &rarr;</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <a href="index.html" class="footer-left">Matthieu Duval &middot; Nantes</a>
+    <div class="footer-right">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank">CV</a>
+    </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Retour en haut">&uarr;</button>
+
+<script>
+    (function() {
+        var btn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', function() {
+            btn.classList.toggle('visible', window.scrollY > 400);
+        });
+        btn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        var tabs = document.querySelectorAll('.tab');
+        var cases = document.querySelectorAll('.case');
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                tabs.forEach(function(t) { t.classList.remove('active'); });
+                cases.forEach(function(c) { c.classList.remove('active'); });
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.target).classList.add('active');
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Veille &mdash; Matthieu Duval</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <div class="nav-brand-name">Matthieu Duval</div>
+            <div class="nav-brand-title">Senior Product Manager</div>
+        </a>
+        <div class="nav-links">
+            <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+            <a href="agent-coach.html">Agent Coach</a>
+            <a href="agent-veille.html" class="active">Agent Veille</a>
+            <a href="UC4/index.html">Portfolio</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-left">
+        <div class="hero-eyebrow">Use case 03 &middot; AI Discipline</div>
+        <h1>Agent<br>Veille</h1>
+    </div>
+    <div class="hero-right">
+        <p class="hero-pitch">Un agent Python interroge 18 sources chaque lundi &agrave; 10h, structure une veille class&eacute;e par pertinence et la publie automatiquement dans Notion. Z&eacute;ro production manuelle. Con&ccedil;u et mis en production en une journ&eacute;e de travail avec Claude Code et l&rsquo;Agent Coach (UC2).</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-num">18</div>
+                <div class="hero-stat-label">Sources scann&eacute;es<br>chaque lundi</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">6</div>
+                <div class="hero-stat-label">Sections<br>par veille</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">0&thinsp;min</div>
+                <div class="hero-stat-label">Production<br>manuelle</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="tabs">
+    <div class="tabs-inner">
+        <button class="tab active" data-target="case-0">Objectifs</button>
+        <button class="tab" data-target="case-1">Construction</button>
+        <button class="tab" data-target="case-2">System prompt</button>
+        <button class="tab" data-target="case-3">D&eacute;cisions produit</button>
+    </div>
+</div>
+
+<div class="cases">
+
+    <!-- TAB 2 : Objectifs -->
+    <div class="case active" id="case-0">
+        <div class="case-visual">
+            <div class="case-method">6 sections &middot; Ranking profil &middot; Filtrage offres</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">&lt;&thinsp;10&thinsp;min</div>
+                <div class="case-impact-label">de lecture. Contrainte non n&eacute;gociable d&egrave;s le d&eacute;part&nbsp;: un outil qui demande du temps pour fonctionner ne sert &agrave; rien.</div>
+            </div>
+            <div class="case-visual-num">02</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Structure &middot; Classement &middot; Filtrage offres</div>
+                <h2 class="case-title">Une veille, pas<br>un agr&eacute;gateur</h2>
+                <p class="case-desc">Chaque section est class&eacute;e 🥇🥈🥉 par pertinence d&eacute;croissante pour le profil&nbsp;: impact concret sur la recherche d&rsquo;emploi et la mont&eacute;e en comp&eacute;tences IA d&rsquo;abord, signal faible en dernier. Trois items maximum par section&nbsp;; jamais de remplissage. Si la semaine est pauvre, la veille le dit.</p>
+                <div class="sections-grid">
+                    <div class="section-item">
+                        <div class="section-rank">01</div>
+                        <div>
+                            <div class="section-name">Actus IA &amp; Produit</div>
+                            <div class="section-desc">Impact direct sur le m&eacute;tier PM cette semaine. Pas d&rsquo;IA g&eacute;n&eacute;rale ni th&eacute;orique.</div>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <div class="section-rank">02</div>
+                        <div>
+                            <div class="section-name">Outil du moment</div>
+                            <div class="section-desc">Nouveaut&eacute; avec cas d&rsquo;usage PM concret. Score de pertinence inclus.</div>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <div class="section-rank">03</div>
+                        <div>
+                            <div class="section-name">Cas d&rsquo;usage IA &times; PM</div>
+                            <div class="section-desc">Workflows applicables cette semaine, avec temps de setup et r&eacute;sultats attendus.</div>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <div class="section-rank">04</div>
+                        <div>
+                            <div class="section-name">Offres d&rsquo;emploi</div>
+                            <div class="section-desc">Filtr&eacute;es sur crit&egrave;res stricts&nbsp;: Senior PM, Nantes ou remote, z&eacute;ro ESN ni Paris sur site. Fit score /10 inclus.</div>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <div class="section-rank">05</div>
+                        <div>
+                            <div class="section-name">Framework *(si nouveaut&eacute;)*</div>
+                            <div class="section-desc">Un seul framework, uniquement s&rsquo;il y a une vraie nouveaut&eacute; cette semaine.</div>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <div class="section-rank">06</div>
+                        <div>
+                            <div class="section-name">Glossaire IA *(si &eacute;mergent)*</div>
+                            <div class="section-desc">1 &agrave; 3 termes, uniquement si un concept IA important &eacute;merge cette semaine.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Le filtrage des offres est encod&eacute; dans le prompt comme un vrai cahier des charges m&eacute;tier&nbsp;: intitul&eacute;s accept&eacute;s, exclusions explicites, g&eacute;ographie, type de structure. La veille est un acte de design avant d&rsquo;&ecirc;tre un acte technique.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 3 : Construction -->
+    <div class="case" id="case-1">
+        <div class="case-visual">
+            <div class="case-method">Agent Coach &middot; Claude Code &middot; Anthropic API &middot; Notion API</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">2 IA</div>
+                <div class="case-impact-label">pour construire la 3e&nbsp;: l&rsquo;Agent Coach cadre la strat&eacute;gie, Claude Code assemble le code</div>
+            </div>
+            <div class="case-visual-num">03</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Construire avec l&rsquo;IA &middot; Python + APIs brutes &middot; Workflow automatis&eacute;</div>
+                <h2 class="case-title">Construire<br>avec l&rsquo;IA</h2>
+                <p class="case-desc">Cet agent de veille a &eacute;t&eacute; construit avec deux outils compl&eacute;mentaires. L&rsquo;Agent Coach (UC2) pour d&eacute;finir la strat&eacute;gie, le contenu et les arbitrages produit. Claude Code pour assembler et corriger le code Python. Une r&eacute;partition claire des r&ocirc;les entre deux outils IA, comme on diviserait le travail dans une &eacute;quipe.</p>
+                <div class="build-steps">
+                    <div class="build-step">
+                        <div class="build-step-tool green">Agent Coach</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">D&eacute;finir le probl&egrave;me et la strat&eacute;gie</div>
+                            <div class="build-step-desc">Quoi surveiller, comment structurer la veille, quels crit&egrave;res de filtrage, quelle logique de ranking. La r&eacute;flexion produit en premier.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">Agent Coach</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">R&eacute;diger le system prompt v1 jusqu&rsquo;&agrave; v4</div>
+                            <div class="build-step-desc">4 it&eacute;rations dans la journ&eacute;e pour passer d&rsquo;un prompt g&eacute;n&eacute;rique &agrave; un cahier des charges de 270 lignes avec r&egrave;gles absolues, format de sortie et profil utilisateur encod&eacute;.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool">Claude Code</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Assembler le code Python</div>
+                            <div class="build-step-desc">Deux modules&nbsp;: veille_pm.py (orchestration + API Anthropic) et notion_publisher.py (conversion Markdown → blocs Notion natifs). Chacun avec un r&ocirc;le pr&eacute;cis.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool">Claude Code</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Premier run autonome r&eacute;ussi</div>
+                            <div class="build-step-desc">18 sources scann&eacute;es, veille compl&egrave;te publi&eacute;e dans Notion sans intervention manuelle. De z&eacute;ro &agrave; un agent fonctionnel en une journ&eacute;e de travail.</div>
+                        </div>
+                    </div>
+                </div>
+                <p style="font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:#AAAAAA; margin-bottom:12px;">Le workflow chaque lundi</p>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <span class="workflow-num">01</span>
+                        <span class="workflow-text"><strong>Cron macOS</strong> d&eacute;clenche le script &agrave; 10h</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">02</span>
+                        <span class="workflow-text">Chargement de l&rsquo;<strong>historique</strong> des 50 derni&egrave;res URLs pour &eacute;viter les doublons</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">03</span>
+                        <span class="workflow-text"><strong>API Anthropic</strong> avec web search&nbsp;: 18 sources scann&eacute;es, veille structur&eacute;e g&eacute;n&eacute;r&eacute;e</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">04</span>
+                        <span class="workflow-text">Sauvegarde locale en markdown comme <strong>filet de s&eacute;curit&eacute;</strong></span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">05</span>
+                        <span class="workflow-text"><strong>Publication Notion</strong>&nbsp;: ancien contenu archiv&eacute;, nouvelle veille publi&eacute;e</span>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Savoir quel outil pour quelle t&acirc;che, c&rsquo;est ce que les &eacute;quipes produit cherchent en 2026. Pas &laquo;&nbsp;je connais Claude&nbsp;&raquo;, mais &laquo;&nbsp;je sais orchestrer plusieurs IA selon leurs forces respectives&nbsp;&raquo;.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 1 : System prompt -->
+    <div class="case" id="case-2">
+        <div class="case-visual">
+            <div class="case-method">270 lignes &middot; Cahier des charges &middot; 4 versions it&eacute;r&eacute;es</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">4</div>
+                <div class="case-impact-label">versions it&eacute;r&eacute;es dans la journ&eacute;e, de g&eacute;n&eacute;rique &agrave; op&eacute;rationnel</div>
+            </div>
+            <div class="case-visual-num">01</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Prompt engineering &middot; It&eacute;ration &middot; R&egrave;gles absolues</div>
+                <h2 class="case-title">Le prompt comme<br>spec produit</h2>
+                <p class="case-desc">Le system prompt n&rsquo;est pas un simple message envoy&eacute; &agrave; l&rsquo;API. C&rsquo;est un document produit &agrave; part enti&egrave;re&nbsp;: il d&eacute;finit le profil utilisateur, les r&egrave;gles m&eacute;tier, les crit&egrave;res de qualit&eacute; et le format de sortie attendu. Il est maintenu dans un fichier s&eacute;par&eacute;, modifiable sans toucher au code Python. Quelqu&rsquo;un qui ne conna&icirc;t pas l&rsquo;IA peut le lire et le comprendre.</p>
+                <div class="prompt-versions">
+                    <div class="prompt-version">
+                        <div class="prompt-v-label">Version</div>
+                        <div class="prompt-v-num">v1</div>
+                        <div class="prompt-v-desc">Prompt g&eacute;n&eacute;rique, format libre. R&eacute;sultats inconsistants d&rsquo;un run &agrave; l&rsquo;autre.</div>
+                    </div>
+                    <div class="prompt-version">
+                        <div class="prompt-v-label">Version</div>
+                        <div class="prompt-v-num">v2&ndash;v3</div>
+                        <div class="prompt-v-desc">Sections d&eacute;finies, crit&egrave;res d&rsquo;offres explicites, r&egrave;gles &eacute;ditoriales. Format Notion sp&eacute;cifi&eacute;.</div>
+                    </div>
+                    <div class="prompt-version">
+                        <div class="prompt-v-label">Version actuelle</div>
+                        <div class="prompt-v-num active-v">v4</div>
+                        <div class="prompt-v-desc">6 sections avec ranking 🥇🥈🥉, profil utilisateur encod&eacute;, r&egrave;gles absolues. 270 lignes.</div>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">D&eacute;finir des r&egrave;gles absolues dans le system prompt (ne jamais inventer, z&eacute;ro doublon, sources obligatoires) est indispensable&nbsp;: sans elles, les LLMs remplissent. Anticiper les comportements par d&eacute;faut et les corriger dans le prompt, c&rsquo;est exactement comme r&eacute;diger des crit&egrave;res d&rsquo;acceptance sur une user story.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 4 : Décisions produit -->
+    <div class="case" id="case-3">
+        <div class="case-visual">
+            <div class="case-method">Arbitrages &middot; Trade-offs &middot; Cons&eacute;quences document&eacute;es</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">3</div>
+                <div class="case-impact-label">d&eacute;cisions structurantes, chacune avec son rejet et sa cons&eacute;quence explicit&eacute;s</div>
+            </div>
+            <div class="case-visual-num">04</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Python vs Make &middot; 1 format vs 2 &middot; M&eacute;moire inter-runs</div>
+                <h2 class="case-title">Ce qui a &eacute;t&eacute;<br>arbitr&eacute;</h2>
+                <div class="decisions-list">
+                    <div class="decision-item">
+                        <div class="decision-num">01</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">Python + APIs brutes</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">Make / n8n</span>
+                            </div>
+                            <div class="decision-why">Make aurait &eacute;t&eacute; plus rapide &agrave; mettre en place. Mais travailler directement avec les APIs donne un contr&ocirc;le total sur la d&eacute;duplication, le parsing Notion et la gestion d&rsquo;&eacute;tat entre les runs, avec z&eacute;ro co&ucirc;t d&rsquo;h&eacute;bergement en prime. Et la compr&eacute;hension des fondations API est une comp&eacute;tence &agrave; d&eacute;montrer, pas &agrave; d&eacute;l&eacute;guer.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> d&egrave;s que la logique de d&eacute;dup ou le format Notion change, il faut modifier un workflow dans une interface tierce plut&ocirc;t que quelques lignes de code.</div>
+                        </div>
+                    </div>
+                    <div class="decision-item">
+                        <div class="decision-num">02</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">1 veille hebdo profonde</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">Flash + Mensuel</span>
+                            </div>
+                            <div class="decision-why">La version initiale pr&eacute;voyait deux formats&nbsp;: un Flash hebdo de 150 mots et un Mensuel complet. Apr&egrave;s test, le Flash &eacute;tait trop superficiel pour &ecirc;tre actionnable. Un seul format, 6 sections, 1600 &agrave; 1800 mots&nbsp;: la r&eacute;gularit&eacute; seule ne compense pas le manque de profondeur.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> deux formats &agrave; maintenir, une redondance in&eacute;vitable entre les deux, et une veille Flash qui n&rsquo;apporte pas grand-chose de plus qu&rsquo;un simple tweet.</div>
+                        </div>
+                    </div>
+                    <div class="decision-item">
+                        <div class="decision-num">03</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">M&eacute;moire inter-runs</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">Pas de d&eacute;duplication</span>
+                            </div>
+                            <div class="decision-why">Un fichier stocke les 200 derni&egrave;res URLs index&eacute;es et les injecte dans chaque prompt. La r&egrave;gle est stricte&nbsp;: une section vide signal&eacute;e vaut mieux qu&rsquo;un contenu r&eacute;p&eacute;t&eacute; ou invent&eacute;. &laquo;&nbsp;Semaine pauvre sur ce sujet&nbsp;&raquo; est une r&eacute;ponse valide.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> l&rsquo;agent r&eacute;p&egrave;te les m&ecirc;mes signaux d&rsquo;une semaine &agrave; l&rsquo;autre. C&rsquo;est exactement le probl&egrave;me qu&rsquo;on cherchait &agrave; r&eacute;soudre au d&eacute;part.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Savoir ce qu&rsquo;on n&rsquo;a pas fait et pourquoi est aussi important que ce qu&rsquo;on a construit. Chaque d&eacute;cision a un rejet explicit&eacute; et une cons&eacute;quence concr&egrave;te. C&rsquo;est la diff&eacute;rence entre un choix et une pr&eacute;f&eacute;rence.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<footer>
+    <a href="index.html" class="footer-left">Matthieu Duval &middot; Nantes</a>
+    <div class="footer-right">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank">CV</a>
+    </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Retour en haut">&uarr;</button>
+
+<script>
+    (function() {
+        var btn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', function() {
+            btn.classList.toggle('visible', window.scrollY > 400);
+        });
+        btn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        var tabs = document.querySelectorAll('.tab');
+        var cases = document.querySelectorAll('.case');
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                tabs.forEach(function(t) { t.classList.remove('active'); });
+                cases.forEach(function(c) { c.classList.remove('active'); });
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.target).classList.add('active');
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>
