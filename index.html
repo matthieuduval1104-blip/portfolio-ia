@@ -23,8 +23,28 @@
                 <a href="agent-veille.html">Agent veille</a>
                 <a href="UC4/index.html">Portfolio</a>
             </div>
+            <button class="burger" id="burgerBtn" aria-label="Menu">
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+            </button>
         </div>
     </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <button class="mobile-nav-close" id="mobileNavClose" aria-label="Fermer">&times;</button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+            <a href="agent-coach.html">Agent Coach</a>
+            <a href="agent-veille.html">Agent Veille</a>
+            <a href="UC4/index.html">Portfolio</a>
+        </nav>
+        <div class="mobile-nav-footer">
+            <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank">LinkedIn</a>
+            <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank">CV</a>
+        </div>
+    </div>
 
     <section class="hero">
 
@@ -36,7 +56,7 @@
             <p class="hero-pitch">J&rsquo;int&egrave;gre aujourd&rsquo;hui l&rsquo;IA g&eacute;n&eacute;rative dans mes pratiques via la formation <a href="https://www.aidiscipline.com/" target="_blank">AI Discipline</a>.</p>
             <div class="hero-ctas">
                 <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" class="hero-cta">LinkedIn &rarr;</a>
-                <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" download class="hero-cta">CV &darr;</a>
+                <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" download target="_blank" class="hero-cta">CV &darr;</a>
             </div>
         </div>
 
@@ -98,6 +118,17 @@
     </footer>
 
 </div>
+
+
+<script>
+    (function() {
+        var burger = document.getElementById('burgerBtn');
+        var mobileNav = document.getElementById('mobileNav');
+        var mobileClose = document.getElementById('mobileNavClose');
+        burger.addEventListener('click', function() { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; });
+        mobileClose.addEventListener('click', function() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; });
+    })();
+</script>
 
 </body>
 </html>

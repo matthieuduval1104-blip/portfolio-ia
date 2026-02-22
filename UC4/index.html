@@ -21,8 +21,28 @@
             <a href="../agent-veille.html">Agent Veille</a>
             <a href="index.html" class="active">Portfolio</a>
         </div>
+        <button class="burger" id="burgerBtn" aria-label="Menu">
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+        </button>
     </div>
 </nav>
+
+<div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Fermer">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+        <a href="../cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+        <a href="../agent-coach.html">Agent Coach</a>
+        <a href="../agent-veille.html">Agent Veille</a>
+        <a href="index.html" class="active">Portfolio</a>
+    </nav>
+    <div class="mobile-nav-footer">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank">LinkedIn</a>
+        <a href="../CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank">CV</a>
+    </div>
+</div>
 
 <section class="hero">
     <div class="hero-left">
@@ -267,6 +287,11 @@
                 document.getElementById(tab.dataset.target).classList.add('active');
             });
         });
+        var burger = document.getElementById('burgerBtn');
+        var mobileNav = document.getElementById('mobileNav');
+        var mobileClose = document.getElementById('mobileNavClose');
+        burger.addEventListener('click', function() { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; });
+        mobileClose.addEventListener('click', function() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; });
     })();
 </script>
 
