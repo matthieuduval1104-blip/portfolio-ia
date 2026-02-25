@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto. Offres &mdash; Matthieu Duval</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <div class="nav-brand-name">Matthieu Duval</div>
+            <div class="nav-brand-title">Senior Product Manager</div>
+        </a>
+        <div class="nav-links">
+            <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+            <a href="agent-coach.html">Agent Coach</a>
+            <a href="agent-veille.html">Agent Veille</a>
+            <a href="pipeline-offres.html" class="active">Auto. Offres</a>
+            <a href="UC4/index.html">Portfolio</a>
+        </div>
+        <button class="burger" id="burgerBtn" aria-label="Menu">
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+        </button>
+    </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Fermer">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+        <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+        <a href="agent-coach.html">Agent Coach</a>
+        <a href="agent-veille.html">Agent Veille</a>
+        <a href="pipeline-offres.html" class="active">Auto. Offres</a>
+        <a href="UC4/index.html">Portfolio</a>
+    </nav>
+    <div class="mobile-nav-footer">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank">CV</a>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="hero-left">
+        <div class="hero-eyebrow">Use case 04</div>
+        <h1>Auto.<br>Offres</h1>
+    </div>
+    <div class="hero-right">
+        <p class="hero-pitch">Trois sources d&rsquo;offres, aucun syst&egrave;me pour les centraliser. J&rsquo;ai construit ce pipeline Make&nbsp;+&nbsp;Airtable pendant ma recherche d&rsquo;emploi&nbsp;: il capture automatiquement les alertes email, les centralise dans Airtable et m&rsquo;envoie un r&eacute;cap chaque lundi matin. En production depuis f&eacute;vrier&nbsp;2026.</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-num">3</div>
+                <div class="hero-stat-label">Sources<br>captur&eacute;es</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">3</div>
+                <div class="hero-stat-label">Sc&eacute;narios<br>Make</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">10&thinsp;min</div>
+                <div class="hero-stat-label">De qualification<br>par semaine</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="tabs">
+    <div class="tabs-inner">
+        <button class="tab active" data-target="case-0">Probl&egrave;me</button>
+        <button class="tab" data-target="case-1">Architecture</button>
+        <button class="tab" data-target="case-2">D&eacute;cisions produit</button>
+        <button class="tab" data-target="case-3">En usage</button>
+    </div>
+</div>
+
+<div class="cases">
+
+    <!-- TAB 1 : Problème -->
+    <div class="case active" id="case-0">
+        <div class="case-visual">
+            <div class="case-method">WTTJ &middot; LinkedIn &middot; HelloWork &middot; Gmail</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">3</div>
+                <div class="case-impact-label">sources d&rsquo;offres sans vision unifi&eacute;e, avant ce pipeline</div>
+            </div>
+            <div class="case-visual-num">01</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Capture &middot; Qualification &middot; Suivi</div>
+                <h2 class="case-title">Un inbox n&rsquo;est<br>pas un CRM</h2>
+                <p class="case-desc">WTTJ, LinkedIn et HelloWork envoient des alertes chaque jour. Sans syst&egrave;me, chaque offre demande d&rsquo;ouvrir l&rsquo;email, d&rsquo;&eacute;valuer la pertinence, de noter quelque part et de se souvenir de relancer. Avec trois sources et un volume variable, &ccedil;a prend du temps et &ccedil;a laisse passer des choses.</p>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <span class="workflow-num">01</span>
+                        <span class="workflow-text">Alerte email re&ccedil;ue &rarr; <strong>ligne Airtable cr&eacute;&eacute;e automatiquement</strong> (statut&nbsp;: &laquo;&nbsp;&Agrave; qualifier&nbsp;&raquo;)</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">02</span>
+                        <span class="workflow-text">Qualification en <strong>2 clics</strong> dans Airtable&nbsp;: Int&eacute;ressant / Pass / &Agrave; postuler</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">03</span>
+                        <span class="workflow-text">Candidature lanc&eacute;e &rarr; <strong>relance J+5 calcul&eacute;e automatiquement</strong></span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">04</span>
+                        <span class="workflow-text">Chaque lundi 8h &rarr; <strong>r&eacute;cap email</strong> de toutes les offres de la semaine</span>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Ce pipeline fait ce qu&rsquo;un CRM fait pour une &eacute;quipe commerciale. M&ecirc;me logique, m&ecirc;me besoin&nbsp;: centraliser pour d&eacute;cider. Les outils no-code comme Make et Airtable permettent de construire ce type de syst&egrave;me sans ligne de code, en moins d&rsquo;une matin&eacute;e.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 2 : Architecture -->
+    <div class="case" id="case-1">
+        <div class="case-visual">
+            <div class="case-method">Make &middot; Airtable &middot; Gmail &middot; 3 sc&eacute;narios</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">1 matin</div>
+                <div class="case-impact-label">de setup. En production depuis le 25 f&eacute;vrier 2026</div>
+            </div>
+            <div class="case-visual-num">02</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Make &middot; Airtable &middot; Gmail &middot; No-code</div>
+                <h2 class="case-title">3 sc&eacute;narios,<br>1 logique</h2>
+                <p class="case-desc">Make orchestre la logique entre Gmail et Airtable. La r&eacute;partition est claire&nbsp;: la capture et les relances sont automatis&eacute;es, la qualification reste humaine. Chaque outil fait ce qu&rsquo;il fait le mieux.</p>
+                <div class="build-steps">
+                    <div class="build-step">
+                        <div class="build-step-tool green">Sc&eacute;nario 1</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Capture automatique des offres</div>
+                            <div class="build-step-desc">D&egrave;s qu&rsquo;une alerte job arrive dans Gmail (WTTJ, LinkedIn, HelloWork), Make cr&eacute;e automatiquement une ligne dans Airtable avec le titre, la date et le statut &laquo;&nbsp;&Agrave; qualifier&nbsp;&raquo;. Une fois par jour.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">Sc&eacute;nario 2</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Relance automatique J+5</div>
+                            <div class="build-step-desc">Quand je passe une offre au statut &laquo;&nbsp;&Agrave; postuler&nbsp;&raquo; et que je remplis la date de candidature, Make calcule automatiquement la date de relance &agrave; J+5 et la note dans Airtable.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool">Sc&eacute;nario 3</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">R&eacute;cap hebdo chaque lundi</div>
+                            <div class="build-step-desc">Chaque lundi &agrave; 8h, Make r&eacute;cup&egrave;re toutes les offres captur&eacute;es dans les 7 derniers jours et m&rsquo;envoie un email de synth&egrave;se. Vue compl&egrave;te de la semaine en une lecture.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Savoir utiliser Make et Airtable, c&rsquo;est une comp&eacute;tence directement transposable en &eacute;quipe produit. Ces outils servent &agrave; automatiser des workflows m&eacute;tier sans d&eacute;pendance technique&nbsp;: onboarding, suivi d&rsquo;incidents, collecte de feedback. Le principe est identique.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 3 : Décisions produit -->
+    <div class="case" id="case-2">
+        <div class="case-visual">
+            <div class="case-method">Make vs Zapier &middot; Airtable vs Time Tonic &middot; Recap vs centralisation seule</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">3</div>
+                <div class="case-impact-label">arbitrages, chacun avec son rejet et sa cons&eacute;quence explicit&eacute;s</div>
+            </div>
+            <div class="case-visual-num">03</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Arbitrages &middot; Trade-offs &middot; Cons&eacute;quences document&eacute;es</div>
+                <h2 class="case-title">Ce qui a &eacute;t&eacute;<br>arbitr&eacute;</h2>
+                <div class="decisions-list">
+                    <div class="decision-item">
+                        <div class="decision-num">01</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">Make</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">Zapier &middot; n8n</span>
+                            </div>
+                            <div class="decision-why">Zapier est trop limit&eacute; sur le free tier (100 t&acirc;ches/mois). n8n est puissant mais demande un h&eacute;bergement et une courbe d&rsquo;apprentissage disproportionn&eacute;e pour ce besoin. Make offre 1&thinsp;000 op&eacute;rations/mois gratuitement, une interface lisible et un p&eacute;rim&egrave;tre suffisant.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> soit un outil trop cher pour valider le concept, soit une complexit&eacute; inutile qui d&eacute;courage la mise en production.</div>
+                        </div>
+                    </div>
+                    <div class="decision-item">
+                        <div class="decision-num">02</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">Airtable</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">Time Tonic</span>
+                            </div>
+                            <div class="decision-why">Time Tonic est franco-fran&ccedil;ais et bien con&ccedil;u, mais peu r&eacute;pandu dans les &eacute;quipes produit scale-up. Airtable est le standard&nbsp;: il est reconnu en entretien, disponible en free tier et nativement int&eacute;gr&eacute; dans Make. La comp&eacute;tence est transposable.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> une comp&eacute;tence moins valorisable sur le march&eacute; PM et une int&eacute;gration Make plus complexe.</div>
+                        </div>
+                    </div>
+                    <div class="decision-item">
+                        <div class="decision-num">03</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">Centraliser + r&eacute;cap hebdo</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">Centraliser seulement</span>
+                            </div>
+                            <div class="decision-why">La centralisation seule r&eacute;sout le probl&egrave;me de stockage, pas celui du suivi. Le r&eacute;cap hebdo ajoute une logique de scheduled automation&nbsp;: un d&eacute;clencheur temporel, une agr&eacute;gation, une sortie structur&eacute;e. C&rsquo;est un pattern r&eacute;utilisable pour des dizaines de cas m&eacute;tier.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> un use case de CRUD basique qui ne d&eacute;montre pas la capacit&eacute; &agrave; penser en syst&egrave;me.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Choisir un outil, c&rsquo;est aussi choisir ce qu&rsquo;on enseigne &agrave; une &eacute;quipe. Airtable et Make sont des outils que je recommanderais &agrave; un ops ou un bizdev qui veut automatiser sans d&eacute;pendance technique. Les avoir utilis&eacute;s en production, m&ecirc;me &agrave; petite &eacute;chelle, c&rsquo;est une diff&eacute;rence avec ceux qui en ont juste entendu parler.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 4 : En usage -->
+    <div class="case" id="case-3">
+        <div class="case-visual">
+            <div class="case-method">Capture auto &middot; Qualification 2 clics &middot; Relance auto &middot; R&eacute;cap lundi</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">10&thinsp;min</div>
+                <div class="case-impact-label">par semaine. Le reste tourne tout seul depuis f&eacute;vrier 2026</div>
+            </div>
+            <div class="case-visual-num">04</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Workflow &middot; Routine &middot; Pipeline actif</div>
+                <h2 class="case-title">La semaine<br>type</h2>
+                <p class="case-desc">Ce que le pipeline fait concr&egrave;tement chaque semaine, sans intervention.</p>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <span class="workflow-num">Lundi 8h</span>
+                        <span class="workflow-text">Email de r&eacute;cap automatique&nbsp;: toutes les offres captur&eacute;es dans les 7 derniers jours, avec titre, entreprise et statut</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">Dans la semaine</span>
+                        <span class="workflow-text">Qualification en 2 clics dans Airtable&nbsp;: chaque offre re&ccedil;oit un statut (&laquo;&nbsp;Int&eacute;ressant&nbsp;&raquo;, &laquo;&nbsp;Pass&nbsp;&raquo;, &laquo;&nbsp;&Agrave; postuler&nbsp;&raquo;)</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">Candidature</span>
+                        <span class="workflow-text">Statut &rarr; &laquo;&nbsp;&Agrave; postuler&nbsp;&raquo; + date remplie &rarr; relance J+5 calcul&eacute;e automatiquement dans Airtable</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">Vue d&rsquo;ensemble</span>
+                        <span class="workflow-text">Airtable centralise tout&nbsp;: offres captur&eacute;es, qualifi&eacute;es, en cours, relances pr&eacute;vues. Un seul endroit pour piloter la recherche</span>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Le syst&egrave;me g&egrave;re la r&eacute;p&eacute;tition. La qualification reste humaine. C&rsquo;est la bonne r&eacute;partition des t&acirc;ches entre l&rsquo;automatisation et le jugement. Ce principe s&rsquo;applique &agrave; n&rsquo;importe quel workflow produit&nbsp;: d&eacute;finir ce qui peut tourner seul et ce qui doit rester sous contr&ocirc;le.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <a href="index.html" class="footer-left">Matthieu Duval &middot; Nantes</a>
+    <div class="footer-right">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank">CV</a>
+    </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Retour en haut">&uarr;</button>
+
+<script>
+    (function() {
+        var btn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', function() {
+            btn.classList.toggle('visible', window.scrollY > 400);
+        });
+        btn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        var tabs = document.querySelectorAll('.tab');
+        var cases = document.querySelectorAll('.case');
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                tabs.forEach(function(t) { t.classList.remove('active'); });
+                cases.forEach(function(c) { c.classList.remove('active'); });
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.target).classList.add('active');
+            });
+        });
+        var burger = document.getElementById('burgerBtn');
+        var mobileNav = document.getElementById('mobileNav');
+        var mobileClose = document.getElementById('mobileNavClose');
+        burger.addEventListener('click', function() { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; });
+        mobileClose.addEventListener('click', function() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; });
+    })();
+</script>
+
+</body>
+</html>

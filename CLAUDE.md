@@ -217,6 +217,7 @@ ssh-add ~/.ssh/id_ed25519_github
 - Stats : "18 Sources scannées", "6 Sections", "0 min Production manuelle"
 - 4 tabs : Objectifs / Construction / System prompt / Décisions produit
 - Composants UC3 spécifiques dans styles.css
+- Tab Objectifs : lien `Notion →` ajouté après "Ce que ça révèle" (23/02/2026)
 
 **UC4/index.html** :
 - Eyebrow : "Use case 04"
@@ -231,8 +232,8 @@ ssh-add ~/.ssh/id_ed25519_github
 
 ### Agent Veille PM (projet séparé)
 - **Dossier** : `~/Desktop/Claud.projets/Produit/Veille-IA/`
-- **Fichiers clés** : `veille_pm.py`, `notion_publisher.py`, `system_prompt_veille_v4.md`
+- **Fichiers clés** : `veille_pm.py`, `notion_publisher.py`, `system_prompt_veille_v5.md`
 - **Déclenchement** : alias `veille-pm` dans `~/.zshrc` OU cron lundi 10h
 - **Stack** : Python 3, API Anthropic (claude-sonnet-4-6, web_search), API Notion
 - **Premier run prod** : 22/02/2026 — 18 sources, 1680 mots, ~0.04€
-- **Voir** : `Veille-IA/CLAUDE_agent_veille_v2.md` pour l'architecture complète
+- **Voir** : `Veille-IA/CLAUDE_agent_veille_v3.md` pour l'architecture complète
