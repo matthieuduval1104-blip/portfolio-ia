@@ -1,6 +1,6 @@
 # CLAUDE.md — Portfolio IA
 > Fichier de contexte principal. À lire en premier à chaque nouvelle session Claude Code.
-> Dernière mise à jour : 22 février 2026
+> Dernière mise à jour : 30 mars 2026
 
 ---
 
@@ -15,10 +15,10 @@ Message principal : "Je suis formé à l'IA gen et je peux embarquer une équipe
 
 | Élément | Valeur |
 |---------|--------|
-| **URL live** | https://book-matthieu-duval.netlify.app/ |
+| **URL live** | https://portfolio-ia.matthieu-duval1104.workers.dev/ |
 | **Repo GitHub** | https://github.com/matthieuduval1104-blip/portfolio-ia |
 | **Branche principale** | `main` |
-| **Déploiement** | Automatique via Netlify → chaque `git push` sur `main` déclenche un build |
+| **Déploiement** | Automatique via Cloudflare Workers → chaque `git push` sur `main` déclenche un build |
 | **Clé SSH** | `~/.ssh/id_ed25519_github` (ajoutée au compte GitHub le 22/02/2026) |
 
 ### Commande de déploiement standard
@@ -76,7 +76,7 @@ ssh-add ~/.ssh/id_ed25519_github
 | `GUIDE.md` | Guide de maintenance pour Matthieu (non-technique) |
 | `UC4/CLAUDE.md` | Documentation complète des phases de construction UC4 |
 | `UC4/JOURNAL_UC4.md` | Journal de bord détaillé de toutes les sessions |
-| `../Profil_Matthieu.md` | Profil complet |
+| `../02_Profil-CV/Profil_Matthieu.md` | Profil complet |
 | `../Agent_Coach_System_Prompt.md` | System prompt Agent Coach |
 
 ---
@@ -85,7 +85,7 @@ ssh-add ~/.ssh/id_ed25519_github
 - HTML/CSS statique, JS inline minimal (tabs + scroll-top + burger mobile)
 - CSS centralisé dans `styles.css` (aucun `<style>` inline dans les HTML)
 - Font : Satoshi via Fontshare CDN
-- Déploiement : GitHub → Netlify (auto-build sur push)
+- Déploiement : GitHub → Cloudflare Workers (auto-build sur push)
 
 ---
 
