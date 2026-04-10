@@ -59,8 +59,8 @@
         <p class="hero-pitch">Un agent audite tous les agents en production&nbsp;: analyse statique du code par Claude, tests API live, scoring F/P/S/C. Rapport HTML g&eacute;n&eacute;r&eacute; &agrave; chaque run. Corrections valid&eacute;es O/N avant application.</p>
         <div class="hero-stats">
             <div class="hero-stat">
-                <div class="hero-stat-num">3</div>
-                <div class="hero-stat-label">Agents<br>monitor&eacute;s</div>
+                <div class="hero-stat-num">90–91%</div>
+                <div class="hero-stat-label">Scores certifi&eacute;s<br>Spotify · Veille PM</div>
             </div>
             <div class="hero-stat">
                 <div class="hero-stat-num">4</div>
@@ -99,7 +99,7 @@
             <div>
                 <div class="case-tag">Ops &middot; Fiabilit&eacute; &middot; Production</div>
                 <h2 class="case-title">Un agent en prod<br>peut d&eacute;grader sans bruit</h2>
-                <p class="case-desc">Quand un agent tourne en production, comment d&eacute;tecter qu&rsquo;il d&eacute;grade&nbsp;? Sans monitoring, on d&eacute;couvre les bugs quand l&rsquo;output est mauvais, ou pire quand l&rsquo;utilisateur le signale. L&rsquo;Agent Monitor audite en amont, &agrave; la demande.</p>
+                <p class="case-desc">Quand un agent tourne en production, comment d&eacute;tecter qu&rsquo;il d&eacute;grade&nbsp;? Sans monitoring, on d&eacute;couvre les bugs quand l&rsquo;output est mauvais, souvent une semaine apr&egrave;s la r&eacute;gression. L&rsquo;Agent Monitor audite en amont, &agrave; la demande.</p>
                 <div class="workflow-steps">
                     <div class="workflow-step">
                         <span class="workflow-num">01</span>
@@ -246,9 +246,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <span class="workflow-num">&lt;60%</span>
+                        <span class="workflow-text">Ne pas utiliser en production</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">60–79%</span>
+                        <span class="workflow-text">Supervision requise &agrave; chaque run</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">80–89%</span>
+                        <span class="workflow-text">Usage r&eacute;gulier, corrections ponctuelles</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">&ge;&thinsp;90%</span>
+                        <span class="workflow-text">Production-ready</span>
+                    </div>
+                </div>
                 <div class="case-learning">
-                    <div class="case-learning-label">Seuils de d&eacute;cision</div>
-                    <div class="case-learning-text">&lt;&thinsp;60% : ne pas utiliser &nbsp;&middot;&nbsp; 60&ndash;79% : supervision requise &nbsp;&middot;&nbsp; 80&ndash;89% : usage r&eacute;gulier &nbsp;&middot;&nbsp; &ge;&thinsp;90% : production-ready. Le Monitor s&rsquo;auto-audite&nbsp;: il fait partie des 3 agents monitor&eacute;s.</div>
+                    <div class="case-learning-label">Scores mesur&eacute;s en production</div>
+                    <div class="case-learning-text">Veille PM v5.3&nbsp;: F&nbsp;95% &middot; P&nbsp;85% &middot; S&nbsp;90% &middot; C&nbsp;100% &rarr; <strong>91%</strong>. Spotify v6&nbsp;: F&nbsp;92% &middot; P&nbsp;82% &middot; S&nbsp;90% &middot; C&nbsp;85% &rarr; <strong>90%</strong>. Le Monitor s&rsquo;auto-audite, baseline en cours.</div>
                 </div>
             </div>
         </div>
