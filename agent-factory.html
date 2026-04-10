@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Factory &mdash; Matthieu Duval</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <div class="nav-brand-name">Matthieu Duval</div>
+            <div class="nav-brand-title">Senior Product Manager</div>
+        </a>
+        <div class="nav-links">
+            <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+            <a href="agent-coach.html">Agent Coach</a>
+            <a href="pipeline-offres.html">Auto. Offres</a>
+            <a href="agent-veille.html">Agent Veille</a>
+            <a href="umami.html">UMAMI</a>
+            <a href="agent-monitor.html">Monitor</a>
+            <a href="agent-factory.html" class="active">Factory</a>
+        </div>
+        <button class="burger" id="burgerBtn" aria-label="Menu">
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+        </button>
+    </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Fermer">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+        <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+        <a href="agent-coach.html">Agent Coach</a>
+        <a href="pipeline-offres.html">Auto. Offres</a>
+        <a href="agent-veille.html">Agent Veille</a>
+        <a href="umami.html">UMAMI</a>
+        <a href="agent-monitor.html">Monitor</a>
+        <a href="agent-factory.html" class="active">Factory</a>
+    </nav>
+    <div class="mobile-nav-footer">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank">CV</a>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="hero-left">
+        <div class="hero-eyebrow">Use case 07</div>
+        <h1>Agent<br>Factory</h1>
+    </div>
+    <div class="hero-right">
+        <p class="hero-pitch">Un CLI interactif qui guide la cr&eacute;ation de nouveaux agents en 6 phases s&eacute;quentielles. Code, documentation et int&eacute;gration Monitor g&eacute;n&eacute;r&eacute;s et valid&eacute;s &agrave; chaque &eacute;tape. Les anti-patterns d&eacute;tect&eacute;s par le Monitor sont encod&eacute;s dans le processus.</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-num">6</div>
+                <div class="hero-stat-label">Phases<br>s&eacute;quentielles</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">3</div>
+                <div class="hero-stat-label">Fichiers g&eacute;n&eacute;r&eacute;s<br>par Claude</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">&#8709;</div>
+                <div class="hero-stat-label">Doc oubli&eacute;e<br>Phase 6 en finally</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="tabs">
+    <div class="tabs-inner">
+        <button class="tab active" data-target="case-0">Probl&egrave;me</button>
+        <button class="tab" data-target="case-1">6 phases</button>
+        <button class="tab" data-target="case-2">Anti-patterns</button>
+        <button class="tab" data-target="case-3">D&eacute;cisions</button>
+    </div>
+</div>
+
+<div class="cases">
+
+    <!-- TAB 1 : Problème -->
+    <div class="case active" id="case-0">
+        <div class="case-visual">
+            <div class="case-method">Patterns &middot; Standards &middot; Reproductibilit&eacute;</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">6+</div>
+                <div class="case-impact-label">agents construits &mdash; m&ecirc;mes anti-patterns, m&ecirc;mes bugs sans standard</div>
+            </div>
+            <div class="case-visual-num">01</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Process &middot; Industrialisation &middot; Productivit&eacute;</div>
+                <h2 class="case-title">Sans standard,<br>chaque agent repart de z&eacute;ro</h2>
+                <p class="case-desc">Apr&egrave;s plusieurs agents construits, les m&ecirc;mes anti-patterns revenaient&nbsp;: paths hardcod&eacute;s, ann&eacute;es fix&eacute;es en dur, documentation oubli&eacute;e, monitoring non branch&eacute;. La Factory standardise la cr&eacute;ation pour ne plus reproduire ces erreurs &mdash; et capitaliser sur ce qui a d&eacute;j&agrave; &eacute;t&eacute; appris.</p>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <span class="workflow-num">Avant</span>
+                        <span class="workflow-text">Chaque agent cr&eacute;&eacute; manuellement&nbsp;: structure ad hoc, doc &agrave; la fin (quand elle existe), int&eacute;gration Monitor oubli&eacute;e</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">Apr&egrave;s</span>
+                        <span class="workflow-text">9 questions d&rsquo;interview &rarr; plan valid&eacute; &rarr; 3 fichiers g&eacute;n&eacute;r&eacute;s par Claude &rarr; &eacute;criture s&eacute;curis&eacute;e &rarr; Monitor branch&eacute; &rarr; docs forc&eacute;es</span>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Standardiser n&rsquo;est pas brider la cr&eacute;ativit&eacute; &mdash; c&rsquo;est capitaliser sur ce qu&rsquo;on a d&eacute;j&agrave; appris. Chaque pattern codifi&eacute; dans la Factory vient d&rsquo;un bug r&eacute;el d&eacute;tect&eacute; par le Monitor. Ce n&rsquo;est pas de la th&eacute;orie, c&rsquo;est de l&rsquo;exp&eacute;rience encod&eacute;e.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 2 : 6 phases -->
+    <div class="case" id="case-1">
+        <div class="case-visual">
+            <div class="case-method">Interview &middot; Plan &middot; G&eacute;n&eacute;ration &middot; &Eacute;criture &middot; Monitor &middot; Docs</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">6</div>
+                <div class="case-impact-label">phases s&eacute;quentielles &mdash; rien n&rsquo;est skippable</div>
+            </div>
+            <div class="case-visual-num">02</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">CLI &middot; S&eacute;quentiel &middot; Validation explicite</div>
+                <h2 class="case-title">6 phases,<br>rien n&rsquo;est skippable</h2>
+                <p class="case-desc">Chaque phase produit un livrable valid&eacute; avant de passer &agrave; la suivante. Aucun fichier n&rsquo;est &eacute;crit sans confirmation. La Phase 6 est ex&eacute;cut&eacute;e dans un bloc <em>finally</em> &mdash; les docs sont toujours mises &agrave; jour, m&ecirc;me si le reste &eacute;choue.</p>
+                <div class="build-steps">
+                    <div class="build-step">
+                        <div class="build-step-tool green">Phase 1</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Interview (9 questions)</div>
+                            <div class="build-step-desc">Nom, description, type, APIs utilis&eacute;es, variables d&rsquo;env, outils, mode interactif/planifi&eacute;, dossier destination, alias zshrc. Chaque r&eacute;ponse est enregistr&eacute;e dans une spec dict.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">Phase 2</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Plan valid&eacute;</div>
+                            <div class="build-step-desc">R&eacute;cap complet affich&eacute; dans le terminal. O/N global avant toute g&eacute;n&eacute;ration. Possibilit&eacute; de corriger la spec avant de continuer.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">Phase 3</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">3 g&eacute;n&eacute;rations Claude</div>
+                            <div class="build-step-desc">agent.py (code complet bas&eacute; sur agent_starter.py), CLAUDE.md (documentation bas&eacute;e sur AGENT_TEMPLATE.md), .env.example (variables comment&eacute;es). Chaque fichier affich&eacute; avant &eacute;criture, O/N/M par fichier.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">Phase 4</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">&Eacute;criture s&eacute;curis&eacute;e</div>
+                            <div class="build-step-desc">py_compile ex&eacute;cut&eacute; sur agent.py avant de continuer. Double-check taille fichier apr&egrave;s &eacute;criture. Un agent avec une erreur de syntaxe ne sort jamais de la Factory.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool">Phase 5</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Int&eacute;gration Monitor</div>
+                            <div class="build-step-desc">Patch automatique de monitor.py (AGENTS[] + API_TESTS{}) via regex. Diff affich&eacute;, O/N. Syntaxe Python v&eacute;rifi&eacute;e apr&egrave;s le patch. Le nouvel agent est imm&eacute;diatement monitor&eacute;.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool">Phase 6</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Docs forc&eacute;es (finally)</div>
+                            <div class="build-step-desc">AGENTS_RELIABILITY.md + MEMORY.md mis &agrave; jour automatiquement. Ex&eacute;cut&eacute; dans un bloc finally&nbsp;: m&ecirc;me si les phases pr&eacute;c&eacute;dentes &eacute;chouent ou sont interrompues, la documentation est toujours &agrave; jour.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 3 : Anti-patterns -->
+    <div class="case" id="case-2">
+        <div class="case-visual">
+            <div class="case-method">Patterns issus des audits Monitor</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">5</div>
+                <div class="case-impact-label">anti-patterns r&eacute;els encod&eacute;s dans le code g&eacute;n&eacute;r&eacute;</div>
+            </div>
+            <div class="case-visual-num">03</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Anti-patterns &middot; Exp&eacute;rience encod&eacute;e &middot; Pr&eacute;vention</div>
+                <h2 class="case-title">Ce qui est<br>encod&eacute;</h2>
+                <p class="case-desc">Ces r&egrave;gles ne viennent pas de bonnes pratiques th&eacute;oriques. Chacune vient d&rsquo;un bug r&eacute;el d&eacute;tect&eacute; par le Monitor sur les agents en production. Elles sont inject&eacute;es dans chaque agent g&eacute;n&eacute;r&eacute;.</p>
+                <div class="build-steps">
+                    <div class="build-step">
+                        <div class="build-step-tool green">R&egrave;gle 1</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Check de path au d&eacute;marrage</div>
+                            <div class="build-step-desc">Tout agent qui d&eacute;pend d&rsquo;un dossier externe v&eacute;rifie son existence au d&eacute;marrage avec un message d&rsquo;erreur explicite. Origin&nbsp;: paths hardcod&eacute;s cassant le chargement des .env (Veille PM, mars 2026).</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">R&egrave;gle 2</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Pas d&rsquo;ann&eacute;e fix&eacute;e en dur</div>
+                            <div class="build-step-desc"><code>datetime.now().year</code> obligatoire, jamais une ann&eacute;e hardcod&eacute;e. Un agent con&ccedil;u en 2026 tourne potentiellement en 2027 &mdash; les requ&ecirc;tes ne doivent pas &ecirc;tre p&eacute;rim&eacute;es.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">R&egrave;gle 3</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Fail fast si tout &eacute;choue</div>
+                            <div class="build-step-desc">Si toutes les analyses &eacute;chouent, arr&ecirc;t propre sans rapport partiel. Ne jamais sauvegarder un historique si les r&eacute;sultats sont tous invalides.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool">R&egrave;gle 4</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Cr&eacute;ation de r&eacute;pertoires</div>
+                            <div class="build-step-desc"><code>Path.mkdir(parents=True, exist_ok=True)</code> avant toute &eacute;criture de fichier. Ne jamais supposer qu&rsquo;un dossier existe d&eacute;j&agrave;.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool">R&egrave;gle 5</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Anti-doublon sur les listes</div>
+                            <div class="build-step-desc">Si l&rsquo;agent maintient une liste (MEMORY.md, historique JSON, BDD), v&eacute;rifier l&rsquo;unicit&eacute; avant insertion. Origin&nbsp;: doublons dans MEMORY.md d&eacute;tect&eacute;s lors d&rsquo;un audit Monitor.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Un processus de cr&eacute;ation qui encode les leçons du monitoring ferme la boucle entre production et d&eacute;veloppement. Ce que le Monitor d&eacute;tecte, la Factory l&rsquo;&eacute;vite. C&rsquo;est exactement ce qu&rsquo;un PM appelle un feedback loop.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 4 : Décisions -->
+    <div class="case" id="case-3">
+        <div class="case-visual">
+            <div class="case-method">Finally &middot; O/N &middot; py_compile</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">3</div>
+                <div class="case-impact-label">arbitrages, chacun avec son rejet et sa cons&eacute;quence</div>
+            </div>
+            <div class="case-visual-num">04</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Arbitrages &middot; Trade-offs &middot; Cons&eacute;quences document&eacute;es</div>
+                <h2 class="case-title">Ce qui a &eacute;t&eacute;<br>arbitr&eacute;</h2>
+                <div class="decisions-list">
+                    <div class="decision-item">
+                        <div class="decision-num">01</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">Phase 6 dans finally</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">Documentation optionnelle</span>
+                            </div>
+                            <div class="decision-why">La documentation est la partie la plus souvent oubli&eacute;e dans la cr&eacute;ation d&rsquo;agents. En la pla&ccedil;ant dans un bloc <em>finally</em>, elle s&rsquo;ex&eacute;cute m&ecirc;me si les phases pr&eacute;c&eacute;dentes &eacute;chouent ou sont interrompues. La dette documentaire est structurellement impossible.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> le code et la documentation divergent d&egrave;s la premi&egrave;re session &mdash; c&rsquo;est exactement le probl&egrave;me qu&rsquo;on cherchait &agrave; &eacute;viter.</div>
+                        </div>
+                    </div>
+                    <div class="decision-item">
+                        <div class="decision-num">02</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">O/N explicite &agrave; chaque &eacute;tape</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">G&eacute;n&eacute;ration enti&egrave;rement automatique</span>
+                            </div>
+                            <div class="decision-why">Chaque fichier g&eacute;n&eacute;r&eacute; est affich&eacute; avant &eacute;criture. L&rsquo;utilisateur valide (O), skippe (N) ou corrige (M). La Factory ne d&eacute;cide jamais seule. Cette contrainte ralentit le processus mais garantit que ce qui est &eacute;crit est exactement ce qui &eacute;tait voulu.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> des fichiers g&eacute;n&eacute;r&eacute;s incorrects &eacute;cras&eacute;s sans rev&ucirc;e &mdash; bugs introduits silencieusement.</div>
+                        </div>
+                    </div>
+                    <div class="decision-item">
+                        <div class="decision-num">03</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">py_compile avant &eacute;criture</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">V&eacute;rification manuelle</span>
+                            </div>
+                            <div class="decision-why">Chaque agent.py g&eacute;n&eacute;r&eacute; est v&eacute;rifi&eacute; syntaxiquement avant d&rsquo;&ecirc;tre &eacute;crit sur le disque. Un agent avec une erreur de syntaxe ne sort jamais de la Factory &mdash; la v&eacute;rification est syst&eacute;matique, pas optionnelle.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> des agents avec des erreurs de syntaxe sont &eacute;crits et ne fonctionnent pas au premier run &mdash; perte de temps, perte de confiance dans le processus.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Un outil de cr&eacute;ation qui n&rsquo;est pas rigoureux sur lui-m&ecirc;me produit des agents qui ne le sont pas non plus. Les contraintes de la Factory &mdash; validation, v&eacute;rification, documentation forc&eacute;e &mdash; sont les m&ecirc;mes qu&rsquo;on attend des agents qu&rsquo;elle cr&eacute;e.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <a href="index.html" class="footer-left">Matthieu Duval &middot; Nantes</a>
+    <div class="footer-right">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank">CV</a>
+    </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Retour en haut">&uarr;</button>
+
+<script>
+    (function() {
+        var btn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', function() {
+            btn.classList.toggle('visible', window.scrollY > 400);
+        });
+        btn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        var tabs = document.querySelectorAll('.tab');
+        var cases = document.querySelectorAll('.case');
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                tabs.forEach(function(t) { t.classList.remove('active'); });
+                cases.forEach(function(c) { c.classList.remove('active'); });
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.target).classList.add('active');
+            });
+        });
+        var burger = document.getElementById('burgerBtn');
+        var mobileNav = document.getElementById('mobileNav');
+        var mobileClose = document.getElementById('mobileNavClose');
+        burger.addEventListener('click', function() { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; });
+        mobileClose.addEventListener('click', function() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; });
+    })();
+</script>
+
+</body>
+</html>

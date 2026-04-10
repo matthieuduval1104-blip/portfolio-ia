@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMAMI &mdash; Matthieu Duval</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <div class="nav-brand-name">Matthieu Duval</div>
+            <div class="nav-brand-title">Senior Product Manager</div>
+        </a>
+        <div class="nav-links">
+            <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+            <a href="agent-coach.html">Agent Coach</a>
+            <a href="pipeline-offres.html">Auto. Offres</a>
+            <a href="agent-veille.html">Agent Veille</a>
+            <a href="umami.html" class="active">UMAMI</a>
+            <a href="agent-monitor.html">Monitor</a>
+            <a href="agent-factory.html">Factory</a>
+        </div>
+        <button class="burger" id="burgerBtn" aria-label="Menu">
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+        </button>
+    </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Fermer">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+        <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+        <a href="agent-coach.html">Agent Coach</a>
+        <a href="pipeline-offres.html">Auto. Offres</a>
+        <a href="agent-veille.html">Agent Veille</a>
+        <a href="umami.html" class="active">UMAMI</a>
+        <a href="agent-monitor.html">Monitor</a>
+        <a href="agent-factory.html">Factory</a>
+    </nav>
+    <div class="mobile-nav-footer">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank">CV</a>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="hero-left">
+        <div class="hero-eyebrow">Use case 05</div>
+        <h1>UMAMI</h1>
+    </div>
+    <div class="hero-right">
+        <p class="hero-pitch">Site vitrine pour le festival annuel de fermentation &agrave; Nantes. Construit avec Claude de A&nbsp;&agrave;&nbsp;Z&nbsp;&mdash; design, code, d&eacute;ploiement. Z&eacute;ro agence, z&eacute;ro framework, livr&eacute; en 10&nbsp;jours.</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-num">1</div>
+                <div class="hero-stat-label">Client r&eacute;el<br>Festival fermentation</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">10j</div>
+                <div class="hero-stat-label">Du brief<br>au live</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">0</div>
+                <div class="hero-stat-label">Framework<br>HTML/CSS/JS natif</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="tabs">
+    <div class="tabs-inner">
+        <button class="tab active" data-target="case-0">Contexte</button>
+        <button class="tab" data-target="case-1">Construction</button>
+        <button class="tab" data-target="case-2">D&eacute;cisions</button>
+        <button class="tab" data-target="case-3">Live</button>
+    </div>
+</div>
+
+<div class="cases">
+
+    <!-- TAB 1 : Contexte -->
+    <div class="case active" id="case-0">
+        <div class="case-visual">
+            <div class="case-method">Festival &middot; Nantes &middot; 3 co-organisateurs</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">10 jours</div>
+                <div class="case-impact-label">du premier message au site live sur umaminantes.com</div>
+            </div>
+            <div class="case-visual-num">01</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Client &middot; &Eacute;v&eacute;nementiel &middot; Web</div>
+                <h2 class="case-title">Un site pour<br>un vrai festival</h2>
+                <p class="case-desc">UMAMI#5 est un festival annuel de la fermentation &agrave; Nantes&nbsp;&mdash; march&eacute; d&rsquo;exposants, ateliers, rencontres, banquet le soir. Trois co-organisateurs, pas d&rsquo;&eacute;quipe technique, pas de budget agence. Le brief&nbsp;: un site &eacute;l&eacute;gant, pr&ecirc;t avant le 18&nbsp;avril, utilisable les ann&eacute;es suivantes sans d&eacute;pendance externe.</p>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <span class="workflow-num">01</span>
+                        <span class="workflow-text">Brief re&ccedil;u &rarr; <strong>choix du stack</strong> (HTML/CSS/JS natif, z&eacute;ro framework) et de l&rsquo;h&eacute;bergement (Cloudflare Workers)</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">02</span>
+                        <span class="workflow-text">Identit&eacute; visuelle d&eacute;finie avec Claude &rarr; <strong>palette, typographie, ton &eacute;ditorial</strong> align&eacute;s sur l&rsquo;univers du festival</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">03</span>
+                        <span class="workflow-text">Construction section par section avec Claude Code &rarr; <strong>v0.1 &agrave; v1.8</strong> en 13 jours, it&eacute;rations valid&eacute;es avec Antoine et Ghita</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">04</span>
+                        <span class="workflow-text">SEO, analytics, favicon, domaine &rarr; <strong>livraison compl&egrave;te</strong>, pas juste un site qui s&rsquo;affiche</span>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Construire avec Claude, ce n&rsquo;est pas du vibe coding. C&rsquo;est prendre des d&eacute;cisions &agrave; chaque &eacute;tape &mdash; stack, structure, contenu, priorit&eacute;s &mdash; et utiliser l&rsquo;IA pour acc&eacute;l&eacute;rer l&rsquo;ex&eacute;cution. Le PM reste ma&icirc;tre d&rsquo;&oelig;uvre. Claude acc&eacute;l&egrave;re sans remplacer le jugement.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 2 : Construction -->
+    <div class="case" id="case-1">
+        <div class="case-visual">
+            <div class="case-method">HTML &middot; CSS &middot; JS &middot; Leaflet &middot; ABCMaxiRound</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">5+8</div>
+                <div class="case-impact-label">5 sections snap-scroll &middot; 8 modales interactives</div>
+            </div>
+            <div class="case-visual-num">02</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Architecture &middot; Contenu &middot; Interactivit&eacute;</div>
+                <h2 class="case-title">5 sections,<br>8 modales</h2>
+                <p class="case-desc">Une page unique en snap-scroll. Chaque section correspond &agrave; une intention &eacute;ditoriale distincte. Z&eacute;ro framework, z&eacute;ro build tool&nbsp;&mdash; HTML s&eacute;mantique, CSS natif avec variables, JS vanilla. Carte Leaflet interactive pour les infos pratiques.</p>
+                <div class="build-steps">
+                    <div class="build-step">
+                        <div class="build-step-tool green">Section 1</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Hero</div>
+                            <div class="build-step-desc">Affiche de l&rsquo;illustrateur Arnaud en plein &eacute;cran. Illustrations cartoon flottantes (animation CSS). Effet typewriter sur le sous-titre.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">Section 2</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Le festival</div>
+                            <div class="build-step-desc">Pr&eacute;sentation &eacute;ditoriale sur fond noir. Bubble texte, illustrations cartoon, ton fermentation revendiqu&eacute;.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">Section 3</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Programme</div>
+                            <div class="build-step-desc">Grid 2&times;2&nbsp;: march&eacute;, ateliers, rencontres, kids. Chaque carte ouvre une modale &mdash; livret feuilletable pour les ateliers (10 pages, JS g&eacute;n&eacute;rique r&eacute;utilisable).</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">Section 4</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Banquet</div>
+                            <div class="build-step-desc">3 cheffes (Ad&eacute;lie Delajot &middot; Annie Mach &middot; Ga&euml;lle Valin). Portraits crop&eacute;s depuis photo de groupe via Python PIL. Biographies compl&egrave;tes en modale.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool">Section 5</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Infos pratiques</div>
+                            <div class="build-step-desc">Split 42/58%&nbsp;: acc&egrave;s et tarifs &agrave; gauche, carte Leaflet interactive &agrave; droite. Coordonn&eacute;es GPS exactes, 4 modes d&rsquo;acc&egrave;s.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Z&eacute;ro framework n&rsquo;est pas un manque de moyens &mdash; c&rsquo;est un choix de durabilit&eacute;. Un site HTML/CSS natif n&rsquo;a pas de d&eacute;pendances &agrave; mettre &agrave; jour, pas de breaking changes, pas de build pipeline &agrave; maintenir. Le client peut reprendre la main sans formation technique.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 3 : Décisions -->
+    <div class="case" id="case-2">
+        <div class="case-visual">
+            <div class="case-method">Stack &middot; og:image &middot; Snap-scroll</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">3</div>
+                <div class="case-impact-label">arbitrages, chacun avec son rejet et sa cons&eacute;quence</div>
+            </div>
+            <div class="case-visual-num">03</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Arbitrages &middot; Trade-offs &middot; Cons&eacute;quences document&eacute;es</div>
+                <h2 class="case-title">Ce qui a &eacute;t&eacute;<br>arbitr&eacute;</h2>
+                <div class="decisions-list">
+                    <div class="decision-item">
+                        <div class="decision-num">01</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">Z&eacute;ro framework</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">React / Next.js</span>
+                            </div>
+                            <div class="decision-why">React aurait apport&eacute; de la structure. Mais pour un festival annuel sans &eacute;quipe tech, il aurait cr&eacute;&eacute; une d&eacute;pendance permanente&nbsp;: npm &agrave; mettre &agrave; jour, breaking changes entre &eacute;ditions, build pipeline &agrave; maintenir. HTML/CSS natif vit ind&eacute;pendamment de l&rsquo;&eacute;cosyst&egrave;me JS.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> la mise &agrave; jour de l&rsquo;&eacute;dition suivante n&eacute;cessite un dev JS, pas juste du contenu &agrave; remplacer.</div>
+                        </div>
+                    </div>
+                    <div class="decision-item">
+                        <div class="decision-num">02</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">og:image supprim&eacute;</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">og:image g&eacute;n&eacute;rique</span>
+                            </div>
+                            <div class="decision-why">Sans visuel fort en 1200&times;630px (ratio obligatoire), un og:image g&eacute;n&eacute;rique affiche un grand carr&eacute; mal cadré dans les r&eacute;sultats Google. C&rsquo;est contre-productif. Supprim&eacute; volontairement jusqu&rsquo;&agrave; avoir un visuel r&eacute;ellement adapt&eacute;.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> les r&eacute;sultats Google affichent une image mal cadré qui d&eacute;grade la perception du site.</div>
+                        </div>
+                    </div>
+                    <div class="decision-item">
+                        <div class="decision-num">03</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">Snap-scroll</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">Scroll classique</span>
+                            </div>
+                            <div class="decision-why">Le snap-scroll force une hi&eacute;rarchie &eacute;ditoriale&nbsp;: chaque section est une &eacute;tape, une intention, une immersion. Il &eacute;vite le scroll infini sans structure et donne au site un caract&egrave;re &eacute;ditorial coh&eacute;rent avec l&rsquo;identit&eacute; du festival.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> un scroll libre qui noie les sections dans une page sans respiration ni rythme.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Chaque d&eacute;cision technique a une cons&eacute;quence m&eacute;tier. Choisir un stack pour un client, c&rsquo;est aussi choisir sa capacit&eacute; &agrave; maintenir et faire &eacute;voluer le produit sans d&eacute;pendance. C&rsquo;est le m&ecirc;me raisonnement qu&rsquo;en product management.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 4 : Live -->
+    <div class="case" id="case-3">
+        <div class="case-visual">
+            <div class="case-method">umaminantes.com &middot; Cloudflare Workers &middot; GitHub</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">Live</div>
+                <div class="case-impact-label">18&ndash;19 avril 2026 &middot; Festival ouvert au public</div>
+            </div>
+            <div class="case-visual-num">04</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">D&eacute;ploiement &middot; SEO &middot; Livraison compl&egrave;te</div>
+                <h2 class="case-title">Livrer, c&rsquo;est plus<br>que &ldquo;&ccedil;a marche&rdquo;</h2>
+                <p class="case-desc">Le site est en production sur umaminantes.com. Livr&eacute; complet&nbsp;: SEO index&eacute;, analytics en place, domaine custom, billetterie branch&eacute;e. Pas un prototype &mdash; un produit pr&ecirc;t pour le public.</p>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <span class="workflow-num">Deploy</span>
+                        <span class="workflow-text"><strong>GitHub &rarr; Cloudflare Workers</strong> &mdash; auto-deploy &agrave; chaque push, en production en &lt;&thinsp;2&thinsp;min</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">SEO</span>
+                        <span class="workflow-text"><strong>robots.txt &middot; sitemap.xml &middot; schema.org Event &middot; Google Search Console</strong> &mdash; indexation compl&egrave;te configur&eacute;e</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">Analytics</span>
+                        <span class="workflow-text"><strong>Umami Analytics</strong> &mdash; tracking sans cookie, RGPD-compatible, dashboard live</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">Billetterie</span>
+                        <span class="workflow-text"><strong>Shotgun</strong> &mdash; ateliers et banquet branch&eacute;s, liens v&eacute;rifi&eacute;s sur toutes les surfaces (hero, menu, footer)</span>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Un livrable, c&rsquo;est un produit fonctionnel dans la main de son utilisateur &mdash; pas un fichier HTML qui s&rsquo;ouvre en local. SEO, analytics, domaine, billetterie&nbsp;: ces d&eacute;tails font la diff&eacute;rence entre un site qu&rsquo;on livre et un site qui sert &agrave; quelque chose.</div>
+                </div>
+            </div>
+            <a href="https://umaminantes.com" target="_blank" class="case-link">Voir le site &rarr;</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <a href="index.html" class="footer-left">Matthieu Duval &middot; Nantes</a>
+    <div class="footer-right">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank">CV</a>
+    </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Retour en haut">&uarr;</button>
+
+<script>
+    (function() {
+        var btn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', function() {
+            btn.classList.toggle('visible', window.scrollY > 400);
+        });
+        btn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        var tabs = document.querySelectorAll('.tab');
+        var cases = document.querySelectorAll('.case');
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                tabs.forEach(function(t) { t.classList.remove('active'); });
+                cases.forEach(function(c) { c.classList.remove('active'); });
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.target).classList.add('active');
+            });
+        });
+        var burger = document.getElementById('burgerBtn');
+        var mobileNav = document.getElementById('mobileNav');
+        var mobileClose = document.getElementById('mobileNavClose');
+        burger.addEventListener('click', function() { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; });
+        mobileClose.addEventListener('click', function() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; });
+    })();
+</script>
+
+</body>
+</html>

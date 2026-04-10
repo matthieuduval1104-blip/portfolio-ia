@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Monitor &mdash; Matthieu Duval</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <div class="nav-brand-name">Matthieu Duval</div>
+            <div class="nav-brand-title">Senior Product Manager</div>
+        </a>
+        <div class="nav-links">
+            <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+            <a href="agent-coach.html">Agent Coach</a>
+            <a href="pipeline-offres.html">Auto. Offres</a>
+            <a href="agent-veille.html">Agent Veille</a>
+            <a href="umami.html">UMAMI</a>
+            <a href="agent-monitor.html" class="active">Monitor</a>
+            <a href="agent-factory.html">Factory</a>
+        </div>
+        <button class="burger" id="burgerBtn" aria-label="Menu">
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+        </button>
+    </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Fermer">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+        <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+        <a href="agent-coach.html">Agent Coach</a>
+        <a href="pipeline-offres.html">Auto. Offres</a>
+        <a href="agent-veille.html">Agent Veille</a>
+        <a href="umami.html">UMAMI</a>
+        <a href="agent-monitor.html" class="active">Monitor</a>
+        <a href="agent-factory.html">Factory</a>
+    </nav>
+    <div class="mobile-nav-footer">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank">CV</a>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="hero-left">
+        <div class="hero-eyebrow">Use case 06</div>
+        <h1>Agent<br>Monitor</h1>
+    </div>
+    <div class="hero-right">
+        <p class="hero-pitch">Un agent audite tous les agents en production&nbsp;: analyse statique du code par Claude, tests API live, scoring F/P/S/C. Rapport HTML g&eacute;n&eacute;r&eacute; &agrave; chaque run. Corrections valid&eacute;es O/N avant application.</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-num">3</div>
+                <div class="hero-stat-label">Agents<br>monitor&eacute;s</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">4</div>
+                <div class="hero-stat-label">Crit&egrave;res<br>F/P/S/C</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">HTML</div>
+                <div class="hero-stat-label">Rapport g&eacute;n&eacute;r&eacute;<br>&agrave; chaque run</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="tabs">
+    <div class="tabs-inner">
+        <button class="tab active" data-target="case-0">Probl&egrave;me</button>
+        <button class="tab" data-target="case-1">Architecture</button>
+        <button class="tab" data-target="case-2">Scoring</button>
+        <button class="tab" data-target="case-3">D&eacute;cisions</button>
+    </div>
+</div>
+
+<div class="cases">
+
+    <!-- TAB 1 : Problème -->
+    <div class="case active" id="case-0">
+        <div class="case-visual">
+            <div class="case-method">Veille PM &middot; Spotify &middot; Monitor</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">3</div>
+                <div class="case-impact-label">agents en production &agrave; auditer en permanence</div>
+            </div>
+            <div class="case-visual-num">01</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Ops &middot; Fiabilit&eacute; &middot; Production</div>
+                <h2 class="case-title">Un agent en prod<br>peut d&eacute;grader sans bruit</h2>
+                <p class="case-desc">Quand un agent tourne en production, comment d&eacute;tecter qu&rsquo;il d&eacute;grade&nbsp;? Sans monitoring, on d&eacute;couvre les bugs quand l&rsquo;output est mauvais &mdash; ou pire, quand l&rsquo;utilisateur le signale. L&rsquo;Agent Monitor audite en amont, &agrave; la demande.</p>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <span class="workflow-num">01</span>
+                        <span class="workflow-text">Lancer <strong>check-agents</strong> dans le terminal</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">02</span>
+                        <span class="workflow-text"><strong>Analyse statique</strong> du code de chaque agent par Claude (bugs, optimisations, score)</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">03</span>
+                        <span class="workflow-text"><strong>Tests API live</strong> : Anthropic, Spotify, Last.fm, Notion &mdash; lecture seule, call minimal</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">04</span>
+                        <span class="workflow-text"><strong>Score F/P/S/C</strong> calcul&eacute; + delta vs dernier run (&Delta;&nbsp;+3% / &nabla;&nbsp;&minus;2% / stable)</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">05</span>
+                        <span class="workflow-text"><strong>Rapport HTML</strong> g&eacute;n&eacute;r&eacute; automatiquement &mdash; onglets par agent, accordéons bugs/optimisations</span>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="workflow-num">06</span>
+                        <span class="workflow-text"><strong>Validation O/N</strong> pour chaque correction propos&eacute;e &mdash; l&rsquo;agent ne modifie rien sans confirmation</span>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Penser &laquo;&nbsp;production&nbsp;&raquo; d&egrave;s la conception, c&rsquo;est anticiper la maintenance. Le monitoring n&rsquo;est pas une &eacute;tape apr&egrave;s &mdash; c&rsquo;est une contrainte de design. Un agent sans audit r&eacute;gulier est un agent dont on ignore l&rsquo;&eacute;tat r&eacute;el.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 2 : Architecture -->
+    <div class="case" id="case-1">
+        <div class="case-visual">
+            <div class="case-method">Python &middot; Anthropic &middot; Spotipy &middot; Requests</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">6</div>
+                <div class="case-impact-label">&eacute;tapes d&rsquo;audit pour chaque agent monitor&eacute;</div>
+            </div>
+            <div class="case-visual-num">02</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Analyse &middot; Tests live &middot; Rapport</div>
+                <h2 class="case-title">6 &eacute;tapes<br>d&rsquo;audit</h2>
+                <p class="case-desc">Pour chaque agent monitor&eacute;, le script ex&eacute;cute six v&eacute;rifications dans l&rsquo;ordre. L&rsquo;analyse statique et les tests live sont compl&eacute;mentaires&nbsp;: ils ne d&eacute;tectent pas les m&ecirc;mes probl&egrave;mes.</p>
+                <div class="build-steps">
+                    <div class="build-step">
+                        <div class="build-step-tool green">Step 1</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Check fichiers &amp; config</div>
+                            <div class="build-step-desc">Credentials .env pr&eacute;sents, historique JSON valide, fichier code .py trouv&eacute;, paths r&eacute;els v&eacute;rifi&eacute;s sur le filesystem. Arr&ecirc;t imm&eacute;diat si un pr&eacute;requis est bloquant.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">Step 2</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Tests API live</div>
+                            <div class="build-step-desc">Connexion Anthropic, Spotify, Last.fm, Notion &mdash; lecture seule, call minimal. D&eacute;tecte les tokens expir&eacute;s et les changements d&rsquo;API avant qu&rsquo;ils impactent la production.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">Step 3</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Analyse Claude du code</div>
+                            <div class="build-step-desc">Claude lit le code source et identifie les bugs (critique / important / mineur), les optimisations possibles, et g&eacute;n&egrave;re un score F/P/S/C avec justification.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">Step 4</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Delta vs dernier run</div>
+                            <div class="build-step-desc">Score actuel compar&eacute; au dernier rapport (quelle que soit la date). Delta affich&eacute; : &Delta;&nbsp;+3% si progression, &nabla;&nbsp;&minus;2% si r&eacute;gression, stable si inchang&eacute;.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool">Step 5</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Rapport HTML</div>
+                            <div class="build-step-desc">G&eacute;n&eacute;r&eacute; dans reports/ et ouvert automatiquement dans le navigateur. Onglets par agent, accordéons bugs/optimisations, prompts Claude Code pr&ecirc;ts &agrave; copier pour les corrections.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool">Step 6</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Validation O/N</div>
+                            <div class="build-step-desc">Chaque correction propos&eacute;e est affich&eacute;e avec un diff color&eacute; (rouge = avant, vert = apr&egrave;s). Validation explicite avant toute application. Les d&eacute;cisions sont trac&eacute;es dans le rapport.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">L&rsquo;analyse statique et les tests live ne se remplacent pas &mdash; ils se compl&egrave;tent. Claude d&eacute;tecte les bugs logiques dans le code. Les tests live d&eacute;tectent les d&eacute;calages avec l&rsquo;&eacute;tat r&eacute;el des APIs. Les deux sont n&eacute;cessaires.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 3 : Scoring -->
+    <div class="case" id="case-2">
+        <div class="case-visual">
+            <div class="case-method">F &middot; P &middot; S &middot; C &middot; Seuils explicit&eacute;s</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">4</div>
+                <div class="case-impact-label">crit&egrave;res pond&eacute;r&eacute;s &mdash; &laquo;&nbsp;&ccedil;a tourne&nbsp;&raquo; n&rsquo;est pas suffisant</div>
+            </div>
+            <div class="case-visual-num">03</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">F/P/S/C &middot; Pond&eacute;ration &middot; Seuils</div>
+                <h2 class="case-title">Un score sans seuils<br>ne sert &agrave; rien</h2>
+                <p class="case-desc">La grille F/P/S/C distingue &laquo;&nbsp;&ccedil;a tourne&nbsp;&raquo; (Fonctionnel) de &laquo;&nbsp;&ccedil;a retourne les bons r&eacute;sultats&nbsp;&raquo; (Pr&eacute;cis). Un agent peut scorer 100% en F et 60% en P &mdash; ce n&rsquo;est pas la m&ecirc;me chose.</p>
+                <div class="build-steps">
+                    <div class="build-step">
+                        <div class="build-step-tool green">F &mdash; 40%</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Fonctionnel</div>
+                            <div class="build-step-desc">Chaque outil r&eacute;pond sans erreur en production&nbsp;? Crit&egrave;re le plus pond&eacute;r&eacute; &mdash; un agent qui plante n&rsquo;a pas de score.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool green">P &mdash; 30%</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Pr&eacute;cis</div>
+                            <div class="build-step-desc">Les r&eacute;sultats sont corrects et v&eacute;rifiables&nbsp;? Un agent peut fonctionner sans erreur et retourner des r&eacute;sultats faux &mdash; c&rsquo;est le cas le plus dangereux.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool">S &mdash; 20%</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Stable</div>
+                            <div class="build-step-desc">Comportement coh&eacute;rent sur plusieurs sessions&nbsp;? Un agent qui fonctionne une fois sur deux n&rsquo;est pas en production.</div>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-tool">C &mdash; 10%</div>
+                        <div class="build-step-body">
+                            <div class="build-step-title">Couvrant</div>
+                            <div class="build-step-desc">% des features pr&eacute;vues qui fonctionnent&nbsp;? Un agent partiel peut &ecirc;tre valid&eacute; s&rsquo;il est fonctionnel, pr&eacute;cis et stable sur son p&eacute;rim&egrave;tre r&eacute;el.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Seuils de d&eacute;cision</div>
+                    <div class="case-learning-text">&lt;&thinsp;60% &mdash; ne pas utiliser &nbsp;&middot;&nbsp; 60&ndash;79% &mdash; supervision requise &nbsp;&middot;&nbsp; 80&ndash;89% &mdash; usage r&eacute;gulier &nbsp;&middot;&nbsp; &ge;&thinsp;90% &mdash; production-ready. Le Monitor s&rsquo;auto-audite&nbsp;: il fait partie des 3 agents monitor&eacute;s.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 4 : Décisions -->
+    <div class="case" id="case-3">
+        <div class="case-visual">
+            <div class="case-method">Statique vs live &middot; O/N humain &middot; Fail fast</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">3</div>
+                <div class="case-impact-label">arbitrages, chacun avec son rejet et sa cons&eacute;quence</div>
+            </div>
+            <div class="case-visual-num">04</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Arbitrages &middot; Trade-offs &middot; Cons&eacute;quences document&eacute;es</div>
+                <h2 class="case-title">Ce qui a &eacute;t&eacute;<br>arbitr&eacute;</h2>
+                <div class="decisions-list">
+                    <div class="decision-item">
+                        <div class="decision-num">01</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">Limite document&eacute;e</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">Fausse exhaustivit&eacute;</span>
+                            </div>
+                            <div class="decision-why">L&rsquo;analyse statique ne d&eacute;tecte pas les paths hardcod&eacute;s incorrects ni les d&eacute;calages avec l&rsquo;&eacute;tat externe. Plut&ocirc;t que de pr&eacute;tendre &agrave; une couverture totale, cette limite est document&eacute;e explicitement dans le CLAUDE.md. Un outil qui conna&icirc;t ses angles morts est plus fiable qu&rsquo;un outil qui les ignore.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> des faux n&eacute;gatifs non document&eacute;s g&eacute;n&egrave;rent une fausse confiance dans les scores.</div>
+                        </div>
+                    </div>
+                    <div class="decision-item">
+                        <div class="decision-num">02</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">Validation O/N humaine</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">Correction automatique</span>
+                            </div>
+                            <div class="decision-why">L&rsquo;agent propose, l&rsquo;humain d&eacute;cide. Chaque correction est affich&eacute;e avec un diff color&eacute; et une explication avant toute application &mdash; m&ecirc;me pour des corrections triviales. Le Monitor ne modifie jamais rien sans confirmation explicite.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> des corrections automatiques sur des faux positifs d&eacute;gradent les agents au lieu de les am&eacute;liorer.</div>
+                        </div>
+                    </div>
+                    <div class="decision-item">
+                        <div class="decision-num">03</div>
+                        <div class="decision-body">
+                            <div class="decision-vs">
+                                <span class="decision-option chosen">Fail fast si analyse impossible</span>
+                                <span class="decision-sep">vs</span>
+                                <span class="decision-option rejected">Rapport partiel</span>
+                            </div>
+                            <div class="decision-why">Si l&rsquo;API Anthropic ne r&eacute;pond pas ou si un fichier agent est introuvable, arr&ecirc;t imm&eacute;diat. Aucun rapport g&eacute;n&eacute;r&eacute;, les scores du run pr&eacute;c&eacute;dent restent la r&eacute;f&eacute;rence. Un rapport partiel avec des scores incomplets est plus dangereux qu&rsquo;aucun rapport.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> des scores faux g&eacute;n&egrave;rent des corrections fictives qui peuvent d&eacute;grader les agents si appliqu&eacute;es.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Un outil de monitoring qui manque de rigueur sur lui-m&ecirc;me invalide tous ses r&eacute;sultats. Les m&ecirc;mes principes qu&rsquo;on applique aux agents monitor&eacute;s s&rsquo;appliquent au Monitor&nbsp;: documenter les limites, ne rien automatiser sans validation, arr&ecirc;ter proprement plut&ocirc;t que continuer &agrave; moiti&eacute;.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <a href="index.html" class="footer-left">Matthieu Duval &middot; Nantes</a>
+    <div class="footer-right">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank">CV</a>
+    </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Retour en haut">&uarr;</button>
+
+<script>
+    (function() {
+        var btn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', function() {
+            btn.classList.toggle('visible', window.scrollY > 400);
+        });
+        btn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        var tabs = document.querySelectorAll('.tab');
+        var cases = document.querySelectorAll('.case');
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                tabs.forEach(function(t) { t.classList.remove('active'); });
+                cases.forEach(function(c) { c.classList.remove('active'); });
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.target).classList.add('active');
+            });
+        });
+        var burger = document.getElementById('burgerBtn');
+        var mobileNav = document.getElementById('mobileNav');
+        var mobileClose = document.getElementById('mobileNavClose');
+        burger.addEventListener('click', function() { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; });
+        mobileClose.addEventListener('click', function() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; });
+    })();
+</script>
+
+</body>
+</html>
