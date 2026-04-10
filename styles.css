@@ -11,7 +11,7 @@ body { font-family: 'Satoshi', sans-serif; color: #0A0A0A; background: #FFFFFF; 
    ══════════════════════════════════════════════ */
 
 nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom: 1px solid #E8E8E8; }
-.nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.nav-inner { padding: 0 48px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
 .nav-brand { text-decoration: none; color: #0A0A0A; }
 .nav-brand-name { font-size: 12px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; }
 .nav-brand-title { font-size: 10px; color: #AAAAAA; letter-spacing: 2px; text-transform: uppercase; margin-top: 1px; }
@@ -23,7 +23,7 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
    HERO (commun UC1/UC2)
    ══════════════════════════════════════════════ */
 
-.hero { max-width: 1200px; margin: 0 auto; padding: 80px 48px 72px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.hero { padding: 80px 48px 72px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
 .hero-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: #AAAAAA; margin-bottom: 20px; }
 .hero h1 { font-size: clamp(44px, 4.5vw, 68px); font-weight: 900; letter-spacing: -2.5px; text-transform: uppercase; line-height: 0.95; }
 .hero-accroche { font-size: 17px; line-height: 1.65; color: #444444; margin-bottom: 32px; }
@@ -113,7 +113,7 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
    ══════════════════════════════════════════════ */
 
 .tabs { position: sticky; top: 64px; z-index: 9; background: #FFFFFF; border-top: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; }
-.tabs-inner { max-width: 1200px; margin: 0 auto; padding: 0 48px; display: flex; }
+.tabs-inner { padding: 0 48px; display: flex; }
 .tab { font-family: 'Satoshi', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #AAAAAA; background: transparent; border: none; border-bottom: 2px solid transparent; padding: 16px 20px; cursor: pointer; transition: color 0.15s, border-color 0.15s; }
 .tab:hover { color: #0A0A0A; }
 .tab.active { color: #0A0A0A; border-bottom: 2px solid #4A7C59; }
@@ -122,7 +122,7 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
    CASE STUDIES (commun UC1/UC2)
    ══════════════════════════════════════════════ */
 
-.cases { max-width: 1200px; margin: 0 auto; }
+.cases { }
 .case { display: none; grid-template-columns: 1fr 1fr; min-height: 480px; border-bottom: 1px solid #E8E8E8; }
 .case.active { display: grid; }
 .case:last-child { border-bottom: none; }
@@ -238,7 +238,7 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
    FOOTER
    ══════════════════════════════════════════════ */
 
-footer { border-top: 1px solid #E8E8E8; height: 52px; padding: 0 max(48px, calc((100% - 1200px) / 2 + 48px)); display: flex; align-items: center; justify-content: space-between; }
+footer { border-top: 1px solid #E8E8E8; height: 52px; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; }
 .footer-left { font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #AAAAAA; text-decoration: none; transition: color 0.15s; }
 .footer-left:hover { color: #0A0A0A; }
 .footer-right { display: flex; gap: 28px; }
