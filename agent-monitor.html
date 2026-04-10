@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agent Monitor &mdash; Matthieu Duval</title>
+    <title>Agent Monitor | Matthieu Duval</title>
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -99,7 +99,7 @@
             <div>
                 <div class="case-tag">Ops &middot; Fiabilit&eacute; &middot; Production</div>
                 <h2 class="case-title">Un agent en prod<br>peut d&eacute;grader sans bruit</h2>
-                <p class="case-desc">Quand un agent tourne en production, comment d&eacute;tecter qu&rsquo;il d&eacute;grade&nbsp;? Sans monitoring, on d&eacute;couvre les bugs quand l&rsquo;output est mauvais &mdash; ou pire, quand l&rsquo;utilisateur le signale. L&rsquo;Agent Monitor audite en amont, &agrave; la demande.</p>
+                <p class="case-desc">Quand un agent tourne en production, comment d&eacute;tecter qu&rsquo;il d&eacute;grade&nbsp;? Sans monitoring, on d&eacute;couvre les bugs quand l&rsquo;output est mauvais, ou pire quand l&rsquo;utilisateur le signale. L&rsquo;Agent Monitor audite en amont, &agrave; la demande.</p>
                 <div class="workflow-steps">
                     <div class="workflow-step">
                         <span class="workflow-num">01</span>
@@ -111,7 +111,7 @@
                     </div>
                     <div class="workflow-step">
                         <span class="workflow-num">03</span>
-                        <span class="workflow-text"><strong>Tests API live</strong> : Anthropic, Spotify, Last.fm, Notion &mdash; lecture seule, call minimal</span>
+                        <span class="workflow-text"><strong>Tests API live</strong> : Anthropic, Spotify, Last.fm, Notion, en lecture seule, call minimal</span>
                     </div>
                     <div class="workflow-step">
                         <span class="workflow-num">04</span>
@@ -119,16 +119,16 @@
                     </div>
                     <div class="workflow-step">
                         <span class="workflow-num">05</span>
-                        <span class="workflow-text"><strong>Rapport HTML</strong> g&eacute;n&eacute;r&eacute; automatiquement &mdash; onglets par agent, accordéons bugs/optimisations</span>
+                        <span class="workflow-text"><strong>Rapport HTML</strong> g&eacute;n&eacute;r&eacute; automatiquement, onglets par agent, accordéons bugs/optimisations</span>
                     </div>
                     <div class="workflow-step">
                         <span class="workflow-num">06</span>
-                        <span class="workflow-text"><strong>Validation O/N</strong> pour chaque correction propos&eacute;e &mdash; l&rsquo;agent ne modifie rien sans confirmation</span>
+                        <span class="workflow-text"><strong>Validation O/N</strong> pour chaque correction propos&eacute;e : l&rsquo;agent ne modifie rien sans confirmation</span>
                     </div>
                 </div>
                 <div class="case-learning">
                     <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
-                    <div class="case-learning-text">Penser &laquo;&nbsp;production&nbsp;&raquo; d&egrave;s la conception, c&rsquo;est anticiper la maintenance. Le monitoring n&rsquo;est pas une &eacute;tape apr&egrave;s &mdash; c&rsquo;est une contrainte de design. Un agent sans audit r&eacute;gulier est un agent dont on ignore l&rsquo;&eacute;tat r&eacute;el.</div>
+                    <div class="case-learning-text">Penser &laquo;&nbsp;production&nbsp;&raquo; d&egrave;s la conception, c&rsquo;est anticiper la maintenance. Le monitoring n&rsquo;est pas une &eacute;tape apr&egrave;s, c&rsquo;est une contrainte de design. Un agent sans audit r&eacute;gulier est un agent dont on ignore l&rsquo;&eacute;tat r&eacute;el.</div>
                 </div>
             </div>
         </div>
@@ -161,7 +161,7 @@
                         <div class="build-step-tool green">Step 2</div>
                         <div class="build-step-body">
                             <div class="build-step-title">Tests API live</div>
-                            <div class="build-step-desc">Connexion Anthropic, Spotify, Last.fm, Notion &mdash; lecture seule, call minimal. D&eacute;tecte les tokens expir&eacute;s et les changements d&rsquo;API avant qu&rsquo;ils impactent la production.</div>
+                            <div class="build-step-desc">Connexion Anthropic, Spotify, Last.fm, Notion, en lecture seule, call minimal. D&eacute;tecte les tokens expir&eacute;s et les changements d&rsquo;API avant qu&rsquo;ils impactent la production.</div>
                         </div>
                     </div>
                     <div class="build-step">
@@ -195,7 +195,7 @@
                 </div>
                 <div class="case-learning">
                     <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
-                    <div class="case-learning-text">L&rsquo;analyse statique et les tests live ne se remplacent pas &mdash; ils se compl&egrave;tent. Claude d&eacute;tecte les bugs logiques dans le code. Les tests live d&eacute;tectent les d&eacute;calages avec l&rsquo;&eacute;tat r&eacute;el des APIs. Les deux sont n&eacute;cessaires.</div>
+                    <div class="case-learning-text">L&rsquo;analyse statique et les tests live ne se remplacent pas, ils se compl&egrave;tent. Claude d&eacute;tecte les bugs logiques dans le code. Les tests live d&eacute;tectent les d&eacute;calages avec l&rsquo;&eacute;tat r&eacute;el des APIs. Les deux sont n&eacute;cessaires.</div>
                 </div>
             </div>
         </div>
@@ -207,7 +207,7 @@
             <div class="case-method">F &middot; P &middot; S &middot; C &middot; Seuils explicit&eacute;s</div>
             <div class="case-impact-block">
                 <div class="case-impact-num">4</div>
-                <div class="case-impact-label">crit&egrave;res pond&eacute;r&eacute;s &mdash; &laquo;&nbsp;&ccedil;a tourne&nbsp;&raquo; n&rsquo;est pas suffisant</div>
+                <div class="case-impact-label">crit&egrave;res pond&eacute;r&eacute;s : &laquo;&nbsp;&ccedil;a tourne&nbsp;&raquo; n&rsquo;est pas suffisant</div>
             </div>
             <div class="case-visual-num">03</div>
         </div>
@@ -215,31 +215,31 @@
             <div>
                 <div class="case-tag">F/P/S/C &middot; Pond&eacute;ration &middot; Seuils</div>
                 <h2 class="case-title">Un score sans seuils<br>ne sert &agrave; rien</h2>
-                <p class="case-desc">La grille F/P/S/C distingue &laquo;&nbsp;&ccedil;a tourne&nbsp;&raquo; (Fonctionnel) de &laquo;&nbsp;&ccedil;a retourne les bons r&eacute;sultats&nbsp;&raquo; (Pr&eacute;cis). Un agent peut scorer 100% en F et 60% en P &mdash; ce n&rsquo;est pas la m&ecirc;me chose.</p>
+                <p class="case-desc">La grille F/P/S/C distingue &laquo;&nbsp;&ccedil;a tourne&nbsp;&raquo; (Fonctionnel) de &laquo;&nbsp;&ccedil;a retourne les bons r&eacute;sultats&nbsp;&raquo; (Pr&eacute;cis). Un agent peut scorer 100% en F et 60% en P : ce n&rsquo;est pas la m&ecirc;me chose.</p>
                 <div class="build-steps">
                     <div class="build-step">
-                        <div class="build-step-tool green">F &mdash; 40%</div>
+                        <div class="build-step-tool green">F &middot; 40%</div>
                         <div class="build-step-body">
                             <div class="build-step-title">Fonctionnel</div>
-                            <div class="build-step-desc">Chaque outil r&eacute;pond sans erreur en production&nbsp;? Crit&egrave;re le plus pond&eacute;r&eacute; &mdash; un agent qui plante n&rsquo;a pas de score.</div>
+                            <div class="build-step-desc">Chaque outil r&eacute;pond sans erreur en production&nbsp;? Crit&egrave;re le plus pond&eacute;r&eacute; : un agent qui plante n&rsquo;a pas de score.</div>
                         </div>
                     </div>
                     <div class="build-step">
-                        <div class="build-step-tool green">P &mdash; 30%</div>
+                        <div class="build-step-tool green">P &middot; 30%</div>
                         <div class="build-step-body">
                             <div class="build-step-title">Pr&eacute;cis</div>
-                            <div class="build-step-desc">Les r&eacute;sultats sont corrects et v&eacute;rifiables&nbsp;? Un agent peut fonctionner sans erreur et retourner des r&eacute;sultats faux &mdash; c&rsquo;est le cas le plus dangereux.</div>
+                            <div class="build-step-desc">Les r&eacute;sultats sont corrects et v&eacute;rifiables&nbsp;? Un agent peut fonctionner sans erreur et retourner des r&eacute;sultats faux : c&rsquo;est le cas le plus dangereux.</div>
                         </div>
                     </div>
                     <div class="build-step">
-                        <div class="build-step-tool">S &mdash; 20%</div>
+                        <div class="build-step-tool">S &middot; 20%</div>
                         <div class="build-step-body">
                             <div class="build-step-title">Stable</div>
                             <div class="build-step-desc">Comportement coh&eacute;rent sur plusieurs sessions&nbsp;? Un agent qui fonctionne une fois sur deux n&rsquo;est pas en production.</div>
                         </div>
                     </div>
                     <div class="build-step">
-                        <div class="build-step-tool">C &mdash; 10%</div>
+                        <div class="build-step-tool">C &middot; 10%</div>
                         <div class="build-step-body">
                             <div class="build-step-title">Couvrant</div>
                             <div class="build-step-desc">% des features pr&eacute;vues qui fonctionnent&nbsp;? Un agent partiel peut &ecirc;tre valid&eacute; s&rsquo;il est fonctionnel, pr&eacute;cis et stable sur son p&eacute;rim&egrave;tre r&eacute;el.</div>
@@ -248,7 +248,7 @@
                 </div>
                 <div class="case-learning">
                     <div class="case-learning-label">Seuils de d&eacute;cision</div>
-                    <div class="case-learning-text">&lt;&thinsp;60% &mdash; ne pas utiliser &nbsp;&middot;&nbsp; 60&ndash;79% &mdash; supervision requise &nbsp;&middot;&nbsp; 80&ndash;89% &mdash; usage r&eacute;gulier &nbsp;&middot;&nbsp; &ge;&thinsp;90% &mdash; production-ready. Le Monitor s&rsquo;auto-audite&nbsp;: il fait partie des 3 agents monitor&eacute;s.</div>
+                    <div class="case-learning-text">&lt;&thinsp;60% : ne pas utiliser &nbsp;&middot;&nbsp; 60&ndash;79% : supervision requise &nbsp;&middot;&nbsp; 80&ndash;89% : usage r&eacute;gulier &nbsp;&middot;&nbsp; &ge;&thinsp;90% : production-ready. Le Monitor s&rsquo;auto-audite&nbsp;: il fait partie des 3 agents monitor&eacute;s.</div>
                 </div>
             </div>
         </div>
@@ -289,7 +289,7 @@
                                 <span class="decision-sep">vs</span>
                                 <span class="decision-option rejected">Correction automatique</span>
                             </div>
-                            <div class="decision-why">L&rsquo;agent propose, l&rsquo;humain d&eacute;cide. Chaque correction est affich&eacute;e avec un diff color&eacute; et une explication avant toute application &mdash; m&ecirc;me pour des corrections triviales. Le Monitor ne modifie jamais rien sans confirmation explicite.</div>
+                            <div class="decision-why">L&rsquo;agent propose, l&rsquo;humain d&eacute;cide. Chaque correction est affich&eacute;e avec un diff color&eacute; et une explication avant toute application, m&ecirc;me pour des corrections triviales. Le Monitor ne modifie jamais rien sans confirmation explicite.</div>
                             <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> des corrections automatiques sur des faux positifs d&eacute;gradent les agents au lieu de les am&eacute;liorer.</div>
                         </div>
                     </div>

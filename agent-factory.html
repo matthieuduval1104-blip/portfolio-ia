@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agent Factory &mdash; Matthieu Duval</title>
+    <title>Agent Factory | Matthieu Duval</title>
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -91,7 +91,7 @@
             <div class="case-method">Patterns &middot; Standards &middot; Reproductibilit&eacute;</div>
             <div class="case-impact-block">
                 <div class="case-impact-num">6+</div>
-                <div class="case-impact-label">agents construits &mdash; m&ecirc;mes anti-patterns, m&ecirc;mes bugs sans standard</div>
+                <div class="case-impact-label">agents construits avec les m&ecirc;mes anti-patterns, m&ecirc;mes bugs sans standard</div>
             </div>
             <div class="case-visual-num">01</div>
         </div>
@@ -99,7 +99,7 @@
             <div>
                 <div class="case-tag">Process &middot; Industrialisation &middot; Productivit&eacute;</div>
                 <h2 class="case-title">Sans standard,<br>chaque agent repart de z&eacute;ro</h2>
-                <p class="case-desc">Apr&egrave;s plusieurs agents construits, les m&ecirc;mes anti-patterns revenaient&nbsp;: paths hardcod&eacute;s, ann&eacute;es fix&eacute;es en dur, documentation oubli&eacute;e, monitoring non branch&eacute;. La Factory standardise la cr&eacute;ation pour ne plus reproduire ces erreurs &mdash; et capitaliser sur ce qui a d&eacute;j&agrave; &eacute;t&eacute; appris.</p>
+                <p class="case-desc">Apr&egrave;s plusieurs agents construits, les m&ecirc;mes anti-patterns revenaient&nbsp;: paths hardcod&eacute;s, ann&eacute;es fix&eacute;es en dur, documentation oubli&eacute;e, monitoring non branch&eacute;. La Factory standardise la cr&eacute;ation pour ne plus reproduire ces erreurs et capitaliser sur ce qui a d&eacute;j&agrave; &eacute;t&eacute; appris.</p>
                 <div class="workflow-steps">
                     <div class="workflow-step">
                         <span class="workflow-num">Avant</span>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="case-learning">
                     <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
-                    <div class="case-learning-text">Standardiser n&rsquo;est pas brider la cr&eacute;ativit&eacute; &mdash; c&rsquo;est capitaliser sur ce qu&rsquo;on a d&eacute;j&agrave; appris. Chaque pattern codifi&eacute; dans la Factory vient d&rsquo;un bug r&eacute;el d&eacute;tect&eacute; par le Monitor. Ce n&rsquo;est pas de la th&eacute;orie, c&rsquo;est de l&rsquo;exp&eacute;rience encod&eacute;e.</div>
+                    <div class="case-learning-text">Standardiser n&rsquo;est pas brider la cr&eacute;ativit&eacute;, c&rsquo;est capitaliser sur ce qu&rsquo;on a d&eacute;j&agrave; appris. Chaque pattern codifi&eacute; dans la Factory vient d&rsquo;un bug r&eacute;el d&eacute;tect&eacute; par le Monitor. Ce n&rsquo;est pas de la th&eacute;orie, c&rsquo;est de l&rsquo;exp&eacute;rience encod&eacute;e.</div>
                 </div>
             </div>
         </div>
@@ -124,7 +124,7 @@
             <div class="case-method">Interview &middot; Plan &middot; G&eacute;n&eacute;ration &middot; &Eacute;criture &middot; Monitor &middot; Docs</div>
             <div class="case-impact-block">
                 <div class="case-impact-num">6</div>
-                <div class="case-impact-label">phases s&eacute;quentielles &mdash; rien n&rsquo;est skippable</div>
+                <div class="case-impact-label">phases s&eacute;quentielles, rien n&rsquo;est skippable</div>
             </div>
             <div class="case-visual-num">02</div>
         </div>
@@ -132,7 +132,7 @@
             <div>
                 <div class="case-tag">CLI &middot; S&eacute;quentiel &middot; Validation explicite</div>
                 <h2 class="case-title">6 phases,<br>rien n&rsquo;est skippable</h2>
-                <p class="case-desc">Chaque phase produit un livrable valid&eacute; avant de passer &agrave; la suivante. Aucun fichier n&rsquo;est &eacute;crit sans confirmation. La Phase 6 est ex&eacute;cut&eacute;e dans un bloc <em>finally</em> &mdash; les docs sont toujours mises &agrave; jour, m&ecirc;me si le reste &eacute;choue.</p>
+                <p class="case-desc">Chaque phase produit un livrable valid&eacute; avant de passer &agrave; la suivante. Aucun fichier n&rsquo;est &eacute;crit sans confirmation. La Phase 6 est ex&eacute;cut&eacute;e dans un bloc <em>finally</em> : les docs sont toujours mises &agrave; jour, m&ecirc;me si le reste &eacute;choue.</p>
                 <div class="build-steps">
                     <div class="build-step">
                         <div class="build-step-tool green">Phase 1</div>
@@ -208,7 +208,7 @@
                         <div class="build-step-tool green">R&egrave;gle 2</div>
                         <div class="build-step-body">
                             <div class="build-step-title">Pas d&rsquo;ann&eacute;e fix&eacute;e en dur</div>
-                            <div class="build-step-desc"><code>datetime.now().year</code> obligatoire, jamais une ann&eacute;e hardcod&eacute;e. Un agent con&ccedil;u en 2026 tourne potentiellement en 2027 &mdash; les requ&ecirc;tes ne doivent pas &ecirc;tre p&eacute;rim&eacute;es.</div>
+                            <div class="build-step-desc"><code>datetime.now().year</code> obligatoire, jamais une ann&eacute;e hardcod&eacute;e. Un agent con&ccedil;u en 2026 tourne potentiellement en 2027 : ses requ&ecirc;tes ne doivent pas &ecirc;tre p&eacute;rim&eacute;es.</div>
                         </div>
                     </div>
                     <div class="build-step">
@@ -265,7 +265,7 @@
                                 <span class="decision-option rejected">Documentation optionnelle</span>
                             </div>
                             <div class="decision-why">La documentation est la partie la plus souvent oubli&eacute;e dans la cr&eacute;ation d&rsquo;agents. En la pla&ccedil;ant dans un bloc <em>finally</em>, elle s&rsquo;ex&eacute;cute m&ecirc;me si les phases pr&eacute;c&eacute;dentes &eacute;chouent ou sont interrompues. La dette documentaire est structurellement impossible.</div>
-                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> le code et la documentation divergent d&egrave;s la premi&egrave;re session &mdash; c&rsquo;est exactement le probl&egrave;me qu&rsquo;on cherchait &agrave; &eacute;viter.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> le code et la documentation divergent d&egrave;s la premi&egrave;re session, ce qui est exactement le probl&egrave;me qu&rsquo;on cherchait &agrave; &eacute;viter.</div>
                         </div>
                     </div>
                     <div class="decision-item">
@@ -277,7 +277,7 @@
                                 <span class="decision-option rejected">G&eacute;n&eacute;ration enti&egrave;rement automatique</span>
                             </div>
                             <div class="decision-why">Chaque fichier g&eacute;n&eacute;r&eacute; est affich&eacute; avant &eacute;criture. L&rsquo;utilisateur valide (O), skippe (N) ou corrige (M). La Factory ne d&eacute;cide jamais seule. Cette contrainte ralentit le processus mais garantit que ce qui est &eacute;crit est exactement ce qui &eacute;tait voulu.</div>
-                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> des fichiers g&eacute;n&eacute;r&eacute;s incorrects &eacute;cras&eacute;s sans rev&ucirc;e &mdash; bugs introduits silencieusement.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> des fichiers g&eacute;n&eacute;r&eacute;s incorrects &eacute;cras&eacute;s sans rev&ucirc;e, avec des bugs introduits silencieusement.</div>
                         </div>
                     </div>
                     <div class="decision-item">
@@ -288,14 +288,14 @@
                                 <span class="decision-sep">vs</span>
                                 <span class="decision-option rejected">V&eacute;rification manuelle</span>
                             </div>
-                            <div class="decision-why">Chaque agent.py g&eacute;n&eacute;r&eacute; est v&eacute;rifi&eacute; syntaxiquement avant d&rsquo;&ecirc;tre &eacute;crit sur le disque. Un agent avec une erreur de syntaxe ne sort jamais de la Factory &mdash; la v&eacute;rification est syst&eacute;matique, pas optionnelle.</div>
-                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> des agents avec des erreurs de syntaxe sont &eacute;crits et ne fonctionnent pas au premier run &mdash; perte de temps, perte de confiance dans le processus.</div>
+                            <div class="decision-why">Chaque agent.py g&eacute;n&eacute;r&eacute; est v&eacute;rifi&eacute; syntaxiquement avant d&rsquo;&ecirc;tre &eacute;crit sur le disque. Un agent avec une erreur de syntaxe ne sort jamais de la Factory : la v&eacute;rification est syst&eacute;matique, pas optionnelle.</div>
+                            <div class="decision-consequence"><strong>Sans ce choix&nbsp;:</strong> des agents avec des erreurs de syntaxe sont &eacute;crits et ne fonctionnent pas au premier run, avec perte de temps et perte de confiance dans le processus.</div>
                         </div>
                     </div>
                 </div>
                 <div class="case-learning">
                     <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
-                    <div class="case-learning-text">Un outil de cr&eacute;ation qui n&rsquo;est pas rigoureux sur lui-m&ecirc;me produit des agents qui ne le sont pas non plus. Les contraintes de la Factory &mdash; validation, v&eacute;rification, documentation forc&eacute;e &mdash; sont les m&ecirc;mes qu&rsquo;on attend des agents qu&rsquo;elle cr&eacute;e.</div>
+                    <div class="case-learning-text">Un outil de cr&eacute;ation qui n&rsquo;est pas rigoureux sur lui-m&ecirc;me produit des agents qui ne le sont pas non plus. Les contraintes de la Factory (validation, v&eacute;rification, documentation forc&eacute;e) sont les m&ecirc;mes qu&rsquo;on attend des agents qu&rsquo;elle cr&eacute;e.</div>
                 </div>
             </div>
         </div>
