@@ -1,6 +1,6 @@
 # CLAUDE.md — Portfolio IA
 > Fichier de contexte principal. À lire en premier à chaque nouvelle session Claude Code.
-> Dernière mise à jour : 30 mars 2026
+> Dernière mise à jour : 10 avril 2026
 
 ---
 
@@ -37,12 +37,16 @@ ssh-add ~/.ssh/id_ed25519_github
 
 | Fichier | Page | Statut |
 |---------|------|--------|
-| `index.html` | Page d'accueil — hero 2 colonnes, grille 4 UC, CTA LinkedIn + CV | ✅ |
-| `cafe-cot-rag.html` | UC1 — Méthodes CAFÉ, CoT & RAG (4 case studies en tabs) | ✅ |
-| `agent-coach.html` | UC2 — Agent Coach PM (4 case studies en tabs) | ✅ |
-| `agent-veille.html` | UC3 — Agent de Veille PM (4 tabs, CSS centralisé) | ✅ |
-| `UC4/index.html` | UC4 — Ce portfolio (méta-cas, 4 tabs) | ✅ |
+| `index.html` | Page d'accueil — hero 2 colonnes, grille 7 UC, CTA LinkedIn + CV | ✅ |
+| `cafe-cot-rag.html` | UC01 — Méthodes CAFÉ, CoT & RAG (4 tabs) | ✅ |
+| `agent-coach.html` | UC02 — Agent Coach PM (4 tabs) | ✅ |
+| `pipeline-offres.html` | UC03 — Auto. Offres Make + Airtable (4 tabs) | ✅ |
+| `agent-veille.html` | UC04 — Agent Veille PM (4 tabs) | ✅ |
+| `umami.html` | UC05 — UMAMI site client festival fermentation (4 tabs) | ✅ |
+| `agent-monitor.html` | UC06 — Agent Monitor audit prod F/P/S/C (4 tabs) | ✅ |
+| `agent-factory.html` | UC07 — Agent Factory CLI 6 phases (4 tabs) | ✅ |
 | `styles.css` | CSS centralisé (partagé par toutes les pages) | ✅ |
+| `UC4/index.html` | Book (méta-cas) — orphelin, plus dans la nav | Archive |
 | `ce-portfolio.html` | Source Agent Coach pour UC4 — **ne pas modifier, ne pas déployer** | Archive |
 | `OLD/` | Anciennes versions archivées — **ne pas toucher** | Archive |
 
@@ -188,43 +192,49 @@ ssh-add ~/.ssh/id_ed25519_github
 
 ---
 
-## État actuel des pages (22/02/2026)
+## État actuel des pages (10/04/2026)
 
 **index.html** :
-- Titre : "Après 10+ ans de produit. / Intégration IA active." (2 lignes nowrap)
-- H1 réduit : clamp(24px, 2.6vw, 40px)
-- Divider vert sauge `#4A7C59`
-- Nav non sticky (position: static via `.page nav`)
-- Footer : LinkedIn + CV
-- CTA CV : `download` + `target="_blank"`
+- Grille 7 UCs (01→07), Factory en wide card (dernière)
+- Nav 7 liens : CAFÉ CoT RAG / Agent Coach / Auto. Offres / Agent Veille / UMAMI / Monitor / Factory
+- Book retiré de la nav et de la grille (UC4/index.html reste en archive)
 
-**cafe-cot-rag.html (UC1)** :
+**cafe-cot-rag.html (UC01)** :
 - Eyebrow : "Use case 01 · AI Discipline"
-- Hero align-items: start
 - Stats : "vs 7/10 sans CoT", "9,5/10 requêtes vs 3/10 avec ChatGPT"
 - 4 tabs : Multi-LLM · CAFÉ · CoT · RAG
-- Blocs noirs : labels descriptifs (Orchestration, Structuration, Décomposition, Architecture)
 
-**agent-coach.html (UC2)** :
+**agent-coach.html (UC02)** :
 - Eyebrow : "Use case 02 · AI Discipline"
-- Hero align-items: start (suppression du `style="align-items: end"` le 22/02)
 - Stats : "6 Modes", "364 Lignes de profil RAG", "4 Candidatures préparées jan-fév 2026"
 - 4 tabs : Simulation fit · 6 modes · Analyse d'offre · Dashboard
 
-**agent-veille.html (UC3)** :
-- Eyebrow : "Use case 03" (sans "· AI Discipline" — supprimé le 22/02)
-- Hero align-items: start
+**pipeline-offres.html (UC03)** :
+- Eyebrow : "Use case 03" (renuméroté depuis 04 le 10/04/2026)
+- Stats : "3 Sources", "3 Scénarios Make", "10 min / semaine"
+- 4 tabs : Problème / Architecture / Décisions produit / En usage
+
+**agent-veille.html (UC04)** :
+- Eyebrow : "Use case 04" (renuméroté depuis 03 le 10/04/2026)
 - Stats : "18 Sources scannées", "6 Sections", "0 min Production manuelle"
 - 4 tabs : Objectifs / Construction / System prompt / Décisions produit
-- Composants UC3 spécifiques dans styles.css
-- Tab Objectifs : lien `Notion →` ajouté après "Ce que ça révèle" (23/02/2026)
+- Tab Objectifs : lien `Notion →`
 
-**UC4/index.html** :
-- Eyebrow : "Use case 04"
-- Hero stats : 4 use cases / 2 outils IA / 100% décisions tracées
-- 4 tabs : Conception / Industrialisation / Décisions produit / Le système complet
-- Bloc Déploiement : mentionne GitHub → Netlify auto-build
-- Typo "4 UC ciblés" corrigée (était "4 UC cibls" dans le source Coach)
+**umami.html (UC05)** — nouveau 10/04/2026 :
+- Eyebrow : "Use case 05" · Tag : Client
+- Stats : "1 client réel", "10j du brief au live", "0 framework"
+- 4 tabs : Contexte / Construction / Décisions / Live
+- Lien externe : umaminantes.com
+
+**agent-monitor.html (UC06)** — nouveau 10/04/2026 :
+- Eyebrow : "Use case 06" · Tag : Ops
+- Stats : "3 agents", "4 critères F/P/S/C", "Rapport HTML"
+- 4 tabs : Problème / Architecture / Scoring / Décisions
+
+**agent-factory.html (UC07)** — nouveau 10/04/2026 :
+- Eyebrow : "Use case 07" · Tag : Process
+- Stats : "6 phases", "3 fichiers générés", "Phase 6 non-skippable (finally)"
+- 4 tabs : Problème / 6 phases / Anti-patterns / Décisions
 
 ---
 
