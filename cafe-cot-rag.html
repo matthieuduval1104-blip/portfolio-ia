@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFÉ, CoT & RAG | Matthieu Duval</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="a2a6b9a6-ece9-4ab3-b295-b6476c938f98"></script>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <div class="nav-brand-name">Matthieu Duval</div>
+            <div class="nav-brand-title">Senior Product Manager</div>
+        </a>
+        <div class="nav-links">
+            <a href="cafe-cot-rag.html" class="active">CAF&Eacute;, CoT &amp; RAG</a>
+            <a href="agent-coach.html">Agent Coach</a>
+            <a href="pipeline-offres.html">Auto. Offres</a>
+            <a href="agent-veille.html">Agent Veille</a>
+            <a href="umami.html">UMAMI</a>
+            <a href="agent-monitor.html">Monitor</a>
+            <a href="agent-factory.html">Factory</a>
+        </div>
+        <button class="burger" id="burgerBtn" aria-label="Menu">
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+        </button>
+    </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Fermer">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+        <a href="cafe-cot-rag.html" class="active">CAF&Eacute;, CoT &amp; RAG</a>
+        <a href="agent-coach.html">Agent Coach</a>
+        <a href="pipeline-offres.html">Auto. Offres</a>
+        <a href="agent-veille.html">Agent Veille</a>
+        <a href="umami.html">UMAMI</a>
+        <a href="agent-monitor.html">Monitor</a>
+        <a href="agent-factory.html">Factory</a>
+    </nav>
+    <div class="mobile-nav-footer">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" data-umami-event="cta-linkedin">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank" data-umami-event="cta-cv">CV</a>
+    </div>
+</div>
+
+<div class="hero">
+    <div class="hero-left">
+        <p class="hero-eyebrow">Use case 01 &middot; AI Discipline</p>
+        <h1>CAF&Eacute;, CoT<br>&amp; RAG</h1>
+    </div>
+    <div class="hero-right">
+        <p class="hero-pitch">Tester trois frameworks de structuration sur un cas r&eacute;el, comparer trois LLMs sur les m&ecirc;mes requ&ecirc;tes, mesurer les &eacute;carts. Pas pour trouver le meilleur mod&egrave;le, mais pour comprendre ce qui fait la diff&eacute;rence entre un prompt qui contr&ocirc;le et un prompt qui d&eacute;l&egrave;gue.</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-num">9/10</div>
+                <div class="hero-stat-label">qualit&eacute; avec CoT<br>7/10 CAF&Eacute; seul</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">95%</div>
+                <div class="hero-stat-label">requ&ecirc;tes r&eacute;ussies<br>vs 30% ChatGPT</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">&minus;52%</div>
+                <div class="hero-stat-label">co&ucirc;t par r&eacute;ponse<br>utile vs ChatGPT</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tabs">
+    <div class="tabs-inner">
+        <button class="tab active" data-target="case-0">Multi-LLM</button>
+        <button class="tab" data-target="case-1">CAF&Eacute;</button>
+        <button class="tab" data-target="case-2">CoT</button>
+        <button class="tab" data-target="case-3">RAG</button>
+    </div>
+</div>
+
+<div class="cases">
+
+    <div class="case active" id="case-0">
+        <div class="case-visual">
+            <span class="case-method">Orchestration &middot; Claude, Notion AI, Deepseek</span>
+            <div class="case-impact-block">
+                <div class="case-impact-num">3</div>
+                <div class="case-impact-label">LLMs, 3 r&ocirc;les distincts, 2 it&eacute;rations avant validation finale</div>
+            </div>
+            <div class="case-visual-num">01</div>
+        </div>
+        <div class="case-content">
+            <div class="case-content-top">
+                <div class="case-tag">Claude Architect &middot; Notion AI Executor &middot; Deepseek Critique</div>
+                <h2 class="case-title">Multi-LLM</h2>
+                <p class="case-desc">Plut&ocirc;t que choisir un seul mod&egrave;le, assigner un r&ocirc;le &agrave; chacun selon ses forces. Claude g&eacute;n&egrave;re le prompt CAF&Eacute; &agrave; partir du brief. Notion AI ex&eacute;cute et supprime les marqueurs IA dans le rendu. Deepseek challenge le prompt et optimise&nbsp;: 2 it&eacute;rations Architect, 2 CR test&eacute;s avant validation finale.</p>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Un LLM comme architecte du prompt d&rsquo;un autre LLM. La qualit&eacute; finale vient de la s&eacute;paration des r&ocirc;les, pas du mod&egrave;le le plus puissant.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="case" id="case-1">
+        <div class="case-visual">
+            <span class="case-method">Structuration &middot; Prompt en 4 dimensions</span>
+            <div class="case-impact-block">
+                <div class="case-impact-num">2&times;</div>
+                <div class="case-impact-label">2 formats de CR, z&eacute;ro retouche manuelle</div>
+            </div>
+            <div class="case-visual-num">02</div>
+        </div>
+        <div class="case-content">
+            <div class="case-content-top">
+                <div class="case-tag">Contexte &middot; Action &middot; Format &middot; Exemple</div>
+                <h2 class="case-title">CAF&Eacute;</h2>
+                <p class="case-desc">Un prompt en 4 dimensions (Contexte, Action, Format, Exemple), co-construit en dual-LLM : Claude Architect pour structurer, Notion AI Executor pour produire. M&ecirc;me brief, deux formats de sortie distincts&nbsp;: CR &eacute;quipe 450 mots, synth&egrave;se CODIR 200 mots. Z&eacute;ro retouche manuelle. Le format du prompt d&eacute;termine le format du r&eacute;sultat.</p>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">La structure du prompt compte plus que le choix du mod&egrave;le. Claude, Notion AI et Deepseek donnent des r&eacute;sultats comparables sur le m&ecirc;me prompt.</div>
+                </div>
+            </div>
+            <a href="https://flint-glass-1e2.notion.site/Prompt-like-a-Queen-2e6189217273804abc8de0f0c1a60776" target="_blank" class="case-link">Notion &rarr;</a>
+        </div>
+    </div>
+
+    <div class="case" id="case-2">
+        <div class="case-visual">
+            <span class="case-method">D&eacute;composition &middot; 5 sous-t&acirc;ches s&eacute;quenc&eacute;es</span>
+            <div class="case-impact-block">
+                <div class="case-impact-num">+2 pts</div>
+                <div class="case-impact-label">7/10 en CAF&Eacute; seule, 9/10 avec CoT</div>
+            </div>
+            <div class="case-visual-num">03</div>
+        </div>
+        <div class="case-content">
+            <div class="case-content-top">
+                <div class="case-tag">Chain of Thought &middot; 5 t&acirc;ches s&eacute;quenc&eacute;es</div>
+                <h2 class="case-title">CoT</h2>
+                <p class="case-desc">Quand le mod&egrave;le prend toutes les d&eacute;cisions, le r&eacute;sultat est fluide mais incontr&ocirc;lable. D&eacute;composer en 5 sous-t&acirc;ches s&eacute;quenc&eacute;es avec points d&rsquo;arbitrage explicites change la dynamique&nbsp;: le mod&egrave;le ex&eacute;cute, le PM d&eacute;cide &agrave; chaque &eacute;tape. R&eacute;sultat&nbsp;: un template r&eacute;utilisable, pas un document jetable.</p>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">D&eacute;composer, c&rsquo;est reprendre le contr&ocirc;le. Chaque pause d&rsquo;arbitrage est un moment o&ugrave; le PM d&eacute;cide, pas le mod&egrave;le.</div>
+                </div>
+            </div>
+            <a href="https://flint-glass-1e2.notion.site/D-coupe-comme-un-Chef-2-2f418921727380ad873ae909541c7a1b" target="_blank" class="case-link">Notion &rarr;</a>
+        </div>
+    </div>
+
+    <div class="case" id="case-3">
+        <div class="case-visual">
+            <span class="case-method">Architecture &middot; 18 documents, 6 cat&eacute;gories</span>
+            <div class="case-impact-block">
+                <div class="case-impact-num">95%</div>
+                <div class="case-impact-label">contre 30% avec ChatGPT sur les m&ecirc;mes documents</div>
+            </div>
+            <div class="case-visual-num">04</div>
+        </div>
+        <div class="case-content">
+            <div class="case-content-top">
+                <div class="case-tag">Retrieval-Augmented Generation &middot; 18 documents</div>
+                <h2 class="case-title">RAG</h2>
+                <p class="case-desc">Structurer une base de connaissance pour un assistant IA&nbsp;: 18 PDFs, architecture en 6 cat&eacute;gories, test empirique sur 10 requ&ecirc;tes r&eacute;elles. ChatGPT &eacute;conomise 62% de tokens en synth&eacute;tisant, mais rate 70% des requ&ecirc;tes. Claude pr&eacute;serve le verbatim et co&ucirc;te r&eacute;ellement 52% de moins par r&eacute;ponse r&eacute;ussie.</p>
+                <div class="case-learning">
+                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                    <div class="case-learning-text">Ce qui est bon pour l&rsquo;humain n&rsquo;est pas bon pour le RAG. Un synonyme supprim&eacute; = un point d&rsquo;entr&eacute;e s&eacute;mantique d&eacute;truit.</div>
+                </div>
+            </div>
+            <a href="https://flint-glass-1e2.notion.site/It-s-RAGtime-2f41892172738036b933ceb6ce510d3f" target="_blank" class="case-link">Notion &rarr;</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <a href="index.html" class="footer-left">Matthieu Duval &middot; Nantes</a>
+    <div class="footer-right">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" data-umami-event="cta-linkedin">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Fevrier_2026.pdf" target="_blank" data-umami-event="cta-cv">CV</a>
+    </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Retour en haut">&uarr;</button>
+
+<script>
+    (function() {
+        var btn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', function() {
+            btn.classList.toggle('visible', window.scrollY > 400);
+        });
+        btn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        var tabs = document.querySelectorAll('.tab');
+        var cases = document.querySelectorAll('.case');
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                tabs.forEach(function(t) { t.classList.remove('active'); });
+                cases.forEach(function(c) { c.classList.remove('active'); });
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.target).classList.add('active');
+            });
+        });
+        var burger = document.getElementById('burgerBtn');
+        var mobileNav = document.getElementById('mobileNav');
+        var mobileClose = document.getElementById('mobileNavClose');
+        burger.addEventListener('click', function() { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; });
+        mobileClose.addEventListener('click', function() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; });
+    })();
+</script>
+
+</body>
+</html>
