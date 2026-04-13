@@ -1,6 +1,6 @@
 # CLAUDE.md — Portfolio IA
 > Fichier de contexte principal. À lire en premier à chaque nouvelle session Claude Code.
-> Dernière mise à jour : 10 avril 2026
+> Dernière mise à jour : 13 avril 2026
 
 ---
 
@@ -15,7 +15,8 @@ Message principal : "Je suis formé à l'IA gen et je peux embarquer une équipe
 
 | Élément | Valeur |
 |---------|--------|
-| **URL live** | https://portfolio-ia.matthieu-duval1104.workers.dev/ |
+| **URL live** | https://matthieu-duval.com/ |
+| **URL workers.dev** | https://portfolio-ia.matthieu-duval1104.workers.dev/ (secondaire, toujours active) |
 | **Repo GitHub** | https://github.com/matthieuduval1104-blip/portfolio-ia |
 | **Branche principale** | `main` |
 | **Déploiement** | Automatique via Cloudflare Workers → chaque `git push` sur `main` déclenche un build |
