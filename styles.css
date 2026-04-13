@@ -20,7 +20,7 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
 .nav-links a:hover, .nav-links a.active { color: #0A0A0A; }
 
 /* ══════════════════════════════════════════════
-   HERO (commun UC1/UC2)
+   HERO (pages UC)
    ══════════════════════════════════════════════ */
 
 .hero { padding: 80px 48px 72px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
@@ -39,7 +39,6 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
 .page nav { position: static; }
 .page .nav-inner { max-width: none; padding: 0 48px; }
 .page footer { padding-left: 48px; padding-right: 48px; }
-.hero-divider { width: 32px; height: 2px; background: #4A7C59; margin-bottom: 14px; }
 .hero-pitch { font-size: 16px; line-height: 1.7; color: #444444; margin-bottom: 0; }
 .hero-pitch + .hero-pitch { margin-top: 14px; }
 .hero-pitch a { color: #0A0A0A; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
@@ -80,35 +79,6 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
 .ucs-card:hover .ucs-arrow { color: #FFFFFF; transform: translateX(3px); }
 
 /* ══════════════════════════════════════════════
-   OUTILS + TAGLINE (INDEX)
-   ══════════════════════════════════════════════ */
-
-.hero-tools-block { margin-top: 14px; }
-.hero-tools-block .hero-pitch { margin-top: 0; }
-.tools-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
-.tool-chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid #E8E8E8; padding: 5px 10px; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #0A0A0A; border-radius: 2px; transition: border-color 0.15s; }
-.tool-chip:hover { border-color: #0A0A0A; }
-.tool-chip svg { flex-shrink: 0; }
-.hero-tagline { font-size: 16px; line-height: 1.7; color: #444444; margin-top: 16px; padding-top: 16px; border-top: 1px solid #E8E8E8; }
-.hero-tagline strong { color: #0A0A0A; font-weight: 700; display: block; margin-top: 4px; }
-
-/* ══════════════════════════════════════════════
-   UC GRID (INDEX)
-   ══════════════════════════════════════════════ */
-
-.uc-label-top { font-size: 11px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: #AAAAAA; margin-bottom: 12px; display: block; }
-.uc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #E8E8E8; border: 1px solid #E8E8E8; }
-.uc-card { background: #FFFFFF; padding: 18px 20px; text-decoration: none; color: #0A0A0A; display: flex; flex-direction: column; gap: 10px; transition: background 0.15s; }
-.uc-card:hover { background: #F7F7F7; }
-.uc-card-wide { grid-column: 1 / -1; }
-.uc-card-top { display: flex; align-items: center; justify-content: space-between; }
-.uc-number { font-size: 11px; font-weight: 800; letter-spacing: 2px; color: #AAAAAA; }
-.uc-tag { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #4A7C59; background: rgba(74,124,89,0.08); padding: 3px 8px; border-radius: 2px; }
-.uc-title { font-size: 16px; font-weight: 800; letter-spacing: -0.3px; }
-.uc-desc { font-size: 13px; color: #777777; line-height: 1.5; flex: 1; }
-.uc-arrow { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #AAAAAA; align-self: flex-end; margin-top: 4px; }
-
-/* ══════════════════════════════════════════════
    TABS
    ══════════════════════════════════════════════ */
 
@@ -119,7 +89,7 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
 .tab.active { color: #0A0A0A; border-bottom: 2px solid #4A7C59; }
 
 /* ══════════════════════════════════════════════
-   CASE STUDIES (commun UC1/UC2)
+   CASE STUDIES (pages UC)
    ══════════════════════════════════════════════ */
 
 .cases { }
@@ -144,6 +114,12 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
 .case-desc { font-size: 15px; color: #555555; line-height: 1.65; max-width: 440px; margin-bottom: 32px; }
 
 /* ══════════════════════════════════════════════
+   CONTENT LABEL (sous-titre de section dans case-content)
+   ══════════════════════════════════════════════ */
+
+.content-label { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #AAAAAA; margin-bottom: 12px; }
+
+/* ══════════════════════════════════════════════
    CASE LEARNING
    ══════════════════════════════════════════════ */
 
@@ -159,7 +135,7 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
 .case-link:hover { opacity: 0.4; }
 
 /* ══════════════════════════════════════════════
-   UC3 — SECTIONS GRID (Objectifs)
+   SECTIONS GRID
    ══════════════════════════════════════════════ */
 
 .sections-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #E8E8E8; border: 1px solid #E8E8E8; margin-bottom: 28px; }
@@ -170,7 +146,7 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
 .section-desc { font-size: 13px; color: #888888; line-height: 1.5; }
 
 /* ══════════════════════════════════════════════
-   UC3 — BUILD STEPS (Construction)
+   BUILD STEPS
    ══════════════════════════════════════════════ */
 
 .build-steps { display: flex; flex-direction: column; gap: 1px; background: #E8E8E8; border: 1px solid #E8E8E8; margin-bottom: 28px; }
@@ -183,7 +159,7 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
 .build-step-desc { font-size: 13px; color: #888888; line-height: 1.5; }
 
 /* ══════════════════════════════════════════════
-   UC3 — WORKFLOW STEPS (Construction)
+   WORKFLOW STEPS
    ══════════════════════════════════════════════ */
 
 .workflow-steps { display: flex; flex-direction: column; gap: 1px; background: #E8E8E8; border: 1px solid #E8E8E8; margin-top: 28px; margin-bottom: 28px; }
@@ -194,7 +170,7 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
 .workflow-text strong { color: #0A0A0A; font-weight: 700; }
 
 /* ══════════════════════════════════════════════
-   UC3 — DECISIONS (Décisions produit)
+   DECISIONS
    ══════════════════════════════════════════════ */
 
 .decisions-list { display: flex; flex-direction: column; gap: 1px; background: #E8E8E8; border: 1px solid #E8E8E8; margin-bottom: 28px; }
@@ -212,7 +188,7 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
 .decision-consequence strong { color: #0A0A0A; font-style: normal; font-weight: 700; }
 
 /* ══════════════════════════════════════════════
-   UC3 — PROMPT VERSIONS (System prompt)
+   PROMPT VERSIONS
    ══════════════════════════════════════════════ */
 
 .prompt-versions { display: flex; gap: 1px; background: #E8E8E8; border: 1px solid #E8E8E8; margin-bottom: 28px; }
@@ -224,7 +200,7 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
 .prompt-v-desc { font-size: 13px; color: #888888; line-height: 1.5; }
 
 /* ══════════════════════════════════════════════
-   MODES GRID (UC2 — 6 modes)
+   MODES GRID
    ══════════════════════════════════════════════ */
 
 .modes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #E8E8E8; border: 1px solid #E8E8E8; margin-bottom: 32px; }
@@ -296,10 +272,6 @@ footer { border-top: 1px solid #E8E8E8; height: 52px; padding: 0 48px; display: 
     .ucs-card { border-right: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; min-height: 120px; }
     .ucs-card:nth-child(2n) { border-right: none; }
     .ucs-title { font-size: 13px; }
-    /* Ancien layout index — désactivé */
-    .tools-row { gap: 6px; }
-    .uc-grid { grid-template-columns: 1fr; }
-
     /* Tabs */
     .tabs-inner { padding: 0 24px; overflow-x: auto; }
     .tab { padding: 14px 16px; white-space: nowrap; }
