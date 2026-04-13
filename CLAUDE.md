@@ -1,6 +1,6 @@
 # CLAUDE.md — Portfolio IA
 > Fichier de contexte principal. À lire en premier à chaque nouvelle session Claude Code.
-> Dernière mise à jour : 13 avril 2026
+> Dernière mise à jour : 13 avril 2026 (session 2)
 
 ---
 
@@ -112,6 +112,8 @@ ssh-add ~/.ssh/id_ed25519_github
 - Case titles : clamp(28px, 2.8vw, 40px), font-weight 900
 - Labels / nav : 11px, font-weight 600, uppercase, letter-spacing 2px
 - Body : 15px, font-weight 400, line-height 1.6
+- Hero index pitch (`hero-cover-pitch`) : 17px, color `#555555`
+- Hero index sub (`hero-cover-sub`) : 17px, color `#555555`
 
 ### Layout
 - Max container : 1200px, centré
@@ -193,49 +195,65 @@ ssh-add ~/.ssh/id_ed25519_github
 
 ---
 
-## État actuel des pages (10/04/2026)
+## État actuel des pages (13/04/2026 — session 2)
 
 **index.html** :
 - Grille 7 UCs (01→07), Factory en wide card (dernière)
 - Nav 7 liens : CAFÉ CoT RAG / Agent Coach / Auto. Offres / Agent Veille / UMAMI / Monitor / Factory
 - Book retiré de la nav et de la grille (UC4/index.html reste en archive)
+- Hero pitch : "J'ai piloté des produits du Fooding au SaaS B2B chez R3." (verbe actif)
+- Tracking Umami complet : 7 UC cards + 2 hero CTAs + 2 mobile nav + 2 footer
 
 **cafe-cot-rag.html (UC01)** :
-- Eyebrow : "Use case 01 · AI Discipline"
-- Stats : "vs 7/10 sans CoT", "9,5/10 requêtes vs 3/10 avec ChatGPT"
-- 4 tabs : Multi-LLM · CAFÉ · CoT · RAG
+- Eyebrow : "Use case 01 · Formation GenAI"
+- Hero pitch en première personne active
+- Stats : "9/10 avec CoT · 7/10 sans", "95% hit rate RAG · vs 30% ChatGPT sans RAG"
+- "dual-LLM" → "orchestration à deux modèles"
+- 4 tabs : Multi-LLM · CAFÉ · CoT · RAG — tous trackés Umami
 
 **agent-coach.html (UC02)** :
-- Eyebrow : "Use case 02 · AI Discipline"
-- Stats : "6 Modes", "364 Lignes de profil RAG", "4 Candidatures préparées jan-fév 2026"
-- 4 tabs : Simulation fit · 6 modes · Analyse d'offre · Dashboard
+- Eyebrow : "Use case 02 · Formation GenAI"
+- Stats : "6 Modes", "13 Sections de profil RAG documentées", "4 Candidatures jan-fév 2026"
+- Meta/og mis à jour : "13 sections" (cohérent avec stat affichée)
+- 4 tabs : Simulation fit · 6 modes · Analyse d'offre · Dashboard — tous trackés Umami
 
 **pipeline-offres.html (UC03)** :
-- Eyebrow : "Use case 03" (renuméroté depuis 04 le 10/04/2026)
+- Eyebrow : "Use case 03"
 - Stats : "3 Sources", "3 Scénarios Make", "10 min / semaine"
-- 4 tabs : Problème / Architecture / Décisions produit / En usage
+- 4 tabs : Problème / Architecture / Décisions produit / En usage — tous trackés Umami
 
 **agent-veille.html (UC04)** :
-- Eyebrow : "Use case 04" (renuméroté depuis 03 le 10/04/2026)
-- Stats : "18 Sources scannées", "6 Sections", "0 min Production manuelle"
-- 4 tabs : Objectifs / Construction / System prompt / Décisions produit
-- Tab Objectifs : lien `Notion →`
+- Eyebrow : "Use case 04"
+- Hero pitch restructuré : "Chaque lundi à 10h, un agent scanne..." (impersonnel → actif)
+- Référence "(UC2)" supprimée → "l'Agent Coach"
+- Stats : "18 Sources · <10 min de lecture", "6 Sections", "0 min Production manuelle"
+- 4 tabs : Objectifs / Construction / System prompt / Décisions produit — tous trackés Umami
 
-**umami.html (UC05)** — nouveau 10/04/2026 :
-- Eyebrow : "Use case 05" · Tag : Client
-- Stats : "1 client réel", "10j du brief au live", "0 framework"
-- 4 tabs : Contexte / Construction / Décisions / Live
-- Lien externe : umaminantes.com
+**umami.html (UC05)** :
+- Hero pitch : "Conçu, développé et déployé entièrement avec Claude Code en 10 jours."
+- Stats : "0 Dépendance technique · client autonome"
+- Accord "image mal cadrée" corrigé
+- 4 tabs : Contexte / Construction / Décisions / Live — tous trackés Umami
 
-**agent-monitor.html (UC06)** — nouveau 10/04/2026 :
-- Eyebrow : "Use case 06" · Tag : Ops
-- Stats : "3 agents", "4 critères F/P/S/C", "Rapport HTML"
-- 4 tabs : Problème / Architecture / Scoring / Décisions
+**agent-monitor.html (UC06)** :
+- Hero pitch en première personne : "J'ai construit un agent qui audite..."
+- F/P/S/C explicité dans le pitch : "(Fonctionnel / Précis / Stable / Couvrant)"
+- Stats : "90–91% Scores mesurés", "4 Critères F/P/S/C", "O/N Validation humaine"
+- 4 tabs : Problème / Architecture / Scoring / Décisions — tous trackés Umami
 
-**agent-factory.html (UC07)** — nouveau 10/04/2026 :
-- Eyebrow : "Use case 07" · Tag : Process
-- Stats : "6 phases", "3 fichiers générés", "Phase 6 non-skippable (finally)"
-- 4 tabs : Problème / 6 phases / Anti-patterns / Décisions
+**agent-factory.html (UC07)** :
+- Hero pitch : "chemins figés, années codées en dur" (jargon technique supprimé)
+- "skippable" → "facultative" (×3)
+- "paths hardcodés" → "chemins figés / chemins de fichiers figés" (partout)
+- Stats : "6 phases", "3 fichiers générés", "0 Doc oubliée · Phase 6 en finally"
+- 4 tabs : Problème / 6 phases / Anti-patterns / Décisions — tous trackés Umami
+
+---
+
+### CSS — nettoyage session 1 (13/04/2026)
+- Suppression ~60 lignes de CSS mort : `.hero-tools-block`, `.tools-row`, `.tool-chip`, `.hero-tagline`, `.hero-divider`, blocs UC GRID index, résidus mobile désactivés
+- Ajout `.content-label` (remplace l'inline style dans agent-veille.html)
+- Commentaires de sections mis à jour (UC3-spécifique → générique)
 
 ---
 
