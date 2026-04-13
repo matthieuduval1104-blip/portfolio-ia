@@ -53,8 +53,8 @@ nav { position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom:
 .hero-cover { flex: 1; display: flex; flex-direction: column; justify-content: flex-start; padding: 36px 48px 40px; min-height: 0; }
 .hero-cover-h1 { font-size: clamp(56px, 7.2vw, 104px); font-weight: 900; letter-spacing: -4px; text-transform: uppercase; line-height: 0.92; color: #0A0A0A; margin: 0; }
 .hero-cover-foot { display: flex; justify-content: flex-start; align-items: flex-start; gap: 48px; margin-top: auto; margin-bottom: auto; }
-.hero-cover-pitch { font-size: 15px; line-height: 1.6; color: #555555; max-width: 700px; }
-.hero-cover-sub { font-size: 14px; line-height: 1.6; color: #555555; max-width: 700px; }
+.hero-cover-pitch { font-size: 17px; line-height: 1.6; color: #555555; max-width: 700px; }
+.hero-cover-sub { font-size: 16px; line-height: 1.6; color: #555555; max-width: 700px; }
 .hero-cover-sub strong { color: #0A0A0A; }
 .hero-cover-ctas { display: flex; gap: 24px; margin-top: 20px; }
 .hero-cover-ctas a { font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #0A0A0A; text-decoration: none; border-bottom: 1px solid #0A0A0A; padding-bottom: 2px; transition: opacity 0.15s; }
