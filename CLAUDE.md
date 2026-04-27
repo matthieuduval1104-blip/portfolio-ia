@@ -77,7 +77,7 @@ ssh-add ~/.ssh/id_ed25519_github
 | Fichier | Contenu |
 |---------|---------|
 | `styles.css` | CSS unique centralisé — toutes les pages y font référence |
-| `CV_MATTHIEU_DUVAL_Fevrier_2026.pdf` | CV téléchargeable (CTA index.html) |
+| `CV_MATTHIEU_DUVAL_Avril_2026.pdf` | CV téléchargeable (CTA index.html) — version 27/04/2026 |
 | `GUIDE.md` | Guide de maintenance pour Matthieu (non-technique) |
 | `UC4/CLAUDE.md` | Documentation complète des phases de construction UC4 |
 | `UC4/JOURNAL_UC4.md` | Journal de bord détaillé de toutes les sessions |
