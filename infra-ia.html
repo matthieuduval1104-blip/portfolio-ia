@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infra IA | Matthieu Duval</title>
+    <meta name="description" content="Pipeline de production IA en 8 agents spécialisés, monitoring F/P/S/C, second cerveau structuré. 12 projets livrés en 3 mois. UC06 · Book IA Matthieu Duval.">
+    <meta property="og:title" content="Infra IA · Pipeline 8 agents, monitoring, second cerveau · Matthieu Duval">
+    <meta property="og:description" content="J'ai structuré la production IA comme une équipe produit : 8 agents spécialisés, gates obligatoires, scoring en production. 12 projets livrés en 3 mois.">
+    <meta property="og:url" content="https://matthieu-duval.com/infra-ia.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://matthieu-duval.com/og-image.png">
+    <meta property="og:locale" content="fr_FR">
+    <link rel="canonical" href="https://matthieu-duval.com/infra-ia.html">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="a2a6b9a6-ece9-4ab3-b295-b6476c938f98"></script>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <div class="nav-brand-name">Matthieu Duval</div>
+            <div class="nav-brand-title">Senior Product Manager</div>
+        </a>
+        <div class="nav-links">
+            <a href="umami.html">UMAMI</a>
+            <a href="agent-coach.html">Agent Coach</a>
+            <a href="agent-veille.html">Agent Veille</a>
+            <a href="pipeline-offres.html">Auto. Offres</a>
+            <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+            <a href="infra-ia.html" class="active">Infra IA</a>
+        </div>
+        <button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+        </button>
+    </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Fermer">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+        <a href="umami.html">UMAMI</a>
+        <a href="agent-coach.html">Agent Coach</a>
+        <a href="agent-veille.html">Agent Veille</a>
+        <a href="pipeline-offres.html">Auto. Offres</a>
+        <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+        <a href="infra-ia.html" class="active">Infra IA</a>
+    </nav>
+    <div class="mobile-nav-footer">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" rel="noopener noreferrer" data-umami-event="cta-linkedin">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Avril_2026.pdf" download data-umami-event="cta-cv">CV</a>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="hero-left">
+        <p class="hero-eyebrow">Use case 06 &middot; Syst&egrave;mes &amp; outillage IA</p>
+        <h1>Infra IA</h1>
+    </div>
+    <div class="hero-right">
+        <p class="hero-pitch">J&rsquo;ai structur&eacute; la production IA comme une &eacute;quipe produit&nbsp;: r&ocirc;les d&eacute;finis, standards, gates obligatoires. 12 projets livr&eacute;s en 3 mois. Rien n&rsquo;entre ni ne sort sans passer par un contrat d&rsquo;output.</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-num">8</div>
+                <div class="hero-stat-label">Agents sp&eacute;cialis&eacute;s<br>dans le pipeline</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">12</div>
+                <div class="hero-stat-label">Projets livr&eacute;s<br>en 3 mois</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">90&ndash;91%</div>
+                <div class="hero-stat-label">Scores de fiabilit&eacute;<br>en production</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="tabs">
+    <div class="tabs-inner">
+        <button class="tab active" data-target="case-0" data-umami-event="infra-tab-pipeline">Pipeline</button>
+        <button class="tab" data-target="case-1" data-umami-event="infra-tab-monitoring">Monitoring &amp; co&ucirc;ts</button>
+        <button class="tab" data-target="case-2" data-umami-event="infra-tab-cerveau">Second cerveau</button>
+        <button class="tab" data-target="case-3" data-umami-event="infra-tab-deploiement">D&eacute;ploiement</button>
+    </div>
+</div>
+
+<div class="case-pager-bar" id="casePagerBar"></div>
+
+<div class="cases">
+
+    <!-- TAB 1 : Pipeline -->
+
+    <!-- CASE 01 — 8 agents, 1 pipeline -->
+    <div class="case active" id="case-0">
+        <div class="case-visual">
+            <div class="case-method">Architecture &middot; R&ocirc;les d&eacute;finis &middot; Output contracts</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">8</div>
+                <div class="case-impact-label">agents sp&eacute;cialis&eacute;s dans le pipeline de production</div>
+            </div>
+            <div class="case-visual-num">01</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Architecture &middot; R&ocirc;les d&eacute;finis &middot; Output contracts</div>
+                <h2 class="case-title">Une &eacute;quipe IA qui fonctionne comme une &eacute;quipe produit</h2>
+                <p class="case-desc">J&rsquo;ai con&ccedil;u et j&rsquo;op&egrave;re un pipeline de production IA compos&eacute; de 8 agents sp&eacute;cialis&eacute;s&nbsp;: PM, designer, frontend, backend, reviewer, QA, ops, copywriter. Chaque agent a un r&ocirc;le document&eacute;, un domaine exclusif, et un output contract&nbsp;: ce qu&rsquo;il produit, dans quel format, selon quels standards.</p>
+                <p class="case-desc">Chaque d&eacute;cision qui engage la qualit&eacute; ou la s&eacute;curit&eacute; passe par une validation humaine. Certaines transitions sont automatiques. D&rsquo;autres sont bloqu&eacute;es jusqu&rsquo;&agrave; validation explicite. C&rsquo;est ce qui s&eacute;pare un syst&egrave;me de production d&rsquo;un ensemble d&rsquo;outils qui fonctionnent &agrave; peu pr&egrave;s.</p>
+                <p class="case-desc">12 projets livr&eacute;s via ce pipeline en 3 mois&nbsp;: sites statiques, agents Python, dashboards clients, guides HTML, scripts d&rsquo;automatisation. Un agent transversal trace la consommation tokens de chaque livrable. Les agents permanents (cron, Notion) rejoignent la flotte via un process d&eacute;di&eacute; en 6 phases qui int&egrave;gre le monitor et la documentation d&egrave;s la cr&eacute;ation.</p>
+            </div>
+            <div class="case-learning">
+                <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                <div class="case-learning-text">Un pipeline IA sans structure de r&ocirc;les produit du bruit. Avec des r&ocirc;les, des contrats et des gates, il produit des livrables d&eacute;fendables. La diff&eacute;rence entre &laquo;&nbsp;utiliser Claude&nbsp;&raquo; et &laquo;&nbsp;op&eacute;rer un syst&egrave;me de production&nbsp;&raquo;.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CASE 02 — Contrôle de régression prompt -->
+    <div class="case" id="case-0-2">
+        <div class="case-visual">
+            <div class="case-method">Qualit&eacute; &middot; R&eacute;gression &middot; Validation syst&eacute;matique</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">0</div>
+                <div class="case-impact-label">r&eacute;gression non d&eacute;tect&eacute;e sans validation explicite du reviewer</div>
+            </div>
+            <div class="case-visual-num">02</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Qualit&eacute; &middot; R&eacute;gression &middot; Validation syst&eacute;matique</div>
+                <h2 class="case-title">On am&eacute;liore un agent. On en d&eacute;grade un autre. Sans le savoir.</h2>
+                <p class="case-desc">La r&eacute;gression prompt est le risque invisible du pipeline IA. J&rsquo;ai mis en place deux verrous. Un reviewer valide chaque modification de prompt avant d&eacute;ploiement en v&eacute;rifiant qu&rsquo;aucune r&egrave;gle existante n&rsquo;a &eacute;t&eacute; supprim&eacute;e et qu&rsquo;aucune contradiction n&rsquo;a &eacute;t&eacute; introduite. Le QA valide les output contracts apr&egrave;s chaque changement. Rien ne passe sans validation explicite.</p>
+            </div>
+            <div class="case-learning">
+                <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                <div class="case-learning-text">Un setup sans ce verrou s&rsquo;arr&ecirc;te &agrave; &laquo;&nbsp;&ccedil;a marche&nbsp;&raquo;. Ce pipeline v&eacute;rifie aussi que les modifications ne cassent pas ce qui fonctionnait. C&rsquo;est une logique de r&eacute;gression appliqu&eacute;e aux prompts, pas au code.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 2 : Monitoring -->
+
+    <!-- CASE 01 — Agent Monitor -->
+    <div class="case" id="case-1">
+        <div class="case-visual">
+            <div class="case-method">Scoring &middot; D&eacute;tection de r&eacute;gression &middot; Rapport HTML</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">91%</div>
+                <div class="case-impact-label">score Agent Veille PM &middot; 90% Agent Spotify en production</div>
+            </div>
+            <div class="case-visual-num">01</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Scoring &middot; D&eacute;tection de r&eacute;gression &middot; Rapport HTML</div>
+                <h2 class="case-title">Un audit quotidien de tout ce qui est en production</h2>
+                <p class="case-desc"><code>check-agents</code> est un agent Python qui audite chaque jour tous les agents en production. Il teste le code, les appels API live, et produit un score sur 4 crit&egrave;res&nbsp;: Fonctionnel (&ccedil;a tourne&nbsp;?), Pr&eacute;cis (les outputs sont corrects&nbsp;?), Stable (pas de d&eacute;rive entre les runs&nbsp;?), Couvrant (tous les cas sont trait&eacute;s&nbsp;?).</p>
+                <p class="case-desc">Le r&eacute;sultat est un rapport HTML avec l&rsquo;historique des scores, les r&eacute;gressions d&eacute;tect&eacute;es entre les runs, et une liste de corrections propos&eacute;es, valid&eacute;es O/N par une d&eacute;cision humaine. Ce score sort d&rsquo;une mesure r&eacute;elle.</p>
+                <p class="case-desc">Scores en production au 29&nbsp;avril&nbsp;2026&nbsp;: Agent Veille PM 91%, Agent Spotify 90%.</p>
+            </div>
+            <div class="case-learning">
+                <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                <div class="case-learning-text">Automatiser sans monitorer, c&rsquo;est d&eacute;ployer sans test. La diff&eacute;rence entre un agent &laquo;&nbsp;qui marche&nbsp;&raquo; et un agent en production, c&rsquo;est ce scoring-l&agrave;.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CASE 02 — Token analyst -->
+    <div class="case" id="case-1-2">
+        <div class="case-visual">
+            <div class="case-method">Tokens &middot; Co&ucirc;ts &middot; Progression mesur&eacute;e</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">3+</div>
+                <div class="case-impact-label">projets track&eacute;s pour que les recommandations deviennent comparables</div>
+            </div>
+            <div class="case-visual-num">02</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Tokens &middot; Co&ucirc;ts &middot; Progression mesur&eacute;e</div>
+                <h2 class="case-title">Mesurer pour progresser, pas pour rogner sur les co&ucirc;ts</h2>
+                <p class="case-desc">Un agent d&eacute;di&eacute; trace la consommation de tokens par t&acirc;che, d&eacute;tecte les anomalies et produit un rapport HTML apr&egrave;s chaque projet. L&rsquo;objectif est de savoir si une t&acirc;che co&ucirc;te plus que pr&eacute;vu, et pourquoi. L&rsquo;objectif est de comprendre, pas de rogner.</p>
+                <p class="case-desc">Ce qui rend l&rsquo;outil utile sur la dur&eacute;e, c&rsquo;est la m&eacute;moire cross-projets. Les baselines s&rsquo;accumulent projet apr&egrave;s projet. &Agrave; partir du 3e projet track&eacute;, les recommandations deviennent comparables&nbsp;: on sait si un brief mieux structur&eacute; r&eacute;duit les it&eacute;rations, si un type de livrable est syst&eacute;matiquement plus co&ucirc;teux, si on progresse.</p>
+            </div>
+            <div class="case-learning">
+                <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                <div class="case-learning-text">La sensibilit&eacute; aux co&ucirc;ts est un r&eacute;flexe de PM. Chaque inefficacit&eacute; dans le brief se traduit en temps et en argent.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CASE 03 — Scores historis&eacute;s -->
+    <div class="case" id="case-1-3">
+        <div class="case-visual">
+            <div class="case-method">scores_history.json &middot; R&eacute;gression &middot; Comparaison inter-runs</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">N&ndash;1</div>
+                <div class="case-impact-label">comparaison automatique entre le run courant et le pr&eacute;c&eacute;dent</div>
+            </div>
+            <div class="case-visual-num">03</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Historique &middot; Comparaison inter-runs &middot; Progression</div>
+                <h2 class="case-title">Ce qui ne se compare pas ne s&rsquo;am&eacute;liore pas</h2>
+                <p class="case-desc">Chaque run du monitor &eacute;crit ses scores dans <code>scores_history.json</code>. La comparaison entre deux runs est automatique&nbsp;: toute baisse de score g&eacute;n&egrave;re un flag dans le rapport. La tendance sur plusieurs runs est visible.</p>
+                <p class="case-desc">C&rsquo;est la seule fa&ccedil;on de savoir si une correction introduite quelque part d&eacute;grade autre chose. Pas un tableau de bord pour para&icirc;tre s&eacute;rieux. Le monitor est lui-m&ecirc;me soumis au m&ecirc;me standard que les agents qu&rsquo;il surveille.</p>
+            </div>
+            <div class="case-learning">
+                <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                <div class="case-learning-text">Un score isol&eacute; ne dit rien. Une s&eacute;rie de scores dans le temps dit si un syst&egrave;me est stable, s&rsquo;il d&eacute;rive ou s&rsquo;il progresse. C&rsquo;est ce qu&rsquo;on attend d&rsquo;une m&eacute;trique produit.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 3 : Second cerveau (3 cases) -->
+
+    <!-- CASE 01 — IPCRA -->
+    <div class="case" id="case-2">
+        <div class="case-visual">
+            <div class="case-method">Organisation &middot; M&eacute;moire &middot; Contexte persistant</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">5</div>
+                <div class="case-impact-label">zones IPCRA&nbsp;: Inbox, Projects, Casquettes, Resources, Archive</div>
+            </div>
+            <div class="case-visual-num">01</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Organisation &middot; M&eacute;moire &middot; Contexte persistant</div>
+                <h2 class="case-title">Le probl&egrave;me de fond n&rsquo;est pas le mod&egrave;le, c&rsquo;est le contexte</h2>
+                <p class="case-desc">Les outputs d&rsquo;un LLM valent ce que vaut le contexte qu&rsquo;on lui donne. J&rsquo;ai structur&eacute; mon espace de travail en 5 zones (Inbox, Projects, Casquettes pour les responsabilit&eacute;s continues, Resources, Archive) pour que le contexte soit toujours disponible, structur&eacute; et &agrave; jour.</p>
+                <p class="case-desc">Chaque projet a un <code>CLAUDE.md</code>&nbsp;: fichier d&rsquo;initialisation que Claude lit en premier &agrave; chaque session. Il contient l&rsquo;&eacute;tat du projet, les contraintes non n&eacute;gociables, les d&eacute;cisions prises et leur rationale, la stack, les fichiers cl&eacute;s. En 30 secondes de lecture, l&rsquo;agent est contextualis&eacute; sans qu&rsquo;on lui r&eacute;explique depuis le d&eacute;but.</p>
+            </div>
+            <div class="case-learning">
+                <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                <div class="case-learning-text">Sans structure, chaque session commence par r&eacute;expliquer le projet depuis le d&eacute;but. IPCRA + CLAUDE.md transforme &ccedil;a en infrastructure&nbsp;: le contexte est un actif, pas une saisie r&eacute;p&eacute;t&eacute;e.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CASE 02 — M&eacute;moire persistante -->
+    <div class="case" id="case-2-2">
+        <div class="case-visual">
+            <div class="case-method">MEMORY.md &middot; Casquettes &middot; Knowledge management</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">0</div>
+                <div class="case-impact-label">session qui repart de z&eacute;ro gr&acirc;ce &agrave; MEMORY.md charg&eacute; automatiquement</div>
+            </div>
+            <div class="case-visual-num">02</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">MEMORY.md &middot; Casquettes &middot; Knowledge management</div>
+                <h2 class="case-title">Ce que Claude sait d&rsquo;une session &agrave; l&rsquo;autre</h2>
+                <p class="case-desc"><code>MEMORY.md</code> est un fichier d&rsquo;index persistant charg&eacute; automatiquement &agrave; chaque session Claude Code. Il contient l&rsquo;&eacute;tat des projets actifs, les d&eacute;cisions structurantes, les scores des agents, les URLs en production, les credentials et leurs chemins.</p>
+                <p class="case-desc">Les &laquo;&nbsp;casquettes&nbsp;&raquo; organisent les responsabilit&eacute;s continues&nbsp;: chaque domaine (portfolio, agents, veille, UMAMI&hellip;) a sa propre fiche. La <code>_knowledge/</code> centralise les patterns r&eacute;utilisables&nbsp;: stack de r&eacute;f&eacute;rence, prompts valid&eacute;s, anti-patterns encod&eacute;s, templates.</p>
+                <p class="case-desc">Le Garden Wiki compl&egrave;te le dispositif&nbsp;: base de connaissances partag&eacute;e (People, Companies, Meetings, Projects) auto-mise &agrave; jour par <code>garden sync &amp;&amp; garden tend</code>.</p>
+            </div>
+            <div class="case-learning">
+                <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                <div class="case-learning-text">La m&eacute;moire n&rsquo;est pas une feature de Claude. C&rsquo;est un syst&egrave;me qu&rsquo;on construit. Sans &ccedil;a, chaque session repart de z&eacute;ro. Avec &ccedil;a, on capitalise.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 4 : Ce que &ccedil;a prouve -->
+
+    <div class="case" id="case-3">
+        <div class="case-visual">
+            <div class="case-method">Squad IA &middot; Adoption &middot; Patterns produit</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">10 min</div>
+                <div class="case-impact-label">pour reprendre n&rsquo;importe quel projet gr&acirc;ce &agrave; <code>CLAUDE.md</code> structur&eacute;</div>
+            </div>
+            <div class="case-visual-num">01</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Squad IA &middot; Adoption &middot; Patterns produit</div>
+                <h2 class="case-title">Ce que cette infrastructure apporte &agrave; une &eacute;quipe produit</h2>
+                <p class="case-desc">Int&eacute;grer l&rsquo;IA dans un squad sans structure produit, &ccedil;a donne du bruit. Pas de r&ocirc;le owner sur les agents, pas de crit&egrave;re de qualit&eacute; partag&eacute;, pas de d&eacute;tection quand une modification casse autre chose. Le premier mois &ccedil;a avance. Apr&egrave;s, la dette s&rsquo;accumule.</p>
+                <p class="case-desc">Les patterns de ce pipeline sont directement adoptables dans un squad&nbsp;: r&ocirc;les avec domaines exclusifs, gates humains sur les d&eacute;cisions critiques, scoring continu pour distinguer &laquo;&nbsp;&ccedil;a tourne&nbsp;&raquo; de &laquo;&nbsp;&ccedil;a fonctionne&nbsp;&raquo;. Ce sont des r&eacute;flexes de management produit. Ils s&rsquo;appliquent aux agents exactement comme aux &eacute;quipes.</p>
+                <p class="case-desc">Le risque invisible dans tout pipeline IA, c&rsquo;est la r&eacute;gression silencieuse. Un prompt modifi&eacute; pour am&eacute;liorer un agent en d&eacute;grade un autre. Sans comparaison entre les runs, &ccedil;a passe inaper&ccedil;u jusqu&rsquo;&agrave; ce qu&rsquo;un client le signale. Le scoring N-1 automatique est le premier m&eacute;canisme que n&rsquo;importe quelle &eacute;quipe devrait mettre en place.</p>
+            </div>
+            <div class="case-learning">
+                <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                <div class="case-learning-text">Ces principes fonctionnent en conditions r&eacute;elles. 3 mois, de vrais projets, de vraies contraintes. Ce qu&rsquo;ils apportent &agrave; une &eacute;quipe qui les adopte&nbsp;: du temps gagn&eacute;, et des livrables qu&rsquo;on peut d&eacute;fendre.</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <a href="index.html" class="footer-left">&larr; Portfolio</a>
+    <div class="footer-right">
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" rel="noopener noreferrer" data-umami-event="cta-linkedin">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Avril_2026.pdf" download data-umami-event="cta-cv">CV</a>
+    </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Retour en haut">&uarr;</button>
+
+<script>
+    (function() {
+        var btn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', function() {
+            btn.classList.toggle('visible', window.scrollY > 400);
+        });
+        btn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        var tabCases = [
+            ['case-0', 'case-0-2'],
+            ['case-1', 'case-1-2', 'case-1-3'],
+            ['case-2', 'case-2-2'],
+            ['case-3']
+        ];
+
+        var tabs = document.querySelectorAll('.tab');
+        var allCaseIds = ['case-0', 'case-0-2', 'case-1', 'case-1-2', 'case-1-3', 'case-2', 'case-2-2', 'case-3'];
+
+        var pagerBar = document.getElementById('casePagerBar');
+        var tabCaseLabels = [
+            ['&Eacute;quipe', 'R&eacute;gression'],
+            ['Audit', 'Tokens', 'Scores'],
+            ['Structure', 'M&eacute;moire'],
+            []
+        ];
+
+        function showCase(tabIdx, caseIdx) {
+            allCaseIds.forEach(function(id) {
+                var el = document.getElementById(id);
+                if (el) el.classList.remove('active');
+            });
+            var el = document.getElementById(tabCases[tabIdx][caseIdx]);
+            if (el) el.classList.add('active');
+            pagerBar.querySelectorAll('.case-pager-btn').forEach(function(btn, i) {
+                btn.classList.toggle('active', i === caseIdx);
+                btn.setAttribute('aria-pressed', i === caseIdx ? 'true' : 'false');
+            });
+        }
+
+        function showTab(idx) {
+            tabs.forEach(function(t) { t.classList.remove('active'); });
+            tabs[idx].classList.add('active');
+            var cases = tabCases[idx];
+            var labels = tabCaseLabels[idx];
+            if (cases.length > 1) {
+                pagerBar.style.display = 'flex';
+                pagerBar.innerHTML = '';
+                cases.forEach(function(_, i) {
+                    var btn = document.createElement('button');
+                    btn.className = 'case-pager-btn' + (i === 0 ? ' active' : '');
+                    btn.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
+                    btn.innerHTML = String(i + 1).padStart(2, '0') + '<span class="pager-label"> &middot; ' + labels[i] + '</span>';
+                    btn.dataset.tab = idx;
+                    btn.dataset.case = i;
+                    pagerBar.appendChild(btn);
+                });
+            } else {
+                pagerBar.style.display = 'none';
+                pagerBar.innerHTML = '';
+            }
+            showCase(idx, 0);
+        }
+
+        tabs.forEach(function(tab, idx) {
+            tab.addEventListener('click', function() { showTab(idx); });
+        });
+
+        document.addEventListener('click', function(e) {
+            var pagerBtn = e.target.closest('.case-pager-btn');
+            if (pagerBtn) {
+                showCase(parseInt(pagerBtn.dataset.tab), parseInt(pagerBtn.dataset.case));
+            }
+        });
+
+        showTab(0);
+
+        var burger = document.getElementById('burgerBtn');
+        var mobileNav = document.getElementById('mobileNav');
+        var mobileClose = document.getElementById('mobileNavClose');
+        burger.addEventListener('click', function() { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; burger.setAttribute('aria-expanded', 'true'); });
+        mobileClose.addEventListener('click', function() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; burger.setAttribute('aria-expanded', 'false'); });
+    })();
+</script>
+
+</body>
+</html>
