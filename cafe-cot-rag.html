@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAFÉ, CoT & RAG | Matthieu Duval</title>
-    <meta name="description" content="Tester CAFÉ, CoT et RAG sur un cas réel, comparer 3 LLMs. 9/10 avec CoT vs 7/10 sans. 95% de succès vs 30% avec ChatGPT. UC01 — Book IA Matthieu Duval.">
-    <meta property="og:title" content="CAFÉ, CoT & RAG — 3 frameworks, 3 LLMs, résultats mesurés · Matthieu Duval">
+    <meta name="description" content="Tester CAFÉ, CoT et RAG sur un cas réel, comparer 3 LLMs. 9/10 avec CoT vs 7/10 sans. 95% de succès vs 30% avec ChatGPT. UC05 · Book IA Matthieu Duval.">
+    <meta property="og:title" content="CAFÉ, CoT & RAG · 3 frameworks, 3 LLMs, résultats mesurés · Matthieu Duval">
     <meta property="og:description" content="Tester CAFÉ, CoT et RAG sur un cas réel, comparer 3 LLMs sur les mêmes requêtes. 9/10 avec CoT vs 7/10 sans. 95% de succès vs 30% avec ChatGPT.">
     <meta property="og:image" content="https://matthieu-duval.com/og-image.png">
     <meta property="og:url" content="https://matthieu-duval.com/cafe-cot-rag.html">
@@ -27,15 +27,14 @@
             <div class="nav-brand-title">Senior Product Manager</div>
         </a>
         <div class="nav-links">
-            <a href="cafe-cot-rag.html" class="active">CAF&Eacute;, CoT &amp; RAG</a>
-            <a href="agent-coach.html">Agent Coach</a>
-            <a href="pipeline-offres.html">Auto. Offres</a>
-            <a href="agent-veille.html">Agent Veille</a>
             <a href="umami.html">UMAMI</a>
-            <a href="agent-monitor.html">Monitor</a>
-            <a href="agent-factory.html">Factory</a>
+            <a href="agent-coach.html">Agent Coach</a>
+            <a href="agent-veille.html">Agent Veille</a>
+            <a href="pipeline-offres.html">Auto. Offres</a>
+            <a href="cafe-cot-rag.html" class="active">CAF&Eacute;, CoT &amp; RAG</a>
+            <a href="infra-ia.html">Infra IA</a>
         </div>
-        <button class="burger" id="burgerBtn" aria-label="Menu">
+        <button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">
             <span class="burger-bar"></span>
             <span class="burger-bar"></span>
         </button>
@@ -47,31 +46,30 @@
         <button class="mobile-nav-close" id="mobileNavClose" aria-label="Fermer">&times;</button>
     </div>
     <nav class="mobile-nav-links">
-        <a href="cafe-cot-rag.html" class="active">CAF&Eacute;, CoT &amp; RAG</a>
-        <a href="agent-coach.html">Agent Coach</a>
-        <a href="pipeline-offres.html">Auto. Offres</a>
-        <a href="agent-veille.html">Agent Veille</a>
         <a href="umami.html">UMAMI</a>
-        <a href="agent-monitor.html">Monitor</a>
-        <a href="agent-factory.html">Factory</a>
+        <a href="agent-coach.html">Agent Coach</a>
+        <a href="agent-veille.html">Agent Veille</a>
+        <a href="pipeline-offres.html">Auto. Offres</a>
+        <a href="cafe-cot-rag.html" class="active">CAF&Eacute;, CoT &amp; RAG</a>
+        <a href="infra-ia.html">Infra IA</a>
     </nav>
     <div class="mobile-nav-footer">
-        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" data-umami-event="cta-linkedin">LinkedIn</a>
-        <a href="CV_MATTHIEU_DUVAL_Avril_2026.pdf" target="_blank" data-umami-event="cta-cv">CV</a>
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" rel="noopener noreferrer" data-umami-event="cta-linkedin">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Avril_2026.pdf" download data-umami-event="cta-cv">CV</a>
     </div>
 </div>
 
 <section class="hero">
     <div class="hero-left">
-        <p class="hero-eyebrow">Use case 01 &middot; Formation GenAI</p>
+        <p class="hero-eyebrow">Use case 05 &middot; Formation GenAI</p>
         <h1>CAF&Eacute;, CoT<br>&amp; RAG</h1>
     </div>
     <div class="hero-right">
-        <p class="hero-pitch">J&rsquo;ai construit un test comparatif sur 3 frameworks et 3 LLMs, sur les m&ecirc;mes requ&ecirc;tes, avec des r&eacute;sultats mesur&eacute;s. Pas pour trouver le meilleur mod&egrave;le, mais pour comprendre ce qui fait la diff&eacute;rence entre un prompt qui contr&ocirc;le et un prompt qui d&eacute;l&egrave;gue.</p>
+        <p class="hero-pitch">J&rsquo;ai construit un test comparatif sur 3 frameworks et 3 LLMs sur les m&ecirc;mes requ&ecirc;tes, avec des r&eacute;sultats mesur&eacute;s. Cas concrets&nbsp;: CR d&rsquo;&eacute;quipe, synth&egrave;se CODIR, assistant documentaire sur 18 PDFs. Ce que &ccedil;a r&eacute;v&egrave;le&nbsp;: chaque pause d&rsquo;arbitrage est un moment o&ugrave; le PM d&eacute;cide, pas le mod&egrave;le.</p>
         <div class="hero-stats">
             <div class="hero-stat">
                 <div class="hero-stat-num">9/10</div>
-                <div class="hero-stat-label">qualit&eacute; avec CoT &middot; 7/10 sans<br>(10 req., auto-&eacute;valu&eacute;)</div>
+                <div class="hero-stat-label">qualit&eacute; avec CoT &middot; 7/10 sans<br>10 requ&ecirc;tes test</div>
             </div>
             <div class="hero-stat">
                 <div class="hero-stat-num">95%</div>
@@ -101,7 +99,7 @@
             <span class="case-method">Orchestration &middot; Claude, Notion AI, Deepseek</span>
             <div class="case-impact-block">
                 <div class="case-impact-num">3</div>
-                <div class="case-impact-label">LLMs, 3 r&ocirc;les distincts, 2 it&eacute;rations avant validation finale</div>
+                <div class="case-impact-label">LLMs, 3 r&ocirc;les distincts, 2 it&eacute;rations avant livraison</div>
             </div>
             <div class="case-visual-num">01</div>
         </div>
@@ -112,7 +110,7 @@
                 <p class="case-desc">Plut&ocirc;t que choisir un seul mod&egrave;le, assigner un r&ocirc;le &agrave; chacun selon ses forces. Claude g&eacute;n&egrave;re le prompt CAF&Eacute; &agrave; partir du brief. Notion AI ex&eacute;cute et supprime les marqueurs IA dans le rendu. Deepseek challenge le prompt et optimise&nbsp;: 2 it&eacute;rations Architect, 2 CR test&eacute;s avant validation finale.</p>
                 <div class="case-learning">
                     <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
-                    <div class="case-learning-text">Un LLM comme architecte du prompt d&rsquo;un autre LLM. La qualit&eacute; finale vient de la s&eacute;paration des r&ocirc;les, pas du mod&egrave;le le plus puissant.</div>
+                    <div class="case-learning-text">Un LLM comme architecte du prompt d&rsquo;un autre LLM. La qualit&eacute; finale vient de la s&eacute;paration des r&ocirc;les, pas de la puissance brute.</div>
                 </div>
             </div>
         </div>
@@ -131,13 +129,13 @@
             <div class="case-content-top">
                 <div class="case-tag">Contexte &middot; Action &middot; Format &middot; Exemple</div>
                 <h2 class="case-title">CAF&Eacute;</h2>
-                <p class="case-desc">Un prompt en 4 dimensions (Contexte, Action, Format, Exemple), co-construit en orchestration &agrave; deux mod&egrave;les : Claude Architect pour structurer, Notion AI Executor pour produire. M&ecirc;me brief, deux formats de sortie distincts&nbsp;: CR &eacute;quipe 450 mots, synth&egrave;se CODIR 200 mots. Z&eacute;ro retouche manuelle. Le format du prompt d&eacute;termine le format du r&eacute;sultat.</p>
+                <p class="case-desc">Un prompt en 4 dimensions (Contexte, Action, Format, Exemple), co-construit en orchestration &agrave; deux mod&egrave;les : Claude Architect pour structurer, Notion AI Executor pour produire. M&ecirc;me brief, deux sorties distinctes&nbsp;: CR &eacute;quipe 450 mots, synth&egrave;se CODIR 200 mots. Z&eacute;ro retouche manuelle. La structure du prompt d&eacute;termine la structure du r&eacute;sultat.</p>
                 <div class="case-learning">
                     <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
                     <div class="case-learning-text">La structure du prompt compte plus que le choix du mod&egrave;le. Claude, Notion AI et Deepseek donnent des r&eacute;sultats comparables sur le m&ecirc;me prompt.</div>
                 </div>
             </div>
-            <a href="https://flint-glass-1e2.notion.site/Prompt-like-a-Queen-2e6189217273804abc8de0f0c1a60776" target="_blank" class="case-link">Notion &rarr;</a>
+            <a href="https://flint-glass-1e2.notion.site/Prompt-like-a-Queen-2e6189217273804abc8de0f0c1a60776" target="_blank" rel="noopener noreferrer" class="case-link">Notion &rarr;</a>
         </div>
     </div>
 
@@ -154,13 +152,13 @@
             <div class="case-content-top">
                 <div class="case-tag">Chain of Thought &middot; 5 t&acirc;ches s&eacute;quenc&eacute;es</div>
                 <h2 class="case-title">CoT</h2>
-                <p class="case-desc">Quand le mod&egrave;le prend toutes les d&eacute;cisions, le r&eacute;sultat est fluide mais incontr&ocirc;lable. D&eacute;composer en 5 sous-t&acirc;ches s&eacute;quenc&eacute;es avec points d&rsquo;arbitrage explicites change la dynamique&nbsp;: le mod&egrave;le ex&eacute;cute, le PM d&eacute;cide &agrave; chaque &eacute;tape. R&eacute;sultat&nbsp;: un template r&eacute;utilisable, pas un document jetable.</p>
+                <p class="case-desc">Quand le mod&egrave;le prend toutes les d&eacute;cisions, le r&eacute;sultat est fluide mais incontr&ocirc;lable. D&eacute;composer en 5 sous-t&acirc;ches s&eacute;quenc&eacute;es avec points d&rsquo;arbitrage explicites inverse le rapport de force&nbsp;: le mod&egrave;le ex&eacute;cute, le PM d&eacute;cide &agrave; chaque &eacute;tape. R&eacute;sultat&nbsp;: un template r&eacute;utilisable, pas un document jetable.</p>
                 <div class="case-learning">
                     <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
-                    <div class="case-learning-text">D&eacute;composer, c&rsquo;est reprendre le contr&ocirc;le. Chaque pause d&rsquo;arbitrage est un moment o&ugrave; le PM d&eacute;cide, pas le mod&egrave;le.</div>
+                    <div class="case-learning-text">D&eacute;composer, c&rsquo;est reprendre le contr&ocirc;le. Chaque pause d&rsquo;arbitrage est un point de bascule&nbsp;: le PM choisit, le mod&egrave;le attend.</div>
                 </div>
             </div>
-            <a href="https://flint-glass-1e2.notion.site/D-coupe-comme-un-Chef-2-2f418921727380ad873ae909541c7a1b" target="_blank" class="case-link">Notion &rarr;</a>
+            <a href="https://flint-glass-1e2.notion.site/D-coupe-comme-un-Chef-2-2f418921727380ad873ae909541c7a1b" target="_blank" rel="noopener noreferrer" class="case-link">Notion &rarr;</a>
         </div>
     </div>
 
@@ -177,13 +175,13 @@
             <div class="case-content-top">
                 <div class="case-tag">Retrieval-Augmented Generation &middot; 18 documents</div>
                 <h2 class="case-title">RAG</h2>
-                <p class="case-desc">Structurer une base de connaissance pour un assistant IA&nbsp;: 18 PDFs, architecture en 6 cat&eacute;gories, test empirique sur 10 requ&ecirc;tes r&eacute;elles. ChatGPT &eacute;conomise 62% de tokens en synth&eacute;tisant, mais rate 70% des requ&ecirc;tes. Claude pr&eacute;serve le verbatim et co&ucirc;te r&eacute;ellement 52% de moins par r&eacute;ponse r&eacute;ussie.</p>
+                <p class="case-desc">J&rsquo;ai structur&eacute; une base de connaissance pour un assistant IA&nbsp;: 18 PDFs organis&eacute;s en 6 cat&eacute;gories, test&eacute;s sur 10 requ&ecirc;tes r&eacute;elles. ChatGPT &eacute;conomise 62% de tokens en synth&eacute;tisant, mais rate 70% des requ&ecirc;tes. Ramen&eacute; au co&ucirc;t par r&eacute;ponse utile, Claude revient 52% moins cher malgr&eacute; un co&ucirc;t brut sup&eacute;rieur.</p>
                 <div class="case-learning">
                     <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
                     <div class="case-learning-text">Ce qui est bon pour l&rsquo;humain n&rsquo;est pas bon pour le RAG. Un synonyme supprim&eacute; = un point d&rsquo;entr&eacute;e s&eacute;mantique d&eacute;truit.</div>
                 </div>
             </div>
-            <a href="https://flint-glass-1e2.notion.site/It-s-RAGtime-2f41892172738036b933ceb6ce510d3f" target="_blank" class="case-link">Notion &rarr;</a>
+            <a href="https://flint-glass-1e2.notion.site/It-s-RAGtime-2f41892172738036b933ceb6ce510d3f" target="_blank" rel="noopener noreferrer" class="case-link">Notion &rarr;</a>
         </div>
     </div>
 
@@ -192,8 +190,8 @@
 <footer>
     <a href="index.html" class="footer-left">Matthieu Duval &middot; Nantes</a>
     <div class="footer-right">
-        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" data-umami-event="cta-linkedin">LinkedIn</a>
-        <a href="CV_MATTHIEU_DUVAL_Avril_2026.pdf" target="_blank" data-umami-event="cta-cv">CV</a>
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" rel="noopener noreferrer" data-umami-event="cta-linkedin">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Avril_2026.pdf" download data-umami-event="cta-cv">CV</a>
     </div>
 </footer>
 
@@ -222,8 +220,8 @@
         var burger = document.getElementById('burgerBtn');
         var mobileNav = document.getElementById('mobileNav');
         var mobileClose = document.getElementById('mobileNavClose');
-        burger.addEventListener('click', function() { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; });
-        mobileClose.addEventListener('click', function() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; });
+        burger.addEventListener('click', function() { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; burger.setAttribute('aria-expanded', 'true'); });
+        mobileClose.addEventListener('click', function() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; burger.setAttribute('aria-expanded', 'false'); });
     })();
 </script>
 

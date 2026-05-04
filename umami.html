@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMAMI | Matthieu Duval</title>
-    <meta name="description" content="Site livré pour un vrai client en 10 jours : festival de fermentation à Nantes. HTML/CSS natif, zéro framework, client autonome. UC05 — Book IA Matthieu Duval.">
-    <meta property="og:title" content="UMAMI — Site client festival fermentation, livré en 10j · Matthieu Duval">
+    <meta name="description" content="Site livré pour un vrai client en 10 jours : festival de fermentation à Nantes. HTML/CSS natif, zéro framework, client autonome. UC01 — Book IA Matthieu Duval.">
+    <meta property="og:title" content="UMAMI : Site client festival fermentation, livré en 10j · Matthieu Duval">
     <meta property="og:description" content="Brief reçu, site livré en 10 jours. HTML/CSS natif, zéro framework, client autonome. SEO indexé, analytics, billetterie branchée. Pas un prototype.">
     <meta property="og:image" content="https://matthieu-duval.com/og-image.png">
     <meta property="og:url" content="https://matthieu-duval.com/umami.html">
@@ -27,15 +27,14 @@
             <div class="nav-brand-title">Senior Product Manager</div>
         </a>
         <div class="nav-links">
-            <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
-            <a href="agent-coach.html">Agent Coach</a>
-            <a href="pipeline-offres.html">Auto. Offres</a>
-            <a href="agent-veille.html">Agent Veille</a>
             <a href="umami.html" class="active">UMAMI</a>
-            <a href="agent-monitor.html">Monitor</a>
-            <a href="agent-factory.html">Factory</a>
+            <a href="agent-coach.html">Agent Coach</a>
+            <a href="agent-veille.html">Agent Veille</a>
+            <a href="pipeline-offres.html">Auto. Offres</a>
+            <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+            <a href="infra-ia.html">Infra IA</a>
         </div>
-        <button class="burger" id="burgerBtn" aria-label="Menu">
+        <button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">
             <span class="burger-bar"></span>
             <span class="burger-bar"></span>
         </button>
@@ -47,30 +46,29 @@
         <button class="mobile-nav-close" id="mobileNavClose" aria-label="Fermer">&times;</button>
     </div>
     <nav class="mobile-nav-links">
-        <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
-        <a href="agent-coach.html">Agent Coach</a>
-        <a href="pipeline-offres.html">Auto. Offres</a>
-        <a href="agent-veille.html">Agent Veille</a>
         <a href="umami.html" class="active">UMAMI</a>
-        <a href="agent-monitor.html">Monitor</a>
-        <a href="agent-factory.html">Factory</a>
+        <a href="agent-coach.html">Agent Coach</a>
+        <a href="agent-veille.html">Agent Veille</a>
+        <a href="pipeline-offres.html">Auto. Offres</a>
+        <a href="cafe-cot-rag.html">CAF&Eacute;, CoT &amp; RAG</a>
+        <a href="infra-ia.html">Infra IA</a>
     </nav>
     <div class="mobile-nav-footer">
-        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" data-umami-event="cta-linkedin">LinkedIn</a>
-        <a href="CV_MATTHIEU_DUVAL_Avril_2026.pdf" target="_blank" data-umami-event="cta-cv">CV</a>
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" rel="noopener noreferrer" data-umami-event="cta-linkedin">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Avril_2026.pdf" download data-umami-event="cta-cv">CV</a>
     </div>
 </div>
 
 <section class="hero">
     <div class="hero-left">
-        <div class="hero-eyebrow">Use case 05</div>
+        <p class="hero-eyebrow">Use case 01</p>
         <h1>UMAMI</h1>
         <div class="hero-ctas">
-            <a href="https://umaminantes.com" target="_blank" class="hero-cta" data-umami-event="link-umami-site">Voir le site &rarr;</a>
+            <a href="https://umaminantes.com" target="_blank" rel="noopener noreferrer" class="hero-cta" data-umami-event="link-umami-site">Voir le site &rarr;</a>
         </div>
     </div>
     <div class="hero-right">
-        <p class="hero-pitch">Trois co-organisateurs, pas d&rsquo;&eacute;quipe tech, pas de budget agence. Brief&nbsp;: un site &eacute;l&eacute;gant, r&eacute;utilisable les ann&eacute;es suivantes, livrable avant le 18&nbsp;avril. Con&ccedil;u, d&eacute;velopp&eacute; et d&eacute;ploy&eacute; enti&egrave;rement avec Claude Code en 10&nbsp;jours.</p>
+        <p class="hero-pitch">Trois co-organisateurs sans &eacute;quipe tech ni budget agence. Brief&nbsp;: un site &eacute;l&eacute;gant, r&eacute;utilisable les ann&eacute;es suivantes, livrable avant le 18&nbsp;avril. Con&ccedil;u, d&eacute;velopp&eacute; et d&eacute;ploy&eacute; enti&egrave;rement avec Claude Code en 10&nbsp;jours.</p>
         <div class="hero-stats">
             <div class="hero-stat">
                 <div class="hero-stat-num">1</div>
@@ -132,10 +130,6 @@
                         <span class="workflow-text">SEO, analytics, favicon, domaine &rarr; <strong>livraison compl&egrave;te</strong>, pas juste un site qui s&rsquo;affiche</span>
                     </div>
                 </div>
-                <div class="case-learning">
-                    <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
-                    <div class="case-learning-text">Claude acc&eacute;l&egrave;re l&rsquo;ex&eacute;cution. Le PM reste ma&icirc;tre d&rsquo;&oelig;uvre&nbsp;: chaque d&eacute;cision (stack, structure, contenu, priorit&eacute;s) est prise par un humain, pas g&eacute;n&eacute;r&eacute;e. C&rsquo;est &ccedil;a l&rsquo;int&eacute;gration IA op&eacute;rationnelle.</div>
-                </div>
             </div>
         </div>
     </div>
@@ -194,7 +188,7 @@
                 </div>
                 <div class="case-learning">
                     <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
-                    <div class="case-learning-text">Z&eacute;ro framework n&rsquo;est pas un manque de moyens, c&rsquo;est un choix de durabilit&eacute;. Un site HTML/CSS natif n&rsquo;a pas de d&eacute;pendances &agrave; mettre &agrave; jour, pas de breaking changes, pas de build pipeline &agrave; maintenir. Le client peut reprendre la main sans formation technique.</div>
+                    <div class="case-learning-text">HTML/CSS natif n&rsquo;a pas de d&eacute;pendances &agrave; mettre &agrave; jour, pas de breaking changes, pas de build pipeline &agrave; maintenir. Un choix de durabilit&eacute;, pas une &eacute;conomie de moyens.</div>
                 </div>
             </div>
         </div>
@@ -254,7 +248,7 @@
                 </div>
                 <div class="case-learning">
                     <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
-                    <div class="case-learning-text">Chaque d&eacute;cision technique a une cons&eacute;quence m&eacute;tier. Choisir un stack pour un client, c&rsquo;est aussi choisir sa capacit&eacute; &agrave; maintenir et faire &eacute;voluer le produit sans d&eacute;pendance. C&rsquo;est le m&ecirc;me raisonnement qu&rsquo;en product management.</div>
+                    <div class="case-learning-text">Sur un projet sans &eacute;quipe tech permanente, le mauvais stack se paie quand l&rsquo;&eacute;dition suivante d&eacute;marre. Ces trois d&eacute;cisions ont &eacute;t&eacute; prises en pensant UMAMI#6, pas UMAMI#5.</div>
                 </div>
             </div>
         </div>
@@ -265,7 +259,7 @@
         <div class="case-visual">
             <div class="case-method">umaminantes.com &middot; Cloudflare Workers &middot; GitHub</div>
             <div class="case-impact-block">
-                <div class="case-impact-num">Live</div>
+                <div class="case-impact-num">v1.8</div>
                 <div class="case-impact-label">18&ndash;19 avril 2026 &middot; Festival ouvert au public</div>
             </div>
             <div class="case-visual-num">04</div>
@@ -295,10 +289,10 @@
                 </div>
                 <div class="case-learning">
                     <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
-                    <div class="case-learning-text">Un livrable, c&rsquo;est un produit fonctionnel dans la main de son utilisateur, pas un fichier HTML qui s&rsquo;ouvre en local. SEO, analytics, domaine, billetterie&nbsp;: ces d&eacute;tails font la diff&eacute;rence entre un site qu&rsquo;on livre et un site qui sert &agrave; quelque chose.</div>
+                    <div class="case-learning-text">SEO, analytics, domaine, billetterie&nbsp;: sans &ccedil;a, c&rsquo;est un fichier HTML. Avec &ccedil;a, c&rsquo;est un site.</div>
                 </div>
             </div>
-            <a href="https://umaminantes.com" target="_blank" class="case-link" data-umami-event="link-umami-site">Voir le site &rarr;</a>
+            <a href="https://umaminantes.com" target="_blank" rel="noopener noreferrer" class="case-link" data-umami-event="link-umami-site">Voir le site &rarr;</a>
         </div>
     </div>
 
@@ -307,8 +301,8 @@
 <footer>
     <a href="index.html" class="footer-left">Matthieu Duval &middot; Nantes</a>
     <div class="footer-right">
-        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" data-umami-event="cta-linkedin">LinkedIn</a>
-        <a href="CV_MATTHIEU_DUVAL_Avril_2026.pdf" target="_blank" data-umami-event="cta-cv">CV</a>
+        <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" rel="noopener noreferrer" data-umami-event="cta-linkedin">LinkedIn</a>
+        <a href="CV_MATTHIEU_DUVAL_Avril_2026.pdf" download data-umami-event="cta-cv">CV</a>
     </div>
 </footer>
 
@@ -336,8 +330,8 @@
         var burger = document.getElementById('burgerBtn');
         var mobileNav = document.getElementById('mobileNav');
         var mobileClose = document.getElementById('mobileNavClose');
-        burger.addEventListener('click', function() { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; });
-        mobileClose.addEventListener('click', function() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; });
+        burger.addEventListener('click', function() { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; burger.setAttribute('aria-expanded', 'true'); });
+        mobileClose.addEventListener('click', function() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; burger.setAttribute('aria-expanded', 'false'); });
     })();
 </script>
 
