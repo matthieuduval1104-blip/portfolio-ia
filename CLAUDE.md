@@ -1,6 +1,25 @@
 # CLAUDE.md — Portfolio IA
-> Fichier de contexte principal. À lire en premier à chaque nouvelle session Claude Code.
-> Dernière mise à jour : 13 avril 2026 (session 2)
+> Dernière mise à jour : 04 mai 2026 (session 3)
+
+---
+
+## RÈGLE ABSOLUE — Démarrage de session
+
+**Lire dans cet ordre, sans exception :**
+1. `TASK_LOG.md` — source de vérité de toutes les sessions. Contient l'état exact de chaque fichier. Si ce fichier dit qu'une correction est faite, elle est faite — ne pas re-vérifier ni re-corriger.
+2. Ce fichier (CLAUDE.md) — architecture et conventions
+3. Rien d'autre avant d'avoir lu ces deux fichiers
+
+**Si TASK_LOG.md n'existe pas** → le créer immédiatement avant toute action.
+
+## RÈGLE ABSOLUE — Pendant la session
+
+Après **chaque action individuelle**, mettre à jour TASK_LOG.md avant de passer à la suivante :
+- Fichier modifié → `✅ [fichier] — [ce qui a changé en 1 ligne]`
+- Décision prise → `DÉCISION: [quoi] → [conséquence sur quels fichiers]`
+- Revue de page terminée → `REVUE [page]: [ce qui a été trouvé] → corrections appliquées [liste] / différées [liste]`
+
+**Jamais de batch.** Une action = une entrée TASK_LOG = action suivante.
 
 ---
 
@@ -34,19 +53,22 @@ ssh-add ~/.ssh/id_ed25519_github
 
 ---
 
-## Structure du site
+## Structure du site (04/05/2026 — 6 UCs)
+
+**Numérotation UC définitive :** 01=UMAMI · 02=Agent Coach · 03=Agent Veille · 04=Auto. Offres · 05=CAFÉ CoT RAG · 06=Infra IA
 
 | Fichier | Page | Statut |
 |---------|------|--------|
-| `index.html` | Page d'accueil — hero 2 colonnes, grille 7 UC, CTA LinkedIn + CV | ✅ |
-| `cafe-cot-rag.html` | UC01 — Méthodes CAFÉ, CoT & RAG (4 tabs) | ✅ |
+| `index.html` | Page d'accueil — grille 6 UCs, CTA LinkedIn + CV | ✅ |
+| `umami.html` | UC01 — UMAMI site client festival fermentation (4 tabs) | ✅ |
 | `agent-coach.html` | UC02 — Agent Coach PM (4 tabs) | ✅ |
-| `pipeline-offres.html` | UC03 — Auto. Offres Make + Airtable (4 tabs) | ✅ |
-| `agent-veille.html` | UC04 — Agent Veille PM (4 tabs) | ✅ |
-| `umami.html` | UC05 — UMAMI site client festival fermentation (4 tabs) | ✅ |
-| `agent-monitor.html` | UC06 — Agent Monitor audit prod F/P/S/C (4 tabs) | ✅ |
-| `agent-factory.html` | UC07 — Agent Factory CLI 6 phases (4 tabs) | ✅ |
+| `agent-veille.html` | UC03 — Agent Veille PM (4 tabs) | ✅ |
+| `pipeline-offres.html` | UC04 — Auto. Offres Make + Airtable (4 tabs) | ✅ |
+| `cafe-cot-rag.html` | UC05 — Méthodes CAFÉ, CoT & RAG (4 tabs) | ✅ |
+| `infra-ia.html` | UC06 — Infra IA · pipeline 8 agents, monitoring, token tracking (4 tabs) | ✅ |
 | `styles.css` | CSS centralisé (partagé par toutes les pages) | ✅ |
+| `agent-monitor.html` | **ARCHIVÉ** — redirect meta refresh → infra-ia.html | Redirect |
+| `agent-factory.html` | **ARCHIVÉ** — redirect meta refresh → infra-ia.html | Redirect |
 | `UC4/index.html` | Book (méta-cas) — orphelin, plus dans la nav | Archive |
 | `ce-portfolio.html` | Source Agent Coach pour UC4 — **ne pas modifier, ne pas déployer** | Archive |
 | `OLD/` | Anciennes versions archivées — **ne pas toucher** | Archive |
@@ -68,7 +90,11 @@ ssh-add ~/.ssh/id_ed25519_github
 - Lisible en 5 minutes
 - Nav : "Agent Veille" (sans "de") sur toutes les pages
 - Zéro CSS inline dans les fichiers HTML — tout dans `styles.css`
-- Tous les liens externes (LinkedIn, CV, Notion, dashboard) : `target="_blank"`
+- Liens externes (LinkedIn, Notion, dashboard) : `target="_blank" rel="noopener noreferrer"`
+- CV : `download` uniquement — jamais `target="_blank"` sur le CV
+- Burger : `aria-expanded="false" aria-controls="mobileNav"` + JS toggle `setAttribute('aria-expanded', ...)`
+- hero-eyebrow : balise `<p>` obligatoire (jamais `<div>`)
+- Zéro tiret cadratin (— ou &mdash;) dans le contenu visible
 
 ---
 
@@ -195,65 +221,51 @@ ssh-add ~/.ssh/id_ed25519_github
 
 ---
 
-## État actuel des pages (13/04/2026 — session 2)
+## État actuel des pages (04/05/2026 — session 3)
+
+**Nav order (toutes pages) :** UMAMI / Agent Coach / Agent Veille / Auto. Offres / CAFÉ CoT RAG / Infra IA
 
 **index.html** :
-- Grille 7 UCs (01→07), Factory en wide card (dernière)
-- Nav 7 liens : CAFÉ CoT RAG / Agent Coach / Auto. Offres / Agent Veille / UMAMI / Monitor / Factory
-- Book retiré de la nav et de la grille (UC4/index.html reste en archive)
-- Hero pitch : "J'ai piloté des produits du Fooding au SaaS B2B chez R3." (verbe actif)
-- Tracking Umami complet : 7 UC cards + 2 hero CTAs + 2 mobile nav + 2 footer
+- Grille 6 UCs, ordre : UMAMI(01) / Coach(02) / Veille(03) / Offres(04) / CAFÉ(05) / Infra(06)
+- Nav 6 liens dans l'ordre défini
+- Burger : aria-expanded + aria-controls + JS toggle ✅
+- CV : download only (mobile-nav-footer + footer) ✅
 
-**cafe-cot-rag.html (UC01)** :
-- Eyebrow : "Use case 01 · Formation GenAI"
-- Hero pitch en première personne active
-- Stats : "9/10 avec CoT · 7/10 sans", "95% hit rate RAG · vs 30% ChatGPT sans RAG"
-- "dual-LLM" → "orchestration à deux modèles"
-- 4 tabs : Multi-LLM · CAFÉ · CoT · RAG — tous trackés Umami
+**umami.html (UC01)** :
+- Eyebrow : "Use case 01"
+- Hero pitch : "Conçu, développé et déployé entièrement avec Claude Code en 10 jours."
+- Stats : "0 Dépendance technique · client autonome"
+- Learning Contexte supprimé (défensif) — Construction + Décisions prouvent par l'exemple
+- 4 tabs : Contexte / Construction / Décisions / Live — tous trackés Umami
 
 **agent-coach.html (UC02)** :
 - Eyebrow : "Use case 02 · Formation GenAI"
 - Stats : "6 Modes", "13 Sections de profil RAG documentées", "4 Candidatures jan-fév 2026"
-- Meta/og mis à jour : "13 sections" (cohérent avec stat affichée)
 - 4 tabs : Simulation fit · 6 modes · Analyse d'offre · Dashboard — tous trackés Umami
 
-**pipeline-offres.html (UC03)** :
+**agent-veille.html (UC03)** :
 - Eyebrow : "Use case 03"
+- Stats : "18 Sources · <10 min de lecture", "6 Sections", "0 min Production manuelle"
+- Référence "(UC2)" supprimée → "l'Agent Coach"
+- 4 tabs : Objectifs / Construction / System prompt / Décisions produit — tous trackés Umami
+
+**pipeline-offres.html (UC04)** :
+- Eyebrow : "Use case 04"
 - Stats : "3 Sources", "3 Scénarios Make", "10 min / semaine"
 - 4 tabs : Problème / Architecture / Décisions produit / En usage — tous trackés Umami
 
-**agent-veille.html (UC04)** :
-- Eyebrow : "Use case 04"
-- Hero pitch restructuré : "Chaque lundi à 10h, un agent scanne..." (impersonnel → actif)
-- Référence "(UC2)" supprimée → "l'Agent Coach"
-- Stats : "18 Sources · <10 min de lecture", "6 Sections", "0 min Production manuelle"
-- 4 tabs : Objectifs / Construction / System prompt / Décisions produit — tous trackés Umami
+**cafe-cot-rag.html (UC05)** :
+- Eyebrow : "Use case 05 · Formation GenAI"
+- Stats : "9/10 avec CoT · 7/10 sans", "95% hit rate RAG · vs 30% ChatGPT sans RAG"
+- 4 tabs : Multi-LLM · CAFÉ · CoT · RAG — tous trackés Umami
 
-**umami.html (UC05)** :
-- Hero pitch : "Conçu, développé et déployé entièrement avec Claude Code en 10 jours."
-- Stats : "0 Dépendance technique · client autonome"
-- Accord "image mal cadrée" corrigé
-- 4 tabs : Contexte / Construction / Décisions / Live — tous trackés Umami
+**infra-ia.html (UC06)** :
+- Eyebrow : "Use case 06 · Systèmes & outillage IA"
+- Hero pitch : pipeline Team Produit complet, 8 agents, angle Head of Product (pas technique)
+- 4 tabs : à vérifier (revue 5-agents en cours)
 
-**agent-monitor.html (UC06)** :
-- Hero pitch en première personne : "J'ai construit un agent qui audite..."
-- F/P/S/C explicité dans le pitch : "(Fonctionnel / Précis / Stable / Couvrant)"
-- Stats : "90–91% Scores mesurés", "4 Critères F/P/S/C", "O/N Validation humaine"
-- 4 tabs : Problème / Architecture / Scoring / Décisions — tous trackés Umami
-
-**agent-factory.html (UC07)** :
-- Hero pitch : "chemins figés, années codées en dur" (jargon technique supprimé)
-- "skippable" → "facultative" (×3)
-- "paths hardcodés" → "chemins figés / chemins de fichiers figés" (partout)
-- Stats : "6 phases", "3 fichiers générés", "0 Doc oubliée · Phase 6 en finally"
-- 4 tabs : Problème / 6 phases / Anti-patterns / Décisions — tous trackés Umami
-
----
-
-### CSS — nettoyage session 1 (13/04/2026)
-- Suppression ~60 lignes de CSS mort : `.hero-tools-block`, `.tools-row`, `.tool-chip`, `.hero-tagline`, `.hero-divider`, blocs UC GRID index, résidus mobile désactivés
-- Ajout `.content-label` (remplace l'inline style dans agent-veille.html)
-- Commentaires de sections mis à jour (UC3-spécifique → générique)
+**agent-monitor.html** : ARCHIVÉ — meta refresh redirect → infra-ia.html
+**agent-factory.html** : ARCHIVÉ — meta refresh redirect → infra-ia.html
 
 ---
 
