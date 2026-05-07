@@ -85,7 +85,7 @@
 
 <div class="tabs">
     <div class="tabs-inner">
-        <button class="tab active" data-target="case-0" data-umami-event="infra-tab-pipeline">Pipeline</button>
+        <button class="tab active" data-target="case-diagram" data-umami-event="infra-tab-process">Process</button>
         <button class="tab" data-target="case-1" data-umami-event="infra-tab-monitoring">Monitoring &amp; co&ucirc;ts</button>
         <button class="tab" data-target="case-2" data-umami-event="infra-tab-cerveau">Second cerveau</button>
         <button class="tab" data-target="case-3" data-umami-event="infra-tab-deploiement">D&eacute;ploiement</button>
@@ -98,8 +98,125 @@
 
     <!-- TAB 1 : Pipeline -->
 
+    <!-- Pager 01 : diagramme pipeline -->
+    <div class="case active" id="case-diagram">
+
+        <!-- Personal OS — Activation contextuelle par brief -->
+        <div class="case-diagram">
+            <p class="os-preamble">Tout brief n'appelle pas les m&ecirc;mes comp&eacute;tences. Le PM lit le contexte, active les agents n&eacute;cessaires et maintient les autres en r&eacute;serve.<br>Activer juste, c'est gagner en v&eacute;locit&eacute; tout en ma&icirc;trisant sa consommation en tokens.</p>
+            <svg class="os-svg" viewBox="0 0 960 330" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Personal OS : 3 configurations d'activation selon le type de brief">
+
+                <!-- s&eacute;parateurs verticaux -->
+                <line class="os-sep" x1="320" y1="0" x2="320" y2="330"/>
+                <line class="os-sep" x1="640" y1="0" x2="640" y2="330"/>
+
+                <!-- ─── HUB 1 · CORRECTION · actifs : FRONT + OPS ─── -->
+                <text class="os-brief"    x="160" y="22" text-anchor="middle">CORRECTION</text>
+                <text class="os-brief-ex" x="160" y="38" text-anchor="middle">ajout composant</text>
+
+                <line class="os-line-off" x1="160" y1="185" x2="160" y2="115"/>
+                <line class="os-line-on"  x1="160" y1="185" x2="234" y2="141"/>
+                <line class="os-line-off" x1="160" y1="185" x2="253" y2="201"/>
+                <line class="os-line-off" x1="160" y1="185" x2="201" y2="248"/>
+                <line class="os-line-off" x1="160" y1="185" x2="119" y2="248"/>
+                <line class="os-line-on"  x1="160" y1="185" x2="67"  y2="201"/>
+                <line class="os-line-off" x1="160" y1="185" x2="86"  y2="141"/>
+
+                <circle class="os-pm"      cx="160" cy="185" r="22"/>
+                <text   class="os-pm-lbl"   x="160"  y="185" text-anchor="middle" dominant-baseline="central">PM</text>
+
+                <circle class="os-node-off" cx="160" cy="115" r="16"/>
+                <circle class="os-node-on"  cx="234" cy="141" r="16"/>
+                <circle class="os-node-off" cx="253" cy="201" r="16"/>
+                <circle class="os-node-off" cx="201" cy="248" r="16"/>
+                <circle class="os-node-off" cx="119" cy="248" r="16"/>
+                <circle class="os-node-on"  cx="67"  cy="201" r="16"/>
+                <circle class="os-node-off" cx="86"  cy="141" r="16"/>
+
+                <text class="os-lbl-off" x="160" y="83"  text-anchor="middle">DESIGN</text>
+                <text class="os-lbl-on"  x="258" y="141" text-anchor="start"  dominant-baseline="central">FRONT</text>
+                <text class="os-lbl-off" x="277" y="201" text-anchor="start"  dominant-baseline="central">BACK</text>
+                <text class="os-lbl-off" x="201" y="273" text-anchor="middle">REVIEW</text>
+                <text class="os-lbl-off" x="119" y="273" text-anchor="middle">QA</text>
+                <text class="os-lbl-on"  x="43"  y="201" text-anchor="end"    dominant-baseline="central">OPS</text>
+                <text class="os-lbl-off" x="62"  y="133" text-anchor="end">COPY</text>
+
+                <text class="os-count" x="160" y="314" text-anchor="middle">2 AGENTS + PM</text>
+
+                <!-- ─── HUB 2 · LIVRAISON · actifs : DESIGN + FRONT + OPS ─── -->
+                <text class="os-brief"    x="480" y="22" text-anchor="middle">LIVRAISON</text>
+                <text class="os-brief-ex" x="480" y="38" text-anchor="middle">site UMAMI</text>
+
+                <line class="os-line-on"  x1="480" y1="185" x2="480" y2="115"/>
+                <line class="os-line-on"  x1="480" y1="185" x2="554" y2="141"/>
+                <line class="os-line-off" x1="480" y1="185" x2="573" y2="201"/>
+                <line class="os-line-off" x1="480" y1="185" x2="521" y2="248"/>
+                <line class="os-line-off" x1="480" y1="185" x2="439" y2="248"/>
+                <line class="os-line-on"  x1="480" y1="185" x2="387" y2="201"/>
+                <line class="os-line-off" x1="480" y1="185" x2="406" y2="141"/>
+
+                <circle class="os-pm"      cx="480" cy="185" r="22"/>
+                <text   class="os-pm-lbl"   x="480"  y="185" text-anchor="middle" dominant-baseline="central">PM</text>
+
+                <circle class="os-node-on"  cx="480" cy="115" r="16"/>
+                <circle class="os-node-on"  cx="554" cy="141" r="16"/>
+                <circle class="os-node-off" cx="573" cy="201" r="16"/>
+                <circle class="os-node-off" cx="521" cy="248" r="16"/>
+                <circle class="os-node-off" cx="439" cy="248" r="16"/>
+                <circle class="os-node-on"  cx="387" cy="201" r="16"/>
+                <circle class="os-node-off" cx="406" cy="141" r="16"/>
+
+                <text class="os-lbl-on"  x="480" y="83"  text-anchor="middle">DESIGN</text>
+                <text class="os-lbl-on"  x="578" y="141" text-anchor="start"  dominant-baseline="central">FRONT</text>
+                <text class="os-lbl-off" x="597" y="201" text-anchor="start"  dominant-baseline="central">BACK</text>
+                <text class="os-lbl-off" x="521" y="273" text-anchor="middle">REVIEW</text>
+                <text class="os-lbl-off" x="439" y="273" text-anchor="middle">QA</text>
+                <text class="os-lbl-on"  x="363" y="201" text-anchor="end"    dominant-baseline="central">OPS</text>
+                <text class="os-lbl-off" x="382" y="133" text-anchor="end">COPY</text>
+
+                <text class="os-count" x="480" y="314" text-anchor="middle">3 AGENTS + PM</text>
+
+                <!-- ─── HUB 3 · LANCEMENT · actifs : BACK + REVIEW + QA + OPS ─── -->
+                <text class="os-brief"    x="800" y="22" text-anchor="middle">LANCEMENT</text>
+                <text class="os-brief-ex" x="800" y="38" text-anchor="middle">agent Veille PM</text>
+
+                <line class="os-line-off" x1="800" y1="185" x2="800" y2="115"/>
+                <line class="os-line-off" x1="800" y1="185" x2="874" y2="141"/>
+                <line class="os-line-on"  x1="800" y1="185" x2="893" y2="201"/>
+                <line class="os-line-on"  x1="800" y1="185" x2="841" y2="248"/>
+                <line class="os-line-on"  x1="800" y1="185" x2="759" y2="248"/>
+                <line class="os-line-on"  x1="800" y1="185" x2="707" y2="201"/>
+                <line class="os-line-off" x1="800" y1="185" x2="726" y2="141"/>
+
+                <circle class="os-pm"      cx="800" cy="185" r="22"/>
+                <text   class="os-pm-lbl"   x="800"  y="185" text-anchor="middle" dominant-baseline="central">PM</text>
+
+                <circle class="os-node-off" cx="800" cy="115" r="16"/>
+                <circle class="os-node-off" cx="874" cy="141" r="16"/>
+                <circle class="os-node-on"  cx="893" cy="201" r="16"/>
+                <circle class="os-node-on"  cx="841" cy="248" r="16"/>
+                <circle class="os-node-on"  cx="759" cy="248" r="16"/>
+                <circle class="os-node-on"  cx="707" cy="201" r="16"/>
+                <circle class="os-node-off" cx="726" cy="141" r="16"/>
+
+                <text class="os-lbl-off" x="800" y="83"  text-anchor="middle">DESIGN</text>
+                <text class="os-lbl-off" x="898" y="141" text-anchor="start"  dominant-baseline="central">FRONT</text>
+                <text class="os-lbl-on"  x="917" y="201" text-anchor="start"  dominant-baseline="central">BACK</text>
+                <text class="os-lbl-on"  x="841" y="273" text-anchor="middle">REVIEW</text>
+                <text class="os-lbl-on"  x="759" y="273" text-anchor="middle">QA</text>
+                <text class="os-lbl-on"  x="683" y="201" text-anchor="end"    dominant-baseline="central">OPS</text>
+                <text class="os-lbl-off" x="702" y="133" text-anchor="end">COPY</text>
+
+                <text class="os-count" x="800" y="314" text-anchor="middle">4 AGENTS + PM</text>
+
+            </svg>
+        </div>
+
+    </div>
+
     <!-- CASE 01 — 8 agents, 1 pipeline -->
-    <div class="case active" id="case-0">
+    <div class="case" id="case-0">
         <div class="case-visual">
             <div class="case-method">Architecture &middot; R&ocirc;les d&eacute;finis &middot; Output contracts</div>
             <div class="case-impact-block">
@@ -321,18 +438,18 @@
         });
 
         var tabCases = [
-            ['case-0', 'case-0-2'],
+            ['case-diagram', 'case-0', 'case-0-2'],
             ['case-1', 'case-1-2', 'case-1-3'],
             ['case-2', 'case-2-2'],
             ['case-3']
         ];
 
         var tabs = document.querySelectorAll('.tab');
-        var allCaseIds = ['case-0', 'case-0-2', 'case-1', 'case-1-2', 'case-1-3', 'case-2', 'case-2-2', 'case-3'];
+        var allCaseIds = ['case-diagram', 'case-0', 'case-0-2', 'case-1', 'case-1-2', 'case-1-3', 'case-2', 'case-2-2', 'case-3'];
 
         var pagerBar = document.getElementById('casePagerBar');
         var tabCaseLabels = [
-            ['&Eacute;quipe', 'R&eacute;gression'],
+            ['Diagramme', '&Eacute;quipe', 'R&eacute;gression'],
             ['Audit', 'Tokens', 'Scores'],
             ['Structure', 'M&eacute;moire'],
             []

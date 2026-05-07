@@ -240,6 +240,26 @@ footer { border-top: 1px solid #E8E8E8; height: 52px; padding: 0 48px; display: 
 .scroll-top.visible { opacity: 1; visibility: visible; }
 
 /* ══════════════════════════════════════════════
+   PERSONAL OS — UC06
+   ══════════════════════════════════════════════ */
+
+.case-diagram  { grid-column: 1 / -1; padding: 48px; overflow-x: auto; }
+.os-preamble   { font-size: 14px; font-weight: 400; color: #555555; line-height: 1.6; margin-bottom: 36px; border-left: 2px solid #4A7C59; padding-left: 16px; }
+.os-svg        { width: 100%; height: auto; display: block; min-width: 600px; }
+.os-sep        { stroke: #F0F0F0; stroke-width: 1; }
+.os-brief      { font-family: 'Satoshi', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; fill: #0A0A0A; }
+.os-brief-ex   { font-family: 'Satoshi', sans-serif; font-size: 8px; font-weight: 500; fill: #AAAAAA; }
+.os-line-on    { stroke: #0A0A0A; stroke-width: 1.5; fill: none; }
+.os-line-off   { stroke: #EEEEEE; stroke-width: 1; stroke-dasharray: 4 3; fill: none; }
+.os-pm         { fill: #4A7C59; }
+.os-pm-lbl     { font-family: 'Satoshi', sans-serif; font-size: 9px; font-weight: 700; fill: #FFFFFF; }
+.os-node-on    { fill: #FFFFFF; stroke: #0A0A0A; stroke-width: 1.5; }
+.os-node-off   { fill: #FFFFFF; stroke: #EEEEEE; stroke-width: 1; }
+.os-lbl-on     { font-family: 'Satoshi', sans-serif; font-size: 7px; font-weight: 700; letter-spacing: 0.5px; fill: #0A0A0A; }
+.os-lbl-off    { font-family: 'Satoshi', sans-serif; font-size: 7px; font-weight: 400; fill: #DDDDDD; }
+.os-count      { font-family: 'Satoshi', sans-serif; font-size: 8px; font-weight: 600; letter-spacing: 1.5px; fill: #4A7C59; }
+
+/* ══════════════════════════════════════════════
    BURGER / MOBILE NAV
    ══════════════════════════════════════════════ */
 
@@ -289,6 +309,9 @@ footer { border-top: 1px solid #E8E8E8; height: 52px; padding: 0 48px; display: 
     .case-pager-bar { padding: 0 24px; overflow-x: auto; }
     .case-pager-btn { padding: 10px 16px 8px 16px; white-space: nowrap; }
     .tab { padding: 14px 16px; white-space: nowrap; }
+
+    /* Diagram */
+    .case-diagram { padding: 32px 24px 28px; }
 
     /* Cases */
     .case { grid-template-columns: 1fr; min-height: auto; }
