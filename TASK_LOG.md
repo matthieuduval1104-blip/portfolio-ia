@@ -4,6 +4,18 @@
 
 ---
 
+## Session 2026-05-14
+
+### Actions ✅ complétées
+- `pitch-infra.html` — créé : page de présentation mobile-first Infra IA (note B2B + diagramme workflow + 3 sections + closing Head of Product). Branche : claude/ai-infrastructure-presentation-stYuZ
+
+### DÉCISIONS 2026-05-14
+- pitch-infra.html est un fichier standalone (CSS embarqué), pas intégré dans infra-ia.html
+- Cible : Head of Product / CPO en présentation mobile
+- Structure : header + stats (8/12/91%) + diagramme 3 boîtes + note 3 sections + closing squad
+
+---
+
 ## Session 2026-05-04
 
 ### Décisions actées
