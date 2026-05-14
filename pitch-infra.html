@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infra IA &mdash; Matthieu Duval</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Satoshi', sans-serif;
+            background: #FFFFFF;
+            color: #0A0A0A;
+            max-width: 540px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        /* ── HEADER ── */
+        .header {
+            padding: 44px 24px 36px;
+            border-bottom: 1px solid #E8E8E8;
+        }
+
+        .eyebrow {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: #AAAAAA;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(60px, 18vw, 80px);
+            font-weight: 900;
+            letter-spacing: -4px;
+            text-transform: uppercase;
+            line-height: 0.9;
+            color: #0A0A0A;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #AAAAAA;
+            line-height: 1.5;
+        }
+
+        /* ── STATS ── */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border-bottom: 1px solid #E8E8E8;
+        }
+
+        .stat {
+            padding: 20px 16px;
+        }
+
+        .stat + .stat {
+            border-left: 1px solid #E8E8E8;
+        }
+
+        .stat-num {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            color: #0A0A0A;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .stat-label {
+            font-size: 10px;
+            color: #AAAAAA;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            line-height: 1.4;
+        }
+
+        /* ── DIAGRAM ── */
+        .diagram-wrap {
+            padding: 28px 24px;
+            border-bottom: 1px solid #E8E8E8;
+        }
+
+        .diagram-title {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #AAAAAA;
+            margin-bottom: 14px;
+        }
+
+        .diagram {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #E8E8E8;
+        }
+
+        .diagram > * + * {
+            border-top: 1px solid #E8E8E8;
+        }
+
+        .diag-box {
+            padding: 18px 20px;
+        }
+
+        .diag-box--cerveau {
+            border-left: 2px solid #4A7C59;
+        }
+
+        .diag-box--pipeline {
+            background: #0A0A0A;
+        }
+
+        .diag-box--monitoring {
+            border-left: 2px solid #CCCCCC;
+        }
+
+        .diag-name {
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #0A0A0A;
+            margin-bottom: 6px;
+        }
+
+        .diag-box--pipeline .diag-name {
+            color: #FFFFFF;
+        }
+
+        .diag-desc {
+            font-size: 12px;
+            color: #888888;
+            line-height: 1.5;
+        }
+
+        .diag-box--pipeline .diag-desc {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .diag-gate {
+            margin-top: 9px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #4A7C59;
+        }
+
+        .diag-conn {
+            background: #F7F7F7;
+            padding: 7px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .diag-conn--center {
+            justify-content: center;
+        }
+
+        .diag-conn-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .diag-arrow {
+            font-size: 11px;
+            color: #4A7C59;
+            font-weight: 700;
+        }
+
+        .diag-conn-label {
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #AAAAAA;
+        }
+
+        /* ── NOTE ── */
+        .note {
+            border-bottom: 1px solid #E8E8E8;
+        }
+
+        .note-section {
+            padding: 28px 24px;
+            border-bottom: 1px solid #E8E8E8;
+        }
+
+        .note-section:last-child {
+            border-bottom: none;
+        }
+
+        .note-h {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #4A7C59;
+            margin-bottom: 12px;
+        }
+
+        .note-p {
+            font-size: 16px;
+            color: #444444;
+            line-height: 1.75;
+        }
+
+        /* ── CLOSING ── */
+        .closing {
+            padding: 32px 24px 44px;
+            border-bottom: 1px solid #E8E8E8;
+        }
+
+        .closing-squad {
+            font-size: 14px;
+            color: #555555;
+            line-height: 1.6;
+            margin-bottom: 24px;
+            padding: 14px 16px;
+            background: #F7F7F7;
+            border-left: 2px solid #4A7C59;
+        }
+
+        .closing-text {
+            font-size: 19px;
+            font-weight: 700;
+            color: #0A0A0A;
+            line-height: 1.4;
+            letter-spacing: -0.3px;
+            margin-bottom: 28px;
+        }
+
+        .closing-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: #0A0A0A;
+            text-decoration: none;
+            border-bottom: 1px solid #0A0A0A;
+            padding-bottom: 2px;
+            transition: opacity 0.15s;
+        }
+
+        .closing-cta:hover { opacity: 0.4; }
+
+        /* ── FOOTER ── */
+        .page-footer {
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-footer-text {
+            font-size: 10px;
+            color: #CCCCCC;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .page-footer-link {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #AAAAAA;
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .page-footer-link:hover { color: #0A0A0A; }
+
+        /* ── DESKTOP ── */
+        @media (min-width: 541px) {
+            body {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                border: 1px solid #E8E8E8;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <p class="eyebrow">Matthieu Duval &middot; Senior PM &middot; 2026</p>
+    <h1>Infra&nbsp;IA</h1>
+    <p class="subtitle">Pipeline de production &middot; Monitoring &middot; Second cerveau</p>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+    <div class="stat">
+        <div class="stat-num">8</div>
+        <div class="stat-label">Agents<br>sp&eacute;cialis&eacute;s</div>
+    </div>
+    <div class="stat">
+        <div class="stat-num">12</div>
+        <div class="stat-label">Projets<br>livr&eacute;s &middot; 3 mois</div>
+    </div>
+    <div class="stat">
+        <div class="stat-num">91%</div>
+        <div class="stat-label">Score<br>fiabilit&eacute;</div>
+    </div>
+</div>
+
+<!-- DIAGRAM -->
+<div class="diagram-wrap">
+    <p class="diagram-title">Vue d&rsquo;ensemble</p>
+    <div class="diagram">
+
+        <div class="diag-box diag-box--cerveau">
+            <div class="diag-name">Second cerveau</div>
+            <div class="diag-desc">5 zones &middot; fichier init par projet &middot; &eacute;tat global &middot; patterns valid&eacute;s</div>
+        </div>
+
+        <div class="diag-conn">
+            <div class="diag-conn-item">
+                <span class="diag-arrow">&#8595;</span>
+                <span class="diag-conn-label">Contexte charg&eacute;</span>
+            </div>
+            <div class="diag-conn-item">
+                <span class="diag-conn-label">Capitalisation</span>
+                <span class="diag-arrow">&#8593;</span>
+            </div>
+        </div>
+
+        <div class="diag-box diag-box--pipeline">
+            <div class="diag-name">Pipeline 8 agents</div>
+            <div class="diag-desc">Strat&eacute;gie &middot; Design &middot; Front &middot; Back &middot; Relecture &middot; QA &middot; Ops &middot; R&eacute;daction</div>
+            <div class="diag-gate">Validation humaine aux points critiques</div>
+        </div>
+
+        <div class="diag-conn diag-conn--center">
+            <div class="diag-conn-item">
+                <span class="diag-arrow">&#8595;</span>
+                <span class="diag-conn-label">Livrables produits</span>
+            </div>
+        </div>
+
+        <div class="diag-box diag-box--monitoring">
+            <div class="diag-name">Monitoring</div>
+            <div class="diag-desc">Audit quotidien &middot; 4 crit&egrave;res &middot; score 90&ndash;91&nbsp;%<br>Co&ucirc;ts et baselines trac&eacute;s par livrable</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- NOTE -->
+<div class="note">
+
+    <div class="note-section">
+        <div class="note-h">Un pipeline de production structur&eacute;</div>
+        <p class="note-p">Huit agents sp&eacute;cialis&eacute;s couvrent l&rsquo;ensemble du cycle : strat&eacute;gie produit, design, d&eacute;veloppement front et back, relecture qualit&eacute;, QA, ops, r&eacute;daction. Chaque agent a un r&ocirc;le exclusif et produit un livrable dans un format d&eacute;fini &agrave; l&rsquo;avance. Les d&eacute;cisions engageant la qualit&eacute; ou la s&eacute;curit&eacute; passent par une validation humaine obligatoire. 12 projets livr&eacute;s en 3 mois : sites web, agents autonomes, dashboards, scripts.</p>
+    </div>
+
+    <div class="note-section">
+        <div class="note-h">Monitoring et tra&ccedil;abilit&eacute; en production</div>
+        <p class="note-p">Deux agents assurent la supervision continue. Le premier audite quotidiennement tous les agents actifs sur 4 crit&egrave;res : fonctionnement, pr&eacute;cision, stabilit&eacute;, couverture des besoins. Il d&eacute;tecte automatiquement les r&eacute;gressions entre deux runs. Scores actuels : 90 &agrave; 91&nbsp;%. Le second trace les co&ucirc;ts par livrable, avec des baselines accumul&eacute;es projet apr&egrave;s projet.</p>
+    </div>
+
+    <div class="note-section">
+        <div class="note-h">Second cerveau : m&eacute;moire structur&eacute;e</div>
+        <p class="note-p">L&rsquo;espace de travail est organis&eacute; en 5 zones : Inbox, projets actifs, responsabilit&eacute;s continues, ressources, archive. Chaque projet dispose d&rsquo;un fichier d&rsquo;initialisation charg&eacute; automatiquement &agrave; chaque session : &eacute;tat, contraintes, d&eacute;cisions prises, stack. Une base de connaissances capitalise les patterns valid&eacute;s, les anti-patterns et les templates r&eacute;utilisables.</p>
+    </div>
+
+</div>
+
+<!-- CLOSING -->
+<div class="closing">
+    <p class="closing-squad">R&ocirc;les exclusifs, gates humains sur les d&eacute;cisions critiques, scoring continu : ces patterns sont directement adoptables dans un squad produit. Ce ne sont pas des outils. Ce sont des r&eacute;flexes de management appliqu&eacute;s aux agents IA.</p>
+    <p class="closing-text">Pas un prototype : un syst&egrave;me en usage quotidien, auditable, avec des co&ucirc;ts mesur&eacute;s et des livrables r&eacute;els.</p>
+    <a href="https://www.linkedin.com/in/matthieu-duval-pm/" target="_blank" rel="noopener noreferrer" class="closing-cta">LinkedIn &#8594;</a>
+</div>
+
+<!-- FOOTER -->
+<div class="page-footer">
+    <span class="page-footer-text">matthieu-duval.com &middot; 2026</span>
+    <a href="infra-ia.html" class="page-footer-link">Vue compl&egrave;te &#8594;</a>
+</div>
+
+</body>
+</html>
