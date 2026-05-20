@@ -261,8 +261,11 @@ ssh-add ~/.ssh/id_ed25519_github
 
 **infra-ia.html (UC06)** :
 - Eyebrow : "Use case 06 · Systèmes & outillage IA"
-- Hero pitch : pipeline Team Produit complet, 8 agents, angle Head of Product (pas technique)
-- 4 tabs : à vérifier (revue 5-agents en cours)
+- Hero pitch : pipeline Team Produit complet, 9 agents (ajout /team:secu — 20/05/2026), angle Head of Product (pas technique)
+- 4 tabs : Process / Monitoring & coûts / Second cerveau / Déploiement
+- Tab Process : pager 4 sous-pages (Process / Equipe / Régression / Sécurité)
+- Tab Process > Process : Personal OS — 3 mini-hubs (Correction / Livraison / Lancement) + preamble 2 lignes. CSS classes `os-*` dans styles.css.
+- Tab Process > Sécurité (case-0-3) : SECU gate — audit sécu avant deploy, finding Brisquard (1 critique + 2 risques).
 
 **agent-monitor.html** : ARCHIVÉ — meta refresh redirect → infra-ia.html
 **agent-factory.html** : ARCHIVÉ — meta refresh redirect → infra-ia.html
