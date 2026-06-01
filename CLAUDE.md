@@ -1,5 +1,5 @@
 # CLAUDE.md — Portfolio IA
-> Dernière mise à jour : 04 mai 2026 (session 3)
+> Dernière mise à jour : 28 mai 2026 (session 4)
 
 ---
 
@@ -80,6 +80,34 @@ ssh-add ~/.ssh/id_ed25519_github
 - **Claude Code** : intégration dans le projet, extraction CSS vers `styles.css`, cohérence entre les pages, maintenance du CLAUDE.md.
 
 **Règle absolue** : le contenu se prépare dans Claude.ai → Claude Code intègre. On ne touche jamais directement au HTML pour du contenu éditorial.
+
+---
+
+## Ordre navigation (source de vérité — 01/06/2026)
+
+Ordre définitif sur toutes les pages (desktop `.nav-links` + mobile `.mobile-nav-links`) :
+```
+Infra IA → CAFÉ, CoT & RAG → UMAMI → Agent Coach → Agent Veille → Auto. Offres
+```
+Chaque page a `class="active"` sur son propre lien.
+
+---
+
+## Process pré-déploiement OBLIGATOIRE
+
+**Avant tout `git push`, AUTOMATIQUEMENT et sans attendre que Matthieu le demande :**
+
+1. **Runner le script de vérification** : `bash scripts/pre-deploy-check.sh`
+   - Vérifie l'ordre nav sur les 7 pages (desktop + mobile)
+   - Vérifie la structure hero index.html
+   - Vérifie les classes active
+   - Bloque le push si erreur détectée (hook git `.git/hooks/pre-push`)
+
+2. **Spawner le Reviewer** pour inspecter les fichiers modifiés (pas de deploy sans review)
+
+3. **Seulement si tout passe** : `git add [fichiers] && git commit && git push`
+
+Le hook `.git/hooks/pre-push` est actif et bloque automatiquement les pushes qui échouent au script.
 
 ---
 
@@ -230,6 +258,8 @@ ssh-add ~/.ssh/id_ed25519_github
 - Nav 6 liens dans l'ordre défini
 - Burger : aria-expanded + aria-controls + JS toggle ✅
 - CV : download only (mobile-nav-footer + footer) ✅
+- Hero (28/05/2026) : refonte complète — H1 3 lignes / `.hero-cover-body` wrapper / `.hero-cover-pitch` / `.hero-cover-divider` (hr) / `.hero-cover-grid` 3 colonnes (Infrastructure · Production · Résultats) / `.hero-cover-ctas`
+- Hero disposition : `justify-content: space-between` sur `.hero-cover` — H1 en haut, body en bas, zéro scroll
 
 **umami.html (UC01)** :
 - Eyebrow : "Use case 01"

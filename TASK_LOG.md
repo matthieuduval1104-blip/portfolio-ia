@@ -184,9 +184,112 @@ Objectif : montrer l'intelligence d'activation contextuelle de l'équipe agents,
 - SVG : 3 occurrences "SECU" (HUB1 off, HUB2 off, HUB3 on) ✅
 - hero-stat-num contient "9" ✅
 
+---
+
+## Session 2026-05-28 — Hero index + LinkedIn post + Visuel
+
+### Contexte
+Refonte du hero index.html (disposition + copy) + création du post LinkedIn infra IA + visuel LinkedIn.
+
+### Décisions actées
+- Hero index : angle "infra IA" → second cerveau en premier, team produit ensuite, outputs en preuve
+- Hero index : H1 sur 3 lignes (Senior PM. / Dix ans de produit. / Un pipeline de livraison IA.)
+- Hero index : sous-paragraphe remplacé par grille 3 colonnes (Infrastructure / Production / Résultats)
+- Hero index : disposition `justify-content: space-between` sur `.hero-cover` — zéro scroll sur la home
+- LinkedIn post : structure 3 piliers (Second cerveau → Team Produit → Outputs)
+- LinkedIn post : Team Produit = 11 agents (ajout Token — suivi coûts API)
+- Visuel LinkedIn : pipeline vertical 3 couches (Second Cerveau noir / Team Produit gris / Outputs blanc)
+
+### Actions ✅ complétées
+- `index.html` : hero entièrement restructuré — H1 3 lignes, `.hero-cover-body`, `.hero-cover-pitch`, `.hero-cover-divider`, `.hero-cover-grid` (3 cols), `.hero-cover-ctas` ✅
+- `styles.css` : nouvelles classes hero — `.hero-cover-body`, `.hero-cover-divider`, `.hero-cover-grid`, `.hero-cover-col-label`, `.hero-cover-col-text` + suppression `.hero-cover-foot`, `.hero-cover-sub` ✅
+- Git commit + push ✅
+- `outputs/20260528_linkedin-visual-A.html` : visuel LinkedIn créé (pipeline 3 couches, 1080×1080px) ✅
+- `outputs/20260528_linkedin-visual-A.png` : export PNG via Playwright ✅
+
+### Livrables LinkedIn (non committés — usage Matthieu)
+- **Post LinkedIn** : texte final validé (voir ci-dessous)
+- **Visuel** : `outputs/20260528_linkedin-visual-A.png`
+
+### Texte post LinkedIn (version finale validée)
+```
+J'ai construit un pipeline de livraison IA avec Claude Code depuis janvier.
+Pas une démo. En production.
+
+Voilà comment ça fonctionne.
+
+Un second cerveau d'abord. Chaque projet a ses fichiers organisés de façon prévisible : état d'avancement, règles immuables, historique des décisions. En parallèle, une base de connaissances à jour : les gens rencontrés, les échanges importants, les choix pris. Avant d'agir, chaque agent sait où chercher. Le système ne repart jamais de zéro.
+
+Une Team Produit dessus. 11 agents spécialisés :
+PM · cadrage et orchestration
+Designer · DA et design tokens
+Frontend · HTML/CSS/JS, composants
+Backend · Python, APIs, scripts
+Reviewer · qualité et conventions code
+QA · tests et edge cases
+Copywriter · textes, copy, naming
+Ops · git et déploiement
+Secu · audit sécurité avant chaque deploy
+Status · santé du pipeline
+Token · suivi des coûts API
+
+Des jalons entre chaque étape. Chaque agent sait exactement ce qu'il doit livrer, et à qui.
+
+Des outputs, enfin.
+
+Un tableau de bord de veille financière, déployé chez un client en autonomie depuis plusieurs semaines.
+
+7 agents Python en production, dont :
+Veille PM · 18 sources agrégées chaque lundi, synthèse Notion automatique
+Monitor · mesure la fiabilité de chaque agent en continu
+Factory · guide CLI pour créer de nouveaux agents en 6 phases
+Newsletter · newsletters Gmail transformées en base Notion structurée
+
+Un site vitrine pour un festival, livré en 10 jours, zéro dépendance, client autonome.
+
+matthieu-duval.com
+```
+
+### Fichiers supprimés (versions intermédiaires)
+- `outputs/20260528_linkedin-visual.html` — version 1 (grille agents seule, abandonnée)
+- `outputs/20260528_linkedin-visual.png`
+- `outputs/20260528_linkedin-visual-B.html` — version B (hub-and-spoke, non retenue)
+- `outputs/20260528_linkedin-visual-B.png`
+
+---
+
 ## Règles de ce fichier
 1. Toute modification de fichier HTML/CSS → ligne ✅ ajoutée ici immédiatement
 2. Toute décision (architecture, contenu, process) → ligne "Décisions actées" immédiatement
 3. Au démarrage de session → lire ce fichier EN PREMIER, avant CLAUDE.md
 4. Ne jamais considérer une tâche comme "faite" si elle n'est pas ici
 5. Jamais de batch : une action = une entrée = action suivante
+
+---
+
+## Session 2026-06-01
+
+### Décisions actées
+- Nouvel ordre nav définitif : Infra IA / CAFÉ CoT RAG / UMAMI / Agent Coach / Agent Veille / Auto. Offres
+- Architecture hero index restructurée : proof zone sortie du hero-cover, devient frère direct dans .page
+- Règle pre-deploy : reviewer + vérification automatique obligatoires avant tout git push
+
+### Modifications fichiers
+✅ index.html — redesign hero complet (zone narrative + zone proof séparées, CTAs byline, numérotation 01/02/03)
+✅ index.html — nouvel ordre UC strip (01 Infra IA, 02 CAFÉ CoT RAG, 03 UMAMI, 04 Agent Coach, 05 Agent Veille, 06 Auto. Offres)
+✅ index.html — nav desktop mise à jour (nouvel ordre)
+✅ styles.css — refonte complète .hero-cover-* (narrative/proof séparés, byline, séparateurs EBEBEB, proof tint F7F7F5)
+✅ styles.css — border UC strip allégée #0A0A0A → #D8D8D8
+✅ umami.html — nav desktop + mobile mis à jour (nouvel ordre)
+✅ agent-coach.html — nav desktop + mobile mis à jour (nouvel ordre)
+✅ agent-veille.html — nav desktop + mobile mis à jour (nouvel ordre)
+✅ pipeline-offres.html — nav desktop + mobile mis à jour (nouvel ordre)
+✅ cafe-cot-rag.html — nav desktop + mobile mis à jour (nouvel ordre)
+✅ infra-ia.html — nav desktop + mobile mis à jour (nouvel ordre)
+✅ scripts/pre-deploy-check.sh — créé (vérification automatique nav + hero avant push)
+✅ .git/hooks/pre-push — créé (bloque push si check échoue)
+
+### Process déployé
+- Avant tout git push : pre-deploy-check.sh vérifie automatiquement la cohérence nav sur toutes les pages
+- Le reviewer agent inspecte les fichiers modifiés avant commit
+- Anti-régression : l'ordre nav est la source de vérité dans CLAUDE.md
