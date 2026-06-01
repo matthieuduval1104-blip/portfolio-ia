@@ -372,6 +372,30 @@
         </div>
     </div>
 
+    <!-- CASE 04 — Routing modèles -->
+    <div class="case" id="case-1-4">
+        <div class="case-visual">
+            <div class="case-method">Haiku &middot; Sonnet &middot; Opus</div>
+            <div class="case-impact-block">
+                <div class="case-impact-num">20&times;</div>
+                <div class="case-impact-label">co&ucirc;t divis&eacute; par 20&nbsp;: Haiku vs Opus, &agrave; volume &eacute;gal</div>
+            </div>
+            <div class="case-visual-num">04</div>
+        </div>
+        <div class="case-content">
+            <div>
+                <div class="case-tag">Haiku &middot; Sonnet &middot; Opus</div>
+                <h2 class="case-title">Le bon mod&egrave;le pour la bonne t&acirc;che, pas le plus puissant par d&eacute;faut</h2>
+                <p class="case-desc">Trois niveaux de mod&egrave;les, trois usages distincts. Haiku absorbe les t&acirc;ches m&eacute;caniques&nbsp;: recherches, lookups, formatage, analyse de logs. Sonnet est le mod&egrave;le par d&eacute;faut pour le d&eacute;veloppement, la review, le QA, le copy. Opus est r&eacute;serv&eacute; aux d&eacute;cisions qui co&ucirc;tent cher &agrave; d&eacute;faire&nbsp;: audit s&eacute;curit&eacute;, architecture, debug sans piste.</p>
+                <p class="case-desc">Le PM recommande un mod&egrave;le au d&eacute;marrage de session si le brief le justifie. Matthieu garde la d&eacute;cision finale. Ce n&rsquo;est pas du contr&ocirc;le par principe&nbsp;: c&rsquo;est parce que le choix du mod&egrave;le change ce qui est produit, pas seulement ce que &ccedil;a co&ucirc;te.</p>
+            </div>
+            <div class="case-learning">
+                <div class="case-learning-label">Ce que &ccedil;a r&eacute;v&egrave;le</div>
+                <div class="case-learning-text">Utiliser Opus pour formater un CSV, c&rsquo;est facturer du champagne pour remplir une glaci&egrave;re. La discipline ici n&rsquo;est pas budg&eacute;taire, elle est architecturale&nbsp;: chaque t&acirc;che a un niveau de complexit&eacute;, et la pile d&rsquo;outils doit le refl&eacute;ter.</div>
+            </div>
+        </div>
+    </div>
+
     <!-- TAB 3 : Second cerveau (3 cases) -->
 
     <!-- CASE 01 — IPCRA -->
@@ -473,18 +497,18 @@
 
         var tabCases = [
             ['case-diagram', 'case-0', 'case-0-2', 'case-0-3'],
-            ['case-1', 'case-1-2', 'case-1-3'],
+            ['case-1', 'case-1-2', 'case-1-3', 'case-1-4'],
             ['case-2', 'case-2-2'],
             ['case-3']
         ];
 
         var tabs = document.querySelectorAll('.tab');
-        var allCaseIds = ['case-diagram', 'case-0', 'case-0-2', 'case-0-3', 'case-1', 'case-1-2', 'case-1-3', 'case-2', 'case-2-2', 'case-3'];
+        var allCaseIds = ['case-diagram', 'case-0', 'case-0-2', 'case-0-3', 'case-1', 'case-1-2', 'case-1-3', 'case-1-4', 'case-2', 'case-2-2', 'case-3'];
 
         var pagerBar = document.getElementById('casePagerBar');
         var tabCaseLabels = [
             ['Process', '&Eacute;quipe', 'R&eacute;gression', 'S&eacute;curit&eacute;'],
-            ['Audit', 'Tokens', 'Scores'],
+            ['Audit', 'Tokens', 'Scores', 'Mod&egrave;les'],
             ['Structure', 'M&eacute;moire'],
             []
         ];
