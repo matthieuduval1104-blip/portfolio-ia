@@ -293,3 +293,37 @@ matthieu-duval.com
 - Avant tout git push : pre-deploy-check.sh vérifie automatiquement la cohérence nav sur toutes les pages
 - Le reviewer agent inspecte les fichiers modifiés avant commit
 - Anti-régression : l'ordre nav est la source de vérité dans CLAUDE.md
+
+---
+
+## Session 2026-06-01 (suite) — Déploiement case routing modèles
+
+### Actions ✅ complétées
+- `infra-ia.html` : case-1-4 "Routing modèles" ajoutée dans Tab Monitoring & coûts ✅
+- pre-deploy-check.sh : 15/15 checks passés ✅
+- git add infra-ia.html → commit 691ea01 ✅
+- git push → Cloudflare auto-build déclenché ✅
+
+### Commit
+- Hash : 691ea01
+- Message : "Ajoute case routing modèles (Haiku/Sonnet/Opus) dans Infra IA — Tab Monitoring & coûts"
+- 1 fichier modifié, 27 insertions(+), 3 suppressions(-)
+
+---
+
+## Session 2026-06-01 — suite (pipeline Infra IA)
+
+### Décisions actées
+- Routing modèles (Haiku/Sonnet/Opus) ajouté comme nouvelle capacité documentée dans l'UC Infra IA
+- Placement : Tab "Monitoring & coûts", case 04 (après Scores historisés)
+- Premier pipeline complet avec routing modèles appliqué dès le départ
+- Token-analyst flag : Secu en Opus = 46% du coût session — à arbitrer selon criticité
+
+### Modifications fichiers
+✅ infra-ia.html — ajout case-1-4 "Routing modèles" (HTML + JS : tabCases, allCaseIds, tabCaseLabels)
+
+### Pipeline exécuté
+PM → Copywriter (Sonnet) → Designer (Sonnet) → Frontend (Sonnet) → Reviewer (Sonnet, APPROVED) → QA (Sonnet, 5/5) → Secu (Opus, CLEAR) → Token-analyst (Haiku, $4.38 ref / 261K tokens) → Ops (Sonnet, 15/15 pre-deploy)
+
+### Commit
+691ea01 — infra-ia.html — 27 insertions, 3 suppressions
