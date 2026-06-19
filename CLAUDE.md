@@ -55,7 +55,7 @@ ssh-add ~/.ssh/id_ed25519_github
 
 ## Structure du site (04/05/2026 — 6 UCs)
 
-**Numérotation UC définitive :** 01=UMAMI · 02=Agent Coach · 03=Agent Veille · 04=Auto. Offres · 05=CAFÉ CoT RAG · 06=Infra IA
+**Numérotation UC définitive :** 01=UMAMI · 02=Agent Coach · 03=Agent Veille · 04=Auto. Offres · 05=CAFÉ CoT RAG · 06=Context Engineering
 
 | Fichier | Page | Statut |
 |---------|------|--------|
@@ -65,7 +65,7 @@ ssh-add ~/.ssh/id_ed25519_github
 | `agent-veille.html` | UC03 — Agent Veille PM (4 tabs) | ✅ |
 | `pipeline-offres.html` | UC04 — Auto. Offres Make + Airtable (4 tabs) | ✅ |
 | `cafe-cot-rag.html` | UC05 — Méthodes CAFÉ, CoT & RAG (4 tabs) | ✅ |
-| `infra-ia.html` | UC06 — Infra IA · pipeline 8 agents, monitoring, token tracking (4 tabs) | ✅ |
+| `infra-ia.html` | UC06 — Context Engineering · pipeline 9 agents, monitoring, second cerveau (4 tabs) | ✅ |
 | `styles.css` | CSS centralisé (partagé par toutes les pages) | ✅ |
 | `agent-monitor.html` | **ARCHIVÉ** — redirect meta refresh → infra-ia.html | Redirect |
 | `agent-factory.html` | **ARCHIVÉ** — redirect meta refresh → infra-ia.html | Redirect |
@@ -83,11 +83,11 @@ ssh-add ~/.ssh/id_ed25519_github
 
 ---
 
-## Ordre navigation (source de vérité — 01/06/2026)
+## Ordre navigation (source de vérité — 09/06/2026)
 
 Ordre définitif sur toutes les pages (desktop `.nav-links` + mobile `.mobile-nav-links`) :
 ```
-Infra IA → CAFÉ, CoT & RAG → UMAMI → Agent Coach → Agent Veille → Auto. Offres
+Context Engineering → CAFÉ, CoT & RAG → UMAMI → Agent Coach → Agent Veille → Auto. Offres
 ```
 Chaque page a `class="active"` sur son propre lien.
 
@@ -131,7 +131,7 @@ Le hook `.git/hooks/pre-push` est actif et bloque automatiquement les pushes qui
 | Fichier | Contenu |
 |---------|---------|
 | `styles.css` | CSS unique centralisé — toutes les pages y font référence |
-| `CV_MATTHIEU_DUVAL_Avril_2026.pdf` | CV téléchargeable (CTA index.html) — version 27/04/2026 |
+| `CV_MATTHIEU_DUVAL_Juin_2026.pdf` | CV téléchargeable (CTA index.html) — version juin 2026 |
 | `GUIDE.md` | Guide de maintenance pour Matthieu (non-technique) |
 | `UC4/CLAUDE.md` | Documentation complète des phases de construction UC4 |
 | `UC4/JOURNAL_UC4.md` | Journal de bord détaillé de toutes les sessions |

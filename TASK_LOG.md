@@ -327,3 +327,34 @@ PM → Copywriter (Sonnet) → Designer (Sonnet) → Frontend (Sonnet) → Revie
 
 ### Commit
 691ea01 — infra-ia.html — 27 insertions, 3 suppressions
+
+---
+
+## Session 2026-06-09 — Context Engineering rename
+
+### Décisions actées
+- UC06 renommée "Infra IA" → "Context Engineering" (proposition contextengineering.fr — validée PM + Copywriter)
+- Tab 1 UC06 : "Process" → "Personal OS"
+- Pager sub-page 01 : "Process" → "Activation" (doublon "Personal OS/Personal OS" détecté en local)
+- Hero pitch UC06 réécrit (Version A copywriter) : "Le context engineering, c'est décider ce que le modèle sait avant qu'il répond..."
+- Nav order source de vérité mise à jour : Context Engineering en premier (09/06/2026)
+- Bug préexistant corrigé : "dix agents" / "10 agents" → "neuf agents" / "9 agents" dans index.html (incohérence cross-pages détectée par PM lors de la repasse complète)
+- Bug préexistant corrigé : nav mobile index.html dans le mauvais ordre (UMAMI en premier au lieu de Context Engineering)
+
+### Modifications fichiers
+✅ infra-ia.html — title, meta, OG, nav desktop+mobile, H1, hero pitch, tab "Personal OS", pager label "Activation"
+✅ index.html — card UC06 title, nav mobile ordre, hero "neuf agents" / "9 agents"
+✅ cafe-cot-rag.html — nav text uniquement
+✅ umami.html — nav text uniquement
+✅ agent-coach.html — nav text uniquement
+✅ agent-veille.html — nav text uniquement
+✅ pipeline-offres.html — nav text uniquement
+✅ agent-monitor.html — nav text uniquement
+✅ agent-factory.html — nav text uniquement
+✅ CLAUDE.md — UC06 label, nav order source de vérité (09/06/2026)
+
+### Pipeline exécuté
+PM (analyse stratégique) → Copywriter (hero pitch V.A) → DA repasse ciblée (APPROVED) → PM repasse ciblée (APPROVED) → DA repasse complète (CHANGES REQUIRED : nav mobile + pager label) → PM repasse complète (APPROVED + bug "10 agents") → corrections appliquées → PM interpellé sur doublon Personal OS (reconnu, label "Activation" proposé) → correction → rendu local validé → Ops (15/15 pre-deploy, commit 93e2122, push)
+
+### Commit
+93e2122 — 9 fichiers, 30 insertions, 30 suppressions — live https://matthieu-duval.com/
