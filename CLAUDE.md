@@ -55,17 +55,17 @@ ssh-add ~/.ssh/id_ed25519_github
 
 ## Structure du site (04/05/2026 — 6 UCs)
 
-**Numérotation UC définitive :** 01=UMAMI · 02=Agent Coach · 03=Agent Veille · 04=Auto. Offres · 05=CAFÉ CoT RAG · 06=Context Engineering
+**Numérotation UC = ordre d'affichage (eyebrows alignés le 23/06/2026) :** 01=Context Engineering · 02=CAFÉ CoT RAG · 03=UMAMI · 04=Agent Coach · 05=Agent Veille · 06=Auto. Offres
 
 | Fichier | Page | Statut |
 |---------|------|--------|
 | `index.html` | Page d'accueil — grille 6 UCs, CTA LinkedIn + CV | ✅ |
-| `umami.html` | UC01 — UMAMI site client festival fermentation (4 tabs) | ✅ |
-| `agent-coach.html` | UC02 — Agent Coach PM (4 tabs) | ✅ |
-| `agent-veille.html` | UC03 — Agent Veille PM (4 tabs) | ✅ |
-| `pipeline-offres.html` | UC04 — Auto. Offres Make + Airtable (4 tabs) | ✅ |
-| `cafe-cot-rag.html` | UC05 — Méthodes CAFÉ, CoT & RAG (4 tabs) | ✅ |
-| `infra-ia.html` | UC06 — Context Engineering · pipeline 9 agents, monitoring, second cerveau (4 tabs) | ✅ |
+| `infra-ia.html` | UC01 — Context Engineering · pipeline 9 agents, monitoring, second cerveau (4 tabs) | ✅ |
+| `cafe-cot-rag.html` | UC02 — Méthodes CAFÉ, CoT & RAG (4 tabs) | ✅ |
+| `umami.html` | UC03 — UMAMI site client festival fermentation (4 tabs) | ✅ |
+| `agent-coach.html` | UC04 — Agent Coach PM (4 tabs) | ✅ |
+| `agent-veille.html` | UC05 — Agent Veille PM (4 tabs) | ✅ |
+| `pipeline-offres.html` | UC06 — Auto. Offres Make + Airtable (4 tabs) | ✅ |
 | `styles.css` | CSS centralisé (partagé par toutes les pages) | ✅ |
 | `agent-monitor.html` | **ARCHIVÉ** — redirect meta refresh → infra-ia.html | Redirect |
 | `agent-factory.html` | **ARCHIVÉ** — redirect meta refresh → infra-ia.html | Redirect |
@@ -251,46 +251,46 @@ Le hook `.git/hooks/pre-push` est actif et bloque automatiquement les pushes qui
 
 ## État actuel des pages (04/05/2026 — session 3)
 
-**Nav order (toutes pages) :** UMAMI / Agent Coach / Agent Veille / Auto. Offres / CAFÉ CoT RAG / Infra IA
+**Nav order (toutes pages) :** Context Engineering / CAFÉ CoT RAG / UMAMI / Agent Coach / Agent Veille / Auto. Offres
 
 **index.html** :
-- Grille 6 UCs, ordre : UMAMI(01) / Coach(02) / Veille(03) / Offres(04) / CAFÉ(05) / Infra(06)
+- Grille 6 UCs, ordre : Context Eng(01) / CAFÉ(02) / UMAMI(03) / Coach(04) / Veille(05) / Offres(06)
 - Nav 6 liens dans l'ordre défini
 - Burger : aria-expanded + aria-controls + JS toggle ✅
 - CV : download only (mobile-nav-footer + footer) ✅
 - Hero (28/05/2026) : refonte complète — H1 3 lignes / `.hero-cover-body` wrapper / `.hero-cover-pitch` / `.hero-cover-divider` (hr) / `.hero-cover-grid` 3 colonnes (Infrastructure · Production · Résultats) / `.hero-cover-ctas`
 - Hero disposition : `justify-content: space-between` sur `.hero-cover` — H1 en haut, body en bas, zéro scroll
 
-**umami.html (UC01)** :
-- Eyebrow : "Use case 01"
+**umami.html (UC03)** :
+- Eyebrow : "Use case 03"
 - Hero pitch : "Conçu, développé et déployé entièrement avec Claude Code en 10 jours."
 - Stats : "0 Dépendance technique · client autonome"
 - Learning Contexte supprimé (défensif) — Construction + Décisions prouvent par l'exemple
 - 4 tabs : Contexte / Construction / Décisions / Live — tous trackés Umami
 
-**agent-coach.html (UC02)** :
-- Eyebrow : "Use case 02 · Formation GenAI"
+**agent-coach.html (UC04)** :
+- Eyebrow : "Use case 04 · Formation GenAI"
 - Stats : "6 Modes", "13 Sections de profil RAG documentées", "4 Candidatures jan-fév 2026"
 - 4 tabs : Simulation fit · 6 modes · Analyse d'offre · Dashboard — tous trackés Umami
 
-**agent-veille.html (UC03)** :
-- Eyebrow : "Use case 03"
+**agent-veille.html (UC05)** :
+- Eyebrow : "Use case 05"
 - Stats : "18 Sources · <10 min de lecture", "6 Sections", "0 min Production manuelle"
 - Référence "(UC2)" supprimée → "l'Agent Coach"
 - 4 tabs : Objectifs / Construction / System prompt / Décisions produit — tous trackés Umami
 
-**pipeline-offres.html (UC04)** :
-- Eyebrow : "Use case 04"
+**pipeline-offres.html (UC06)** :
+- Eyebrow : "Use case 06"
 - Stats : "3 Sources", "3 Scénarios Make", "10 min / semaine"
 - 4 tabs : Problème / Architecture / Décisions produit / En usage — tous trackés Umami
 
-**cafe-cot-rag.html (UC05)** :
-- Eyebrow : "Use case 05 · Formation GenAI"
+**cafe-cot-rag.html (UC02)** :
+- Eyebrow : "Use case 02 · Formation GenAI"
 - Stats : "9/10 avec CoT · 7/10 sans", "95% hit rate RAG · vs 30% ChatGPT sans RAG"
 - 4 tabs : Multi-LLM · CAFÉ · CoT · RAG — tous trackés Umami
 
-**infra-ia.html (UC06)** :
-- Eyebrow : "Use case 06 · Systèmes & outillage IA"
+**infra-ia.html (UC01)** :
+- Eyebrow : "Use case 01 · Systèmes & outillage IA"
 - Hero pitch : pipeline Team Produit complet, 9 agents (ajout /team:secu — 20/05/2026), angle Head of Product (pas technique)
 - 4 tabs : Process / Monitoring & coûts / Second cerveau / Déploiement
 - Tab Process : pager 4 sous-pages (Process / Equipe / Régression / Sécurité)
