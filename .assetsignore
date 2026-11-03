@@ -1,0 +1,16 @@
+# Fichiers du dépôt qui ne doivent pas être publiés sur matthieu-duval.com.
+# Même format que .gitignore. Doc : developers.cloudflare.com/workers/static-assets/binding/#ignoring-assets
+.git
+.gitignore
+.assetsignore
+.DS_Store
+.claude
+*.md
+scripts
+OLD
+brand
+outputs
+test_*.html
+pitch-infra.*
+CV_MATTHIEU_DUVAL_Avril_2026.pdf
+CV_MATTHIEU_DUVAL_Fevrier_2026.pdf
