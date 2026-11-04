@@ -14,3 +14,8 @@ test_*.html
 pitch-infra.*
 CV_MATTHIEU_DUVAL_Avril_2026.pdf
 CV_MATTHIEU_DUVAL_Fevrier_2026.pdf
+wrangler.jsonc
+wrangler.toml
+.wrangler
+.dev.vars*
+.env*
